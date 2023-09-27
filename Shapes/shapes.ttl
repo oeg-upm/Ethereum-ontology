@@ -1,0 +1,551 @@
+@prefix :      <https://w3id.org/def/EthereumOntology/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix eth:   <https://w3id.org/def/EthereumOntology/> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix abi:   <https://w3id.org/def/SolidityABI/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ethon: <http://ethon.consensys.net/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82>
+        a            sh:PropertyShape ;
+        rdfs:label   "author block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "author block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:authorBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75>
+        a            sh:PropertyShape ;
+        rdfs:label   "key" ;
+        sh:datatype  xsd:string ;
+        sh:name      "key" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:key ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647>
+        a            sh:PropertyShape ;
+        rdfs:label   "value transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "value transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:valueTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844>
+        a            sh:PropertyShape ;
+        rdfs:label   "gas used block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "gas used block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:gasUsedBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa>
+        a            sh:PropertyShape ;
+        rdfs:label   "timestamp block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "timestamp block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:timestampBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16>
+        a            sh:PropertyShape ;
+        rdfs:label   "has access list" ;
+        sh:class     eth:AccessList ;
+        sh:name      "has access list" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      eth:hasAccessList .
+
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0>
+        a            sh:PropertyShape ;
+        rdfs:label   "amount withdrawal" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "amount withdrawal" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:amountWithdrawal ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724>
+        a            sh:PropertyShape ;
+        rdfs:label   "number block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "number block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:numberBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3>
+        a               sh:NodeShape ;
+        rdfs:label      "Block" ;
+        sh:name         "Block" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  ethon:Block .
+
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb>
+        a            sh:PropertyShape ;
+        rdfs:label   "validator index withdrawal" ;
+        sh:datatype  xsd:string ;
+        sh:name      "validator index withdrawal" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:validatorIndexWithdrawal ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582>
+        a            sh:PropertyShape ;
+        rdfs:label   "v transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "v transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:vTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d>
+        a            sh:PropertyShape ;
+        rdfs:label   "nonce transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "nonce transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:nonceTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f>
+        a            sh:PropertyShape ;
+        rdfs:label   "hash transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "hash transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:hashTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33>
+        a            sh:PropertyShape ;
+        rdfs:label   "total difficulty block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "total difficulty block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:totalDifficultyBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38>
+        a            sh:PropertyShape ;
+        rdfs:label   "public key transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "public key transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:publicKeyTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166>
+        a               sh:NodeShape ;
+        rdfs:label      "ABI" ;
+        sh:name         "ABI" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  abi:ABI .
+
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4>
+        a            sh:PropertyShape ;
+        rdfs:label   "parent hash block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "parent hash block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:parentHashBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a>
+        a            sh:PropertyShape ;
+        rdfs:label   "base fee per gas block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "base fee per gas block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:baseFeePerGasBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263>
+        a               sh:NodeShape ;
+        rdfs:label      "Keys" ;
+        sh:name         "Keys" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> ;
+        sh:targetClass  eth:Keys .
+
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee>
+        a            sh:PropertyShape ;
+        rdfs:label   "extra data block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "extra data block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:extraDataBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5>
+        a            sh:PropertyShape ;
+        rdfs:label   "has behaviour" ;
+        sh:class     ethon:Block ;
+        sh:name      "has behaviour" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      eth:hasBehaviour .
+
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b>
+        a            sh:PropertyShape ;
+        rdfs:label   "state root block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "state root block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:stateRootBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6>
+        a            sh:PropertyShape ;
+        rdfs:label   "creates transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "creates transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:createsTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e>
+        a            sh:PropertyShape ;
+        rdfs:label   "nonce block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "nonce block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:nonceBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c>
+        a            sh:PropertyShape ;
+        rdfs:label   "transactions root block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "transactions root block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:transactionsRootBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd>
+        a               sh:NodeShape ;
+        rdfs:label      "Transaction" ;
+        sh:name         "Transaction" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> , <https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> , <https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> , <https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> , <https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> , <https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> , <https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> , <https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> , <https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> , <https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> , <https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> , <https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> , <https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> , <https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> , <https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> , <https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> , <https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> , <https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> , <https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> , <https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> , <https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> , <https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> ;
+        sh:targetClass  eth:Transaction .
+
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5>
+        a               sh:NodeShape ;
+        rdfs:label      "Withdrawals" ;
+        sh:name         "Withdrawals" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> , <https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> , <https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> , <https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> ;
+        sh:targetClass  eth:Withdrawals .
+
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a>
+        a            sh:PropertyShape ;
+        rdfs:label   "r transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "r transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:rTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb>
+        a            sh:PropertyShape ;
+        rdfs:label   "transaction index transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "transaction index transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:transactionIndexTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4>
+        a            sh:PropertyShape ;
+        rdfs:label   "s transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "s transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:sTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6>
+        a            sh:PropertyShape ;
+        rdfs:label   "index withdrawal" ;
+        sh:datatype  xsd:string ;
+        sh:name      "index withdrawal" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:indexWithdrawal ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee>
+        a            sh:PropertyShape ;
+        rdfs:label   "address access list" ;
+        sh:datatype  xsd:string ;
+        sh:name      "address access list" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:addressAccessList ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64>
+        a            sh:PropertyShape ;
+        rdfs:label   "sha3 uncles block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "sha3 uncles block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:sha3UnclesBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9>
+        a            sh:PropertyShape ;
+        rdfs:label   "address withdrawal" ;
+        sh:datatype  xsd:string ;
+        sh:name      "address withdrawal" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:addressWithdrawal ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea>
+        a            sh:PropertyShape ;
+        rdfs:label   "block number transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "block number transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:blockNumberTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b>
+        a            sh:PropertyShape ;
+        rdfs:label   "type transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "type transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:typeTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be>
+        a            sh:PropertyShape ;
+        rdfs:label   "max fee per gas transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "max fee per gas transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:maxFeePerGasTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5>
+        a            sh:PropertyShape ;
+        rdfs:label   "mix hash block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "mix hash block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:mixHashBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024>
+        a            sh:PropertyShape ;
+        rdfs:label   "has keys" ;
+        sh:class     eth:Keys ;
+        sh:name      "has keys" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      eth:hasKeys .
+
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391>
+        a            sh:PropertyShape ;
+        rdfs:label   "withdrawal root block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "withdrawal root block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:withdrawalRootBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf>
+        a            sh:PropertyShape ;
+        rdfs:label   "to transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "to transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:toTransaction ;
+        sh:pattern   ".*" .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> , <https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> , <https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> , <https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> , <https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> , <https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> , <https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> , <https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> , <https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> , <https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> , <https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> , <https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> , <https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> , <https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> , <https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> , <https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> , <https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> , <https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> , <https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> , <https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> , <https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> , <https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> , <https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> , <https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> , <https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> , <https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> , <https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> , <https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> , <https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> , <https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166> , <https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> , <https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> , <https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> , <https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> , <https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> , <https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> , <https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> , <https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> , <https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> , <https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> , <https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> , <https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> , <https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> , <https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> , <https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> , <https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> , <https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> , <https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> , <https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> , <https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> , <https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> , <https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3> , <https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> , <https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> , <https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> , <https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> , <https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> , <https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> , <https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> , <https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08>
+        a            sh:PropertyShape ;
+        rdfs:label   "chain id transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "chain id transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:chainIdTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638>
+        a            sh:PropertyShape ;
+        rdfs:label   "receipts root block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "receipts root block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:receiptsRootBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81>
+        a            sh:PropertyShape ;
+        rdfs:label   "has withdrawals" ;
+        sh:class     eth:Withdrawals ;
+        sh:name      "has withdrawals" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      eth:hasWithdrawals .
+
+<https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d>
+        a            sh:PropertyShape ;
+        rdfs:label   "has abi" ;
+        sh:class     abi:ABI ;
+        sh:name      "has abi" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      eth:hasABI .
+
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7>
+        a            sh:PropertyShape ;
+        rdfs:label   "max priority fee per gas transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "max priority fee per gas transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:maxPriorityFeePerGasTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18>
+        a            sh:PropertyShape ;
+        rdfs:label   "input transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "input transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:inputTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c>
+        a            sh:PropertyShape ;
+        rdfs:label   "hash block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "hash block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:hashBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec>
+        a            sh:PropertyShape ;
+        rdfs:label   "has transactions" ;
+        sh:class     eth:Transaction ;
+        sh:name      "has transactions" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      eth:hasTransactions .
+
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03>
+        a            sh:PropertyShape ;
+        rdfs:label   "difficulty block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "difficulty block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:difficultyBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b>
+        a            sh:PropertyShape ;
+        rdfs:label   "gas limit block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "gas limit block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:gasLimitBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff>
+        a            sh:PropertyShape ;
+        rdfs:label   "miner block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "miner block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:minerBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c>
+        a            sh:PropertyShape ;
+        rdfs:label   "from transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "from transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:fromTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939>
+        a               sh:NodeShape ;
+        rdfs:label      "Access List" ;
+        sh:name         "Access List" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> , <https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> ;
+        sh:targetClass  eth:AccessList .
+
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7>
+        a            sh:PropertyShape ;
+        rdfs:label   "logs bloom block" ;
+        sh:datatype  xsd:string ;
+        sh:name      "logs bloom block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:logsBloomBlock ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066>
+        a            sh:PropertyShape ;
+        rdfs:label   "gas transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "gas transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:gasTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5>
+        a            sh:PropertyShape ;
+        rdfs:label   "gas price transaction" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "gas price transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:gasPriceTransaction ;
+        sh:pattern   "[\\-+]?[0-9]+" .
+
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623>
+        a               sh:NodeShape ;
+        rdfs:label      "Block" ;
+        sh:name         "Block" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> , <https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> , <https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> , <https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> , <https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> , <https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> , <https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> , <https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> , <https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> , <https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> , <https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> , <https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> , <https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> , <https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> , <https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> , <https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> , <https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> , <https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> , <https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> , <https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> , <https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> , <https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> , <https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> , <https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> ;
+        sh:targetClass  eth:Block .
+
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c>
+        a            sh:PropertyShape ;
+        rdfs:label   "block hash transaction" ;
+        sh:datatype  xsd:string ;
+        sh:name      "block hash transaction" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:blockHashTransaction ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118>
+        a            sh:PropertyShape ;
+        rdfs:label   "size block" ;
+        sh:datatype  xsd:integer ;
+        sh:name      "size block" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      eth:sizeBlock ;
+        sh:pattern   "[\\-+]?[0-9]+" .
