@@ -1,0 +1,42 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "https://w3id.org/def/EthereumOntologyBlock" "https://w3id.org/def/EthereumOntologytransaction" "https://w3id.org/def/SolidityABIABI" "http://ethon.consensys.netBlock" ; /*classes style*/
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologytransactionIndex" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologytransactionsRoot" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologyhash" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologystateRoot" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologyvalue" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologysha3Uncles" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologysize" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "https://w3id.org/def/EthereumOntologytransaction" [ label = "https://w3id.org/def/EthereumOntologyhasTransactions" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologynonce" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologyblockNumber" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "https://w3id.org/def/SolidityABIABI" [ label = "https://w3id.org/def/EthereumOntologyhasABI" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologypublicKey" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyminer" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologygasUsed" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyblockHash" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyextraData" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyto" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyauthor" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologydifficulty" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyreceiptsRoot" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologygasPrice" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologytimestamp" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "http://ethon.consensys.netBlock" [ label = "https://w3id.org/def/EthereumOntologyhasBehaviour" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologychainId" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologyparentHash" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologycreates" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyr" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologys" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologylogsBloom" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologyv" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologygas" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologytotalDifficulty" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyinput" ];
+	"https://w3id.org/def/EthereumOntologytransaction" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologyfrom" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:string" [ label = "https://w3id.org/def/EthereumOntologymixHash" ];
+	"https://w3id.org/def/EthereumOntologyBlock" -> "xsd:integer" [ label = "https://w3id.org/def/EthereumOntologygasLimit" ];
+
+}

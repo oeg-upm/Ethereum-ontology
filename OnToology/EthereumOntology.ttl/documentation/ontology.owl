@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/EthereumOntology#"
+     xml:base="https://w3id.org/def/EthereumOntology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/def/EthereumOntology">
+        <dc:creator>Juan Cano-Benito</dc:creator>
+        <dc:creator>Raúl García-Castro</dc:creator>
+        <dc:description>Ontology code created by Chowlk</dc:description>
+        <dc:title>Ethereum Ontology</dc:title>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyhasABI -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntologyhasABI">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABIABI"/>
+        <rdfs:label>has a b i</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyhasBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntologyhasBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://ethon.consensys.netBlock"/>
+        <rdfs:label>has behaviour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyhasTransactions -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntologyhasTransactions">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:label>has transactions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyauthor -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyauthor">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>author</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyblockHash -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyblockHash">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>block hash</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyblockNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyblockNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>block number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologychainId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologychainId">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>chain id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologycreates -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologycreates">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>creates</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologydifficulty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologydifficulty">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>difficulty</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyextraData -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyextraData">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>extra data</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyfrom -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyfrom">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>from</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologygas -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologygas">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>gas</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologygasLimit -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologygasLimit">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>gas limit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologygasPrice -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologygasPrice">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>gas price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologygasUsed -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologygasUsed">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>gas used</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyhash -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyhash">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>hash</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyinput -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyinput">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>input</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologylogsBloom -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologylogsBloom">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>logs bloom</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyminer -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyminer">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>miner</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologymixHash -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologymixHash">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>mix hash</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologynonce -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologynonce">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>nonce</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyparentHash -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyparentHash">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>parent hash</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologypublicKey -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologypublicKey">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>public key</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyr -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyr">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>r</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyreceiptsRoot -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyreceiptsRoot">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>receipts root</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologys -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologys">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>s</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologysha3Uncles -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologysha3Uncles">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>sha3 uncles</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologysize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologysize">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>size</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologystateRoot -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologystateRoot">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>state root</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologytimestamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologytimestamp">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyto -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyto">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>to</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologytotalDifficulty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologytotalDifficulty">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>total difficulty</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologytransactionIndex -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologytransactionIndex">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>transaction index</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologytransactionsRoot -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologytransactionsRoot">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>transactions root</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyv -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyv">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>v</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyvalue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyvalue">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ethon.consensys.netBlock -->
+
+
+    <owl:Class rdf:about="http://ethon.consensys.netBlock">
+        <rdfs:label>Block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologyBlock -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/EthereumOntologyBlock">
+        <rdfs:label>Block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntologytransaction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/EthereumOntologytransaction">
+        <rdfs:label>transaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABIABI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABIABI">
+        <rdfs:label>A B I</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

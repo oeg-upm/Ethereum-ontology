@@ -1,0 +1,284 @@
+<https://w3id.org/def/EthereumOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/EthereumOntology> <http://purl.org/dc/elements/1.1/creator> "Juan Cano-Benito" .
+<https://w3id.org/def/EthereumOntology> <http://purl.org/dc/elements/1.1/creator> "Raúl García-Castro" .
+<https://w3id.org/def/EthereumOntology> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+<https://w3id.org/def/EthereumOntology> <http://purl.org/dc/elements/1.1/title> "Ethereum Ontology" .
+<https://w3id.org/def/EthereumOntology> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/EthereumOntologyhasABI
+<https://w3id.org/def/EthereumOntologyhasABI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/EthereumOntologyhasABI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyhasABI> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityABIABI> .
+<https://w3id.org/def/EthereumOntologyhasABI> <http://www.w3.org/2000/01/rdf-schema#label> "has a b i" .
+# 
+# https://w3id.org/def/EthereumOntologyhasBehaviour
+<https://w3id.org/def/EthereumOntologyhasBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/EthereumOntologyhasBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyhasBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <http://ethon.consensys.netBlock> .
+<https://w3id.org/def/EthereumOntologyhasBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has behaviour" .
+# 
+# https://w3id.org/def/EthereumOntologyhasTransactions
+<https://w3id.org/def/EthereumOntologyhasTransactions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/EthereumOntologyhasTransactions> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyhasTransactions> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyhasTransactions> <http://www.w3.org/2000/01/rdf-schema#label> "has transactions" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/EthereumOntologyauthor
+<https://w3id.org/def/EthereumOntologyauthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyauthor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyauthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyauthor> <http://www.w3.org/2000/01/rdf-schema#label> "author" .
+# 
+# https://w3id.org/def/EthereumOntologyblockHash
+<https://w3id.org/def/EthereumOntologyblockHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyblockHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyblockHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyblockHash> <http://www.w3.org/2000/01/rdf-schema#label> "block hash" .
+# 
+# https://w3id.org/def/EthereumOntologyblockNumber
+<https://w3id.org/def/EthereumOntologyblockNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyblockNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyblockNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologyblockNumber> <http://www.w3.org/2000/01/rdf-schema#label> "block number" .
+# 
+# https://w3id.org/def/EthereumOntologychainId
+<https://w3id.org/def/EthereumOntologychainId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologychainId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologychainId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologychainId> <http://www.w3.org/2000/01/rdf-schema#label> "chain id" .
+# 
+# https://w3id.org/def/EthereumOntologycreates
+<https://w3id.org/def/EthereumOntologycreates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologycreates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologycreates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologycreates> <http://www.w3.org/2000/01/rdf-schema#label> "creates" .
+# 
+# https://w3id.org/def/EthereumOntologydifficulty
+<https://w3id.org/def/EthereumOntologydifficulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologydifficulty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologydifficulty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologydifficulty> <http://www.w3.org/2000/01/rdf-schema#label> "difficulty" .
+# 
+# https://w3id.org/def/EthereumOntologyextraData
+<https://w3id.org/def/EthereumOntologyextraData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyextraData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyextraData> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyextraData> <http://www.w3.org/2000/01/rdf-schema#label> "extra data" .
+# 
+# https://w3id.org/def/EthereumOntologyfrom
+<https://w3id.org/def/EthereumOntologyfrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyfrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyfrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyfrom> <http://www.w3.org/2000/01/rdf-schema#label> "from" .
+# 
+# https://w3id.org/def/EthereumOntologygas
+<https://w3id.org/def/EthereumOntologygas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologygas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologygas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologygas> <http://www.w3.org/2000/01/rdf-schema#label> "gas" .
+# 
+# https://w3id.org/def/EthereumOntologygasLimit
+<https://w3id.org/def/EthereumOntologygasLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologygasLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologygasLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologygasLimit> <http://www.w3.org/2000/01/rdf-schema#label> "gas limit" .
+# 
+# https://w3id.org/def/EthereumOntologygasPrice
+<https://w3id.org/def/EthereumOntologygasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologygasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologygasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologygasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "gas price" .
+# 
+# https://w3id.org/def/EthereumOntologygasUsed
+<https://w3id.org/def/EthereumOntologygasUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologygasUsed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologygasUsed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologygasUsed> <http://www.w3.org/2000/01/rdf-schema#label> "gas used" .
+# 
+# https://w3id.org/def/EthereumOntologyhash
+<https://w3id.org/def/EthereumOntologyhash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyhash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyhash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologyhash> <http://www.w3.org/2000/01/rdf-schema#label> "hash" .
+# 
+# https://w3id.org/def/EthereumOntologyinput
+<https://w3id.org/def/EthereumOntologyinput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyinput> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyinput> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyinput> <http://www.w3.org/2000/01/rdf-schema#label> "input" .
+# 
+# https://w3id.org/def/EthereumOntologylogsBloom
+<https://w3id.org/def/EthereumOntologylogsBloom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologylogsBloom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologylogsBloom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologylogsBloom> <http://www.w3.org/2000/01/rdf-schema#label> "logs bloom" .
+# 
+# https://w3id.org/def/EthereumOntologyminer
+<https://w3id.org/def/EthereumOntologyminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyminer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyminer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyminer> <http://www.w3.org/2000/01/rdf-schema#label> "miner" .
+# 
+# https://w3id.org/def/EthereumOntologymixHash
+<https://w3id.org/def/EthereumOntologymixHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologymixHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologymixHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologymixHash> <http://www.w3.org/2000/01/rdf-schema#label> "mix hash" .
+# 
+# https://w3id.org/def/EthereumOntologynonce
+<https://w3id.org/def/EthereumOntologynonce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologynonce> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologynonce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologynonce> <http://www.w3.org/2000/01/rdf-schema#label> "nonce" .
+# 
+# https://w3id.org/def/EthereumOntologyparentHash
+<https://w3id.org/def/EthereumOntologyparentHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyparentHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyparentHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologyparentHash> <http://www.w3.org/2000/01/rdf-schema#label> "parent hash" .
+# 
+# https://w3id.org/def/EthereumOntologypublicKey
+<https://w3id.org/def/EthereumOntologypublicKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologypublicKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologypublicKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologypublicKey> <http://www.w3.org/2000/01/rdf-schema#label> "public key" .
+# 
+# https://w3id.org/def/EthereumOntologyr
+<https://w3id.org/def/EthereumOntologyr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyr> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyr> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyr> <http://www.w3.org/2000/01/rdf-schema#label> "r" .
+# 
+# https://w3id.org/def/EthereumOntologyreceiptsRoot
+<https://w3id.org/def/EthereumOntologyreceiptsRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyreceiptsRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologyreceiptsRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyreceiptsRoot> <http://www.w3.org/2000/01/rdf-schema#label> "receipts root" .
+# 
+# https://w3id.org/def/EthereumOntologys
+<https://w3id.org/def/EthereumOntologys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologys> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologys> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologys> <http://www.w3.org/2000/01/rdf-schema#label> "s" .
+# 
+# https://w3id.org/def/EthereumOntologysha3Uncles
+<https://w3id.org/def/EthereumOntologysha3Uncles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologysha3Uncles> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologysha3Uncles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologysha3Uncles> <http://www.w3.org/2000/01/rdf-schema#label> "sha3 uncles" .
+# 
+# https://w3id.org/def/EthereumOntologysize
+<https://w3id.org/def/EthereumOntologysize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologysize> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologysize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologysize> <http://www.w3.org/2000/01/rdf-schema#label> "size" .
+# 
+# https://w3id.org/def/EthereumOntologystateRoot
+<https://w3id.org/def/EthereumOntologystateRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologystateRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologystateRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologystateRoot> <http://www.w3.org/2000/01/rdf-schema#label> "state root" .
+# 
+# https://w3id.org/def/EthereumOntologytimestamp
+<https://w3id.org/def/EthereumOntologytimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologytimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologytimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologytimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp" .
+# 
+# https://w3id.org/def/EthereumOntologyto
+<https://w3id.org/def/EthereumOntologyto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyto> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologyto> <http://www.w3.org/2000/01/rdf-schema#label> "to" .
+# 
+# https://w3id.org/def/EthereumOntologytotalDifficulty
+<https://w3id.org/def/EthereumOntologytotalDifficulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologytotalDifficulty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologytotalDifficulty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologytotalDifficulty> <http://www.w3.org/2000/01/rdf-schema#label> "total difficulty" .
+# 
+# https://w3id.org/def/EthereumOntologytransactionIndex
+<https://w3id.org/def/EthereumOntologytransactionIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologytransactionIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologytransactionIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologytransactionIndex> <http://www.w3.org/2000/01/rdf-schema#label> "transaction index" .
+# 
+# https://w3id.org/def/EthereumOntologytransactionsRoot
+<https://w3id.org/def/EthereumOntologytransactionsRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologytransactionsRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologyBlock> .
+<https://w3id.org/def/EthereumOntologytransactionsRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/EthereumOntologytransactionsRoot> <http://www.w3.org/2000/01/rdf-schema#label> "transactions root" .
+# 
+# https://w3id.org/def/EthereumOntologyv
+<https://w3id.org/def/EthereumOntologyv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyv> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyv> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologyv> <http://www.w3.org/2000/01/rdf-schema#label> "v" .
+# 
+# https://w3id.org/def/EthereumOntologyvalue
+<https://w3id.org/def/EthereumOntologyvalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/EthereumOntologyvalue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/EthereumOntologytransaction> .
+<https://w3id.org/def/EthereumOntologyvalue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/EthereumOntologyvalue> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ethon.consensys.netBlock
+<http://ethon.consensys.netBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ethon.consensys.netBlock> <http://www.w3.org/2000/01/rdf-schema#label> "Block" .
+# 
+# https://w3id.org/def/EthereumOntologyBlock
+<https://w3id.org/def/EthereumOntologyBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/EthereumOntologyBlock> <http://www.w3.org/2000/01/rdf-schema#label> "Block" .
+# 
+# https://w3id.org/def/EthereumOntologytransaction
+<https://w3id.org/def/EthereumOntologytransaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/EthereumOntologytransaction> <http://www.w3.org/2000/01/rdf-schema#label> "transaction" .
+# 
+# https://w3id.org/def/SolidityABIABI
+<https://w3id.org/def/SolidityABIABI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/SolidityABIABI> <http://www.w3.org/2000/01/rdf-schema#label> "A B I" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,175 @@
+{
+  "@context" : {
+    "EthereumOntologyr" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyr",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologystateRoot" : {
+      "@id" : "https://w3id.org/def/EthereumOntologystateRoot",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologygasUsed" : {
+      "@id" : "https://w3id.org/def/EthereumOntologygasUsed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "EthereumOntologyvalue" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyvalue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologysha3Uncles" : {
+      "@id" : "https://w3id.org/def/EthereumOntologysha3Uncles",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologyhasBehaviour" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyhasBehaviour",
+      "@type" : "@id"
+    },
+    "EthereumOntologyextraData" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyextraData",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologyfrom" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyfrom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologyblockNumber" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyblockNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "EthereumOntologygasLimit" : {
+      "@id" : "https://w3id.org/def/EthereumOntologygasLimit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologyparentHash" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyparentHash",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologynonce" : {
+      "@id" : "https://w3id.org/def/EthereumOntologynonce",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologylogsBloom" : {
+      "@id" : "https://w3id.org/def/EthereumOntologylogsBloom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologychainId" : {
+      "@id" : "https://w3id.org/def/EthereumOntologychainId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologyblockHash" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyblockHash",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologyv" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyv",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologyhash" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyhash",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologyto" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "EthereumOntologygasPrice" : {
+      "@id" : "https://w3id.org/def/EthereumOntologygasPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologytransactionsRoot" : {
+      "@id" : "https://w3id.org/def/EthereumOntologytransactionsRoot",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologyBlock" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyBlock"
+    },
+    "ethon.consensys.netBlock" : {
+      "@id" : "http://ethon.consensys.netBlock"
+    },
+    "EthereumOntologymixHash" : {
+      "@id" : "https://w3id.org/def/EthereumOntologymixHash",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologyauthor" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyauthor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologytotalDifficulty" : {
+      "@id" : "https://w3id.org/def/EthereumOntologytotalDifficulty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologytimestamp" : {
+      "@id" : "https://w3id.org/def/EthereumOntologytimestamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologycreates" : {
+      "@id" : "https://w3id.org/def/EthereumOntologycreates",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologys" : {
+      "@id" : "https://w3id.org/def/EthereumOntologys",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologygas" : {
+      "@id" : "https://w3id.org/def/EthereumOntologygas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "EthereumOntologyhasABI" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyhasABI",
+      "@type" : "@id"
+    },
+    "SolidityABIABI" : {
+      "@id" : "https://w3id.org/def/SolidityABIABI"
+    },
+    "EthereumOntologydifficulty" : {
+      "@id" : "https://w3id.org/def/EthereumOntologydifficulty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologysize" : {
+      "@id" : "https://w3id.org/def/EthereumOntologysize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologyinput" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyinput",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologypublicKey" : {
+      "@id" : "https://w3id.org/def/EthereumOntologypublicKey",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologytransactionIndex" : {
+      "@id" : "https://w3id.org/def/EthereumOntologytransactionIndex",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EthereumOntologyhasTransactions" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyhasTransactions",
+      "@type" : "@id"
+    },
+    "EthereumOntologytransaction" : {
+      "@id" : "https://w3id.org/def/EthereumOntologytransaction"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "EthereumOntologyminer" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyminer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EthereumOntologyreceiptsRoot" : {
+      "@id" : "https://w3id.org/def/EthereumOntologyreceiptsRoot",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
