@@ -1,0 +1,207 @@
+ @prefix abi: <https://w3id.org/def/SolidityABI> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix eth: <https://w3id.org/def/EthereumOntology> .
+@prefix ethon: <http://ethon.consensys.net> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+eth: a owl:Ontology ;
+    dc:creator "Juan Cano-Benito",
+        "Raúl García-Castro" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "Ethereum Ontology" ;
+    owl:versionInfo "1.0" .
+
+eth:author a owl:DatatypeProperty ;
+    rdfs:label "author" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:blockHash a owl:DatatypeProperty ;
+    rdfs:label "block hash" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:string .
+
+eth:blockNumber a owl:DatatypeProperty ;
+    rdfs:label "block number" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:chainId a owl:DatatypeProperty ;
+    rdfs:label "chain id" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:integer .
+
+eth:creates a owl:DatatypeProperty ;
+    rdfs:label "creates" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:string .
+
+eth:difficulty a owl:DatatypeProperty ;
+    rdfs:label "difficulty" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:extraData a owl:DatatypeProperty ;
+    rdfs:label "extra data" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:from a owl:DatatypeProperty ;
+    rdfs:label "from" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:string .
+
+eth:gas a owl:DatatypeProperty ;
+    rdfs:label "gas" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:integer .
+
+eth:gasLimit a owl:DatatypeProperty ;
+    rdfs:label "gas limit" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:gasPrice a owl:DatatypeProperty ;
+    rdfs:label "gas price" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:integer .
+
+eth:gasUsed a owl:DatatypeProperty ;
+    rdfs:label "gas used" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:hasABI a owl:ObjectProperty ;
+    rdfs:label "has a b i" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range abi:ABI .
+
+eth:hasBehaviour a owl:ObjectProperty ;
+    rdfs:label "has behaviour" ;
+    rdfs:domain eth:Block ;
+    rdfs:range ethon:Block .
+
+eth:hasTransactions a owl:ObjectProperty ;
+    rdfs:label "has transactions" ;
+    rdfs:domain eth:Block ;
+    rdfs:range eth:transaction .
+
+eth:hash a owl:DatatypeProperty ;
+    rdfs:label "hash" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:input a owl:DatatypeProperty ;
+    rdfs:label "input" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:string .
+
+eth:logsBloom a owl:DatatypeProperty ;
+    rdfs:label "logs bloom" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:miner a owl:DatatypeProperty ;
+    rdfs:label "miner" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:mixHash a owl:DatatypeProperty ;
+    rdfs:label "mix hash" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:nonce a owl:DatatypeProperty ;
+    rdfs:label "nonce" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:parentHash a owl:DatatypeProperty ;
+    rdfs:label "parent hash" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:publicKey a owl:DatatypeProperty ;
+    rdfs:label "public key" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:string .
+
+eth:r a owl:DatatypeProperty ;
+    rdfs:label "r" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:string .
+
+eth:receiptsRoot a owl:DatatypeProperty ;
+    rdfs:label "receipts root" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:s a owl:DatatypeProperty ;
+    rdfs:label "s" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:string .
+
+eth:sha3Uncles a owl:DatatypeProperty ;
+    rdfs:label "sha3 uncles" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:size a owl:DatatypeProperty ;
+    rdfs:label "size" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:stateRoot a owl:DatatypeProperty ;
+    rdfs:label "state root" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:timestamp a owl:DatatypeProperty ;
+    rdfs:label "timestamp" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:to a owl:DatatypeProperty ;
+    rdfs:label "to" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:string .
+
+eth:totalDifficulty a owl:DatatypeProperty ;
+    rdfs:label "total difficulty" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:integer .
+
+eth:transactionIndex a owl:DatatypeProperty ;
+    rdfs:label "transaction index" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:integer .
+
+eth:transactionsRoot a owl:DatatypeProperty ;
+    rdfs:label "transactions root" ;
+    rdfs:domain eth:Block ;
+    rdfs:range xsd:string .
+
+eth:v a owl:DatatypeProperty ;
+    rdfs:label "v" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:integer .
+
+eth:value a owl:DatatypeProperty ;
+    rdfs:label "value" ;
+    rdfs:domain eth:transaction ;
+    rdfs:range xsd:integer .
+
+ethon:Block a owl:Class ;
+    rdfs:label "Block" .
+
+abi:ABI a owl:Class ;
+    rdfs:label "A B I" .
+
+eth:transaction a owl:Class ;
+    rdfs:label "transaction" .
+
+eth:Block a owl:Class ;
+    rdfs:label "Block" .
+
