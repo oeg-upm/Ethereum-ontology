@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/def/EthereumOntology#"
-     xml:base="https://w3id.org/def/EthereumOntology"
+<rdf:RDF xmlns="https://w3id.org/def/EthereumOntology/"
+     xml:base="https://w3id.org/def/EthereumOntology/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://w3id.org/def/EthereumOntology">
+    <owl:Ontology rdf:about="https://w3id.org/def/EthereumOntology/">
         <dc:creator>Juan Cano-Benito</dc:creator>
-        <dc:creator>Raúl García-Castro</dc:creator>
-        <dc:description>Ontology code created by Chowlk</dc:description>
+        <dc:creator>http://www.garcia-castro.com/foaf.rdf#me</dc:creator>
+        <dc:description>This ontology aims at modelling the Ethereum blocks.</dc:description>
         <dc:title>Ethereum Ontology</dc:title>
         <owl:versionInfo>1.0</owl:versionInfo>
     </owl:Ontology>
@@ -62,35 +62,74 @@
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyhasABI -->
+    <!-- https://w3id.org/def/EthereumOntology/hasABI -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntologyhasABI">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABIABI"/>
-        <rdfs:label>has a b i</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntology/hasABI">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI/ABI"/>
+        <dc:description>Specification for smart contract interactions on Ethereum</dc:description>
+        <rdfs:label>has abi</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyhasBehaviour -->
+    <!-- https://w3id.org/def/EthereumOntology/hasAccessList -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntologyhasBehaviour">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
-        <rdfs:range rdf:resource="http://ethon.consensys.netBlock"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntology/hasAccessList">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/EthereumOntology/AccessList"/>
+        <dc:description>A list specifying addresses and keys accessed during the transaction, optimizing gas usage and enabling more predictable gas costs</dc:description>
+        <rdfs:label>has access list</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/hasBehaviour -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntology/hasBehaviour">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://ethon.consensys.net/Block"/>
+        <dc:description>Behaviour of the block represented in the EthOn ontology</dc:description>
         <rdfs:label>has behaviour</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyhasTransactions -->
+    <!-- https://w3id.org/def/EthereumOntology/hasKeys -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntologyhasTransactions">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntology/hasKeys">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/AccessList"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/EthereumOntology/Keys"/>
+        <dc:description>Specific storage locations accessed in a contract</dc:description>
+        <rdfs:label>has keys</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/hasTransactions -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntology/hasTransactions">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <dc:description>Set of operations encoded and transmitted on the network</dc:description>
         <rdfs:label>has transactions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/hasWithdrawals -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/EthereumOntology/hasWithdrawals">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/EthereumOntology/Withdrawals"/>
+        <dc:description>Process of moving funds from a contract to an address</dc:description>
+        <rdfs:label>has withdrawals</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -107,365 +146,566 @@
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyauthor -->
+    <!-- https://w3id.org/def/EthereumOntology/addressAccessList -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyauthor">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/addressAccessList">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/AccessList"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>author</rdfs:label>
+        <dc:description>The contract address being accessed within the AccessList</dc:description>
+        <rdfs:label>address access list</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyblockHash -->
+    <!-- https://w3id.org/def/EthereumOntology/addressWithdrawal -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyblockHash">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/addressWithdrawal">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Withdrawals"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>block hash</rdfs:label>
+        <dc:description>The destination address where the funds are to be sent post withdrawal</dc:description>
+        <rdfs:label>address withdrawal</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyblockNumber -->
+    <!-- https://w3id.org/def/EthereumOntology/amountWithdrawal -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyblockNumber">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/amountWithdrawal">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Withdrawals"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>block number</rdfs:label>
+        <dc:description>The quantity of funds (usually measured in Ether) being withdrawn</dc:description>
+        <rdfs:label>amount withdrawal</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologychainId -->
+    <!-- https://w3id.org/def/EthereumOntology/authorBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologychainId">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>chain id</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/EthereumOntologycreates -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologycreates">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/authorBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>creates</rdfs:label>
+        <dc:description>Address of the individual who proposed the block</dc:description>
+        <rdfs:label>author block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologydifficulty -->
+    <!-- https://w3id.org/def/EthereumOntology/baseFeePerGasBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologydifficulty">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/baseFeePerGasBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>difficulty</rdfs:label>
+        <dc:description>The base fee value</dc:description>
+        <rdfs:label>base fee per gas block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyextraData -->
+    <!-- https://w3id.org/def/EthereumOntology/blockHashTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyextraData">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/blockHashTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>extra data</rdfs:label>
+        <dc:description>Unique identifier of the block containing transaction</dc:description>
+        <rdfs:label>block hash transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyfrom -->
+    <!-- https://w3id.org/def/EthereumOntology/blockNumberTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyfrom">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>from</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/EthereumOntologygas -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologygas">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/blockNumberTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>gas</rdfs:label>
+        <dc:description>The number of the current block</dc:description>
+        <rdfs:label>block number transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologygasLimit -->
+    <!-- https://w3id.org/def/EthereumOntology/chainIdTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologygasLimit">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/chainIdTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>gas limit</rdfs:label>
+        <dc:description>Identifies the specific Ethereum blockchain instance</dc:description>
+        <rdfs:label>chain id transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologygasPrice -->
+    <!-- https://w3id.org/def/EthereumOntology/createsTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologygasPrice">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/createsTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Contract address created if transaction is a contract</dc:description>
+        <rdfs:label>creates transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/difficultyBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/difficultyBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>gas price</rdfs:label>
+        <dc:description>Represents how hard it is to mine a block</dc:description>
+        <rdfs:label>difficulty block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologygasUsed -->
+    <!-- https://w3id.org/def/EthereumOntology/extraDataBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologygasUsed">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/extraDataBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Arbitrary additional data as raw bytes</dc:description>
+        <rdfs:label>extra data block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/fromTransaction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/fromTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Address of the sender initiating the transaction</dc:description>
+        <rdfs:label>from transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/gasLimitBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/gasLimitBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>gas used</rdfs:label>
+        <dc:description>Maximum gas allowed in this block</dc:description>
+        <rdfs:label>gas limit block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyhash -->
+    <!-- https://w3id.org/def/EthereumOntology/gasPriceTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyhash">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/gasPriceTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>hash</rdfs:label>
+        <dc:description>Cost per unit of gas specified for the transaction</dc:description>
+        <rdfs:label>gas price transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyinput -->
+    <!-- https://w3id.org/def/EthereumOntology/gasTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyinput">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>input</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/EthereumOntologylogsBloom -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologylogsBloom">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>logs bloom</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/EthereumOntologyminer -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyminer">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>miner</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/EthereumOntologymixHash -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologymixHash">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>mix hash</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/EthereumOntologynonce -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologynonce">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/gasTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>nonce</rdfs:label>
+        <dc:description>Units of computational effort required to execute transaction</dc:description>
+        <rdfs:label>gas transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyparentHash -->
+    <!-- https://w3id.org/def/EthereumOntology/gasUsedBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyparentHash">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/gasUsedBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>parent hash</rdfs:label>
+        <dc:description>The actual amount of gas used in this block</dc:description>
+        <rdfs:label>gas used block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologypublicKey -->
+    <!-- https://w3id.org/def/EthereumOntology/hashBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologypublicKey">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/hashBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>public key</rdfs:label>
+        <dc:description>Hash of execution block</dc:description>
+        <rdfs:label>hash block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyr -->
+    <!-- https://w3id.org/def/EthereumOntology/hashTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyr">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/hashTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>r</rdfs:label>
+        <dc:description>Unique identifier of the transaction</dc:description>
+        <rdfs:label>hash transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyreceiptsRoot -->
+    <!-- https://w3id.org/def/EthereumOntology/indexWithdrawal -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyreceiptsRoot">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/indexWithdrawal">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Withdrawals"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>receipts root</rdfs:label>
+        <dc:description>A unique identifier for the withdrawal transaction, helping to organize and track transactions within a block</dc:description>
+        <rdfs:label>index withdrawal</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologys -->
+    <!-- https://w3id.org/def/EthereumOntology/inputTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologys">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/inputTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>s</rdfs:label>
+        <dc:description>Data sent with transaction, often contract interaction</dc:description>
+        <rdfs:label>input transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologysha3Uncles -->
+    <!-- https://w3id.org/def/EthereumOntology/key -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologysha3Uncles">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/key">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Keys"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>sha3 uncles</rdfs:label>
+        <dc:description>The storage key being accessed within that contract address in the AccessList</dc:description>
+        <rdfs:label>key</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologysize -->
+    <!-- https://w3id.org/def/EthereumOntology/logsBloomBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologysize">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/logsBloomBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Data structure containing event logs</dc:description>
+        <rdfs:label>logs bloom block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>size</rdfs:label>
+        <dc:description>Maximum fee per gas unit for transaction inclusion</dc:description>
+        <rdfs:label>max fee per gas transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologystateRoot -->
+    <!-- https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologystateRoot">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:description>Tip to miner for transaction processing priority</dc:description>
+        <rdfs:label>max priority fee per gas transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/minerBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/minerBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>state root</rdfs:label>
+        <dc:description>Address of the miner who successfully mined the block</dc:description>
+        <rdfs:label>miner block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologytimestamp -->
+    <!-- https://w3id.org/def/EthereumOntology/mixHashBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologytimestamp">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>timestamp</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/def/EthereumOntologyto -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyto">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/mixHashBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>to</rdfs:label>
+        <dc:description>Hash proving sufficient computational work with nonce</dc:description>
+        <rdfs:label>mix hash block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologytotalDifficulty -->
+    <!-- https://w3id.org/def/EthereumOntology/nonceBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologytotalDifficulty">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/nonceBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>total difficulty</rdfs:label>
+        <dc:description>A number altered to meet a specific cryptographic condition</dc:description>
+        <rdfs:label>nonce block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologytransactionIndex -->
+    <!-- https://w3id.org/def/EthereumOntology/nonceTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologytransactionIndex">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/nonceTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>transaction index</rdfs:label>
+        <dc:description>Number of transactions sent from the address of the sender</dc:description>
+        <rdfs:label>nonce transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologytransactionsRoot -->
+    <!-- https://w3id.org/def/EthereumOntology/numberBlock -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologytransactionsRoot">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologyBlock"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/numberBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:description>The number of the current block</dc:description>
+        <rdfs:label>number block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/parentHashBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/parentHashBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>transactions root</rdfs:label>
+        <dc:description>Hash of the parent block</dc:description>
+        <rdfs:label>parent hash block</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyv -->
+    <!-- https://w3id.org/def/EthereumOntology/publicKeyTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyv">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>v</rdfs:label>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/publicKeyTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Public key of the sender, derived from the private key</dc:description>
+        <rdfs:label>public key transaction</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyvalue -->
+    <!-- https://w3id.org/def/EthereumOntology/rTransaction -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntologyvalue">
-        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntologytransaction"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/rTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Cryptographic signature part of the transaction</dc:description>
+        <rdfs:label>r transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/receiptsRootBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/receiptsRootBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Hash of the transaction receipts trie</dc:description>
+        <rdfs:label>receipts root block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/sTransaction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/sTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Cryptographic signature part of the transaction</dc:description>
+        <rdfs:label>s transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/sha3UnclesBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/sha3UnclesBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>SHA3 hash of the list of uncle blocks included</dc:description>
+        <rdfs:label>sha3 uncles block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/sizeBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/sizeBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label>value</rdfs:label>
+        <dc:description>The size of the block in bytes</dc:description>
+        <rdfs:label>size block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/stateRootBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/stateRootBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Root hash for the global state after applying changes in this block</dc:description>
+        <rdfs:label>state root block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/timestampBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/timestampBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:description>The block time</dc:description>
+        <rdfs:label>timestamp block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/toTransaction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/toTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Address of the receiver or contract interacting with</dc:description>
+        <rdfs:label>to transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/totalDifficultyBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/totalDifficultyBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:description>Sum of the difficulty of this block and that of all the previous blocks in the chain</dc:description>
+        <rdfs:label>total difficulty block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/transactionIndexTransaction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/transactionIndexTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:description>Position of the transaction within the block</dc:description>
+        <rdfs:label>transaction index transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/transactionsRootBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/transactionsRootBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Root hash of the transactions in the payload</dc:description>
+        <rdfs:label>transactions root block</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/typeTransaction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/typeTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Indicates the transaction type</dc:description>
+        <rdfs:label>type transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/vTransaction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/vTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:description>Recovery ID, part of the cryptographic signature of the transaction</dc:description>
+        <rdfs:label>v transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Withdrawals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>The unique identifier of the validator initiating the withdrawal. In Ethereum 2.0, validators are network participants who propose and attest to blocks, and their activities are tracked via unique indices</dc:description>
+        <rdfs:label>validator index withdrawal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/valueTransaction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/valueTransaction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:description>Amount of Ether being transferred in Wei</dc:description>
+        <rdfs:label>value transaction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/withdrawalRootBlock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/EthereumOntology/withdrawalRootBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/EthereumOntology/Block"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description>Root hash of the withdrawals in the payload</dc:description>
+        <rdfs:label>withdrawal root block</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -482,38 +722,72 @@
     
 
 
-    <!-- http://ethon.consensys.netBlock -->
+    <!-- http://ethon.consensys.net/Block -->
 
 
-    <owl:Class rdf:about="http://ethon.consensys.netBlock">
+    <owl:Class rdf:about="http://ethon.consensys.net/Block">
+        <dc:description>The block class that is part of the EthOn ontology</dc:description>
         <rdfs:label>Block</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologyBlock -->
+    <!-- https://w3id.org/def/EthereumOntology/AccessList -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/EthereumOntologyBlock">
+    <owl:Class rdf:about="https://w3id.org/def/EthereumOntology/AccessList">
+        <dc:description>A specify address and keys accessed during the transaction</dc:description>
+        <rdfs:label>Access List</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/Block -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/EthereumOntology/Block">
+        <dc:description>A transaction and other data recorded on the chain</dc:description>
         <rdfs:label>Block</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/def/EthereumOntologytransaction -->
+    <!-- https://w3id.org/def/EthereumOntology/Keys -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/EthereumOntologytransaction">
-        <rdfs:label>transaction</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/def/EthereumOntology/Keys">
+        <dc:description>Specific storage locations accessed in a contract</dc:description>
+        <rdfs:label>Keys</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/def/SolidityABIABI -->
+    <!-- https://w3id.org/def/EthereumOntology/Transaction -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/SolidityABIABI">
-        <rdfs:label>A B I</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/def/EthereumOntology/Transaction">
+        <dc:description>Encoded operations executed and recorded the chain</dc:description>
+        <rdfs:label>Transaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/EthereumOntology/Withdrawals -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/EthereumOntology/Withdrawals">
+        <dc:description>Process of retrieving funds from a contract</dc:description>
+        <rdfs:label>Withdrawals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI/ABI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI/ABI">
+        <dc:description>Specification for smart contract interactions</dc:description>
+        <rdfs:label>ABI</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
