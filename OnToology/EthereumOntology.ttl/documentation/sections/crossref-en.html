@@ -6,119 +6,269 @@ This section provides details for each class and property defined by Ethereum On
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/def/SolidityABIABI" title="https://w3id.org/def/SolidityABIABI">A B I</a>
+         <a href="#https://w3id.org/def/SolidityABI/ABI" title="https://w3id.org/def/SolidityABI/ABI">ABI</a>
       </li>
       <li>
-         <a href="#http://ethon.consensys.netBlock" title="http://ethon.consensys.netBlock">Block</a>
+         <a href="#/AccessList" title="https://w3id.org/def/EthereumOntology/AccessList">Access List</a>
       </li>
       <li>
-         <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+         <a href="#http://ethon.consensys.net/Block" title="http://ethon.consensys.net/Block">Block</a>
       </li>
       <li>
-         <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+         <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+      </li>
+      <li>
+         <a href="#/Keys" title="https://w3id.org/def/EthereumOntology/Keys">Keys</a>
+      </li>
+      <li>
+         <a href="#/Transaction"
+            title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+      </li>
+      <li>
+         <a href="#/Withdrawals"
+            title="https://w3id.org/def/EthereumOntology/Withdrawals">Withdrawals</a>
       </li>
    </ul>
-   <div class="entity" id="https://w3id.org/def/SolidityABIABI">
-      <h3>A B I<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://w3id.org/def/SolidityABI/ABI">
+      <h3>ABI<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/SolidityABIABI</p>
+         <strong>IRI:</strong> https://w3id.org/def/SolidityABI/ABI</p>
+      <div class="info">
+         <span class="markdown">Specification for smart contract interactions</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasABI" title="https://w3id.org/def/EthereumOntologyhasABI">has a b i</a>
+            <a href="#/hasABI" title="https://w3id.org/def/EthereumOntology/hasABI">has abi</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://ethon.consensys.netBlock">
+   <div class="entity" id="/AccessList">
+      <h3>Access List<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/AccessList</p>
+      <div class="info">
+         <span class="markdown">A specify address and keys accessed during the transaction</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/addressAccessList"
+               title="https://w3id.org/def/EthereumOntology/addressAccessList">address access list</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/hasKeys" title="https://w3id.org/def/EthereumOntology/hasKeys">has keys</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasAccessList"
+               title="https://w3id.org/def/EthereumOntology/hasAccessList">has access list</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ethon.consensys.net/Block">
       <h3>Block<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://ethon.consensys.netBlock</p>
+         <strong>IRI:</strong> http://ethon.consensys.net/Block</p>
+      <div class="info">
+         <span class="markdown">The block class that is part of the EthOn ontology</span>
+      </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasBehaviour" title="https://w3id.org/def/EthereumOntologyhasBehaviour">has behaviour</a>
+            <a href="#/hasBehaviour"
+               title="https://w3id.org/def/EthereumOntology/hasBehaviour">has behaviour</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Block">
+   <div class="entity" id="/Block">
       <h3>Block<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyBlock</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/Block</p>
+      <div class="info">
+         <span class="markdown">A transaction and other data recorded on the chain</span>
+      </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#author" title="https://w3id.org/def/EthereumOntologyauthor">author</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#blockNumber" title="https://w3id.org/def/EthereumOntologyblockNumber">block number</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#difficulty" title="https://w3id.org/def/EthereumOntologydifficulty">difficulty</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#extraData" title="https://w3id.org/def/EthereumOntologyextraData">extra data</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#gasLimit" title="https://w3id.org/def/EthereumOntologygasLimit">gas limit</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#gasUsed" title="https://w3id.org/def/EthereumOntologygasUsed">gas used</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasBehaviour" title="https://w3id.org/def/EthereumOntologyhasBehaviour">has behaviour</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasTransactions"
-               title="https://w3id.org/def/EthereumOntologyhasTransactions">has transactions</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hash" title="https://w3id.org/def/EthereumOntologyhash">hash</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#logsBloom" title="https://w3id.org/def/EthereumOntologylogsBloom">logs bloom</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#miner" title="https://w3id.org/def/EthereumOntologyminer">miner</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#mixHash" title="https://w3id.org/def/EthereumOntologymixHash">mix hash</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#nonce" title="https://w3id.org/def/EthereumOntologynonce">nonce</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#parentHash" title="https://w3id.org/def/EthereumOntologyparentHash">parent hash</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#receiptsRoot"
-               title="https://w3id.org/def/EthereumOntologyreceiptsRoot">receipts root</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#sha3Uncles" title="https://w3id.org/def/EthereumOntologysha3Uncles">sha3 uncles</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#size" title="https://w3id.org/def/EthereumOntologysize">size</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#stateRoot" title="https://w3id.org/def/EthereumOntologystateRoot">state root</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#timestamp" title="https://w3id.org/def/EthereumOntologytimestamp">timestamp</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#totalDifficulty"
-               title="https://w3id.org/def/EthereumOntologytotalDifficulty">total difficulty</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#transactionsRoot"
-               title="https://w3id.org/def/EthereumOntologytransactionsRoot">transactions root</a>
+            <a href="#/authorBlock"
+               title="https://w3id.org/def/EthereumOntology/authorBlock">author block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/baseFeePerGasBlock"
+               title="https://w3id.org/def/EthereumOntology/baseFeePerGasBlock">base fee per gas block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/difficultyBlock"
+               title="https://w3id.org/def/EthereumOntology/difficultyBlock">difficulty block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/extraDataBlock"
+               title="https://w3id.org/def/EthereumOntology/extraDataBlock">extra data block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/gasLimitBlock"
+               title="https://w3id.org/def/EthereumOntology/gasLimitBlock">gas limit block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/gasUsedBlock"
+               title="https://w3id.org/def/EthereumOntology/gasUsedBlock">gas used block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/hasBehaviour"
+               title="https://w3id.org/def/EthereumOntology/hasBehaviour">has behaviour</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hasTransactions"
+               title="https://w3id.org/def/EthereumOntology/hasTransactions">has transactions</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hasWithdrawals"
+               title="https://w3id.org/def/EthereumOntology/hasWithdrawals">has withdrawals</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hashBlock" title="https://w3id.org/def/EthereumOntology/hashBlock">hash block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/logsBloomBlock"
+               title="https://w3id.org/def/EthereumOntology/logsBloomBlock">logs bloom block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/minerBlock" title="https://w3id.org/def/EthereumOntology/minerBlock">miner block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/mixHashBlock"
+               title="https://w3id.org/def/EthereumOntology/mixHashBlock">mix hash block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/nonceBlock" title="https://w3id.org/def/EthereumOntology/nonceBlock">nonce block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/numberBlock"
+               title="https://w3id.org/def/EthereumOntology/numberBlock">number block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/parentHashBlock"
+               title="https://w3id.org/def/EthereumOntology/parentHashBlock">parent hash block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/receiptsRootBlock"
+               title="https://w3id.org/def/EthereumOntology/receiptsRootBlock">receipts root block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/sha3UnclesBlock"
+               title="https://w3id.org/def/EthereumOntology/sha3UnclesBlock">sha3 uncles block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/sizeBlock" title="https://w3id.org/def/EthereumOntology/sizeBlock">size block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/stateRootBlock"
+               title="https://w3id.org/def/EthereumOntology/stateRootBlock">state root block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/timestampBlock"
+               title="https://w3id.org/def/EthereumOntology/timestampBlock">timestamp block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/totalDifficultyBlock"
+               title="https://w3id.org/def/EthereumOntology/totalDifficultyBlock">total difficulty block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/transactionsRootBlock"
+               title="https://w3id.org/def/EthereumOntology/transactionsRootBlock">transactions root block</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/withdrawalRootBlock"
+               title="https://w3id.org/def/EthereumOntology/withdrawalRootBlock">withdrawal root block</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="transaction">
-      <h3>transaction<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="/Keys">
+      <h3>Keys<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologytransaction</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/Keys</p>
+      <div class="info">
+         <span class="markdown">Specific storage locations accessed in a contract</span>
+      </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#blockHash" title="https://w3id.org/def/EthereumOntologyblockHash">block hash</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#chainId" title="https://w3id.org/def/EthereumOntologychainId">chain id</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#creates" title="https://w3id.org/def/EthereumOntologycreates">creates</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#from" title="https://w3id.org/def/EthereumOntologyfrom">from</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#gas" title="https://w3id.org/def/EthereumOntologygas">gas</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#gasPrice" title="https://w3id.org/def/EthereumOntologygasPrice">gas price</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasABI" title="https://w3id.org/def/EthereumOntologyhasABI">has a b i</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#input" title="https://w3id.org/def/EthereumOntologyinput">input</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#publicKey" title="https://w3id.org/def/EthereumOntologypublicKey">public key</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#r" title="https://w3id.org/def/EthereumOntologyr">r</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#s" title="https://w3id.org/def/EthereumOntologys">s</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#to" title="https://w3id.org/def/EthereumOntologyto">to</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#transactionIndex"
-               title="https://w3id.org/def/EthereumOntologytransactionIndex">transaction index</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#v" title="https://w3id.org/def/EthereumOntologyv">v</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#value" title="https://w3id.org/def/EthereumOntologyvalue">value</a>
+            <a href="#/key" title="https://w3id.org/def/EthereumOntology/key">key</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasTransactions"
-               title="https://w3id.org/def/EthereumOntologyhasTransactions">has transactions</a>
+            <a href="#/hasKeys" title="https://w3id.org/def/EthereumOntology/hasKeys">has keys</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Transaction">
+      <h3>Transaction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/Transaction</p>
+      <div class="info">
+         <span class="markdown">Encoded operations executed and recorded the chain</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/blockHashTransaction"
+               title="https://w3id.org/def/EthereumOntology/blockHashTransaction">block hash transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/blockNumberTransaction"
+               title="https://w3id.org/def/EthereumOntology/blockNumberTransaction">block number transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/chainIdTransaction"
+               title="https://w3id.org/def/EthereumOntology/chainIdTransaction">chain id transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/createsTransaction"
+               title="https://w3id.org/def/EthereumOntology/createsTransaction">creates transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/fromTransaction"
+               title="https://w3id.org/def/EthereumOntology/fromTransaction">from transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/gasPriceTransaction"
+               title="https://w3id.org/def/EthereumOntology/gasPriceTransaction">gas price transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/gasTransaction"
+               title="https://w3id.org/def/EthereumOntology/gasTransaction">gas transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/hasABI" title="https://w3id.org/def/EthereumOntology/hasABI">has abi</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hasAccessList"
+               title="https://w3id.org/def/EthereumOntology/hasAccessList">has access list</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hashTransaction"
+               title="https://w3id.org/def/EthereumOntology/hashTransaction">hash transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/inputTransaction"
+               title="https://w3id.org/def/EthereumOntology/inputTransaction">input transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/maxFeePerGasTransaction"
+               title="https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction">max fee per gas transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/maxPriorityFeePerGasTransaction"
+               title="https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction">max priority fee per gas transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/nonceTransaction"
+               title="https://w3id.org/def/EthereumOntology/nonceTransaction">nonce transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/publicKeyTransaction"
+               title="https://w3id.org/def/EthereumOntology/publicKeyTransaction">public key transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/rTransaction"
+               title="https://w3id.org/def/EthereumOntology/rTransaction">r transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/sTransaction"
+               title="https://w3id.org/def/EthereumOntology/sTransaction">s transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/toTransaction"
+               title="https://w3id.org/def/EthereumOntology/toTransaction">to transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/transactionIndexTransaction"
+               title="https://w3id.org/def/EthereumOntology/transactionIndexTransaction">transaction index transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/typeTransaction"
+               title="https://w3id.org/def/EthereumOntology/typeTransaction">type transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/vTransaction"
+               title="https://w3id.org/def/EthereumOntology/vTransaction">v transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/valueTransaction"
+               title="https://w3id.org/def/EthereumOntology/valueTransaction">value transaction</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasTransactions"
+               title="https://w3id.org/def/EthereumOntology/hasTransactions">has transactions</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="/Withdrawals">
+      <h3>Withdrawals<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/Withdrawals</p>
+      <div class="info">
+         <span class="markdown">Process of retrieving funds from a contract</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/addressWithdrawal"
+               title="https://w3id.org/def/EthereumOntology/addressWithdrawal">address withdrawal</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/amountWithdrawal"
+               title="https://w3id.org/def/EthereumOntology/amountWithdrawal">amount withdrawal</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/indexWithdrawal"
+               title="https://w3id.org/def/EthereumOntology/indexWithdrawal">index withdrawal</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/validatorIndexWithdrawal"
+               title="https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal">validator index withdrawal</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasWithdrawals"
+               title="https://w3id.org/def/EthereumOntology/hasWithdrawals">has withdrawals</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -129,77 +279,177 @@ This section provides details for each class and property defined by Ethereum On
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#hasABI" title="https://w3id.org/def/EthereumOntologyhasABI">has a b i</a>
+         <a href="#/hasABI" title="https://w3id.org/def/EthereumOntology/hasABI">has abi</a>
       </li>
       <li>
-         <a href="#hasBehaviour" title="https://w3id.org/def/EthereumOntologyhasBehaviour">has behaviour</a>
+         <a href="#/hasAccessList"
+            title="https://w3id.org/def/EthereumOntology/hasAccessList">has access list</a>
       </li>
       <li>
-         <a href="#hasTransactions"
-            title="https://w3id.org/def/EthereumOntologyhasTransactions">has transactions</a>
+         <a href="#/hasBehaviour"
+            title="https://w3id.org/def/EthereumOntology/hasBehaviour">has behaviour</a>
+      </li>
+      <li>
+         <a href="#/hasKeys" title="https://w3id.org/def/EthereumOntology/hasKeys">has keys</a>
+      </li>
+      <li>
+         <a href="#/hasTransactions"
+            title="https://w3id.org/def/EthereumOntology/hasTransactions">has transactions</a>
+      </li>
+      <li>
+         <a href="#/hasWithdrawals"
+            title="https://w3id.org/def/EthereumOntology/hasWithdrawals">has withdrawals</a>
       </li>
    </ul>
-   <div class="entity" id="hasABI">
-      <h3>has a b i<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="/hasABI">
+      <h3>has abi<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyhasABI</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/hasABI</p>
+      <div class="info">
+         <span class="markdown">Specification for smart contract interactions on Ethereum</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/def/SolidityABIABI" title="https://w3id.org/def/SolidityABIABI">A B I</a>
+               <a href="#https://w3id.org/def/SolidityABI/ABI" title="https://w3id.org/def/SolidityABI/ABI">ABI</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasBehaviour">
+   <div class="entity" id="/hasAccessList">
+      <h3>has access list<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/hasAccessList</p>
+      <div class="info">
+         <span class="markdown">A list specifying addresses and keys accessed during the transaction, optimizing gas usage and enabling more predictable gas costs</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/AccessList" title="https://w3id.org/def/EthereumOntology/AccessList">Access List</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasBehaviour">
       <h3>has behaviour<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyhasBehaviour</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/hasBehaviour</p>
+      <div class="info">
+         <span class="markdown">Behaviour of the block represented in the EthOn ontology</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://ethon.consensys.netBlock" title="http://ethon.consensys.netBlock">Block</a>
+               <a href="#http://ethon.consensys.net/Block" title="http://ethon.consensys.net/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasTransactions">
+   <div class="entity" id="/hasKeys">
+      <h3>has keys<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/hasKeys</p>
+      <div class="info">
+         <span class="markdown">Specific storage locations accessed in a contract</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/AccessList" title="https://w3id.org/def/EthereumOntology/AccessList">Access List</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Keys" title="https://w3id.org/def/EthereumOntology/Keys">Keys</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasTransactions">
       <h3>has transactions<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyhasTransactions</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/hasTransactions</p>
+      <div class="info">
+         <span class="markdown">Set of operations encoded and transmitted on the network</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/hasWithdrawals">
+      <h3>has withdrawals<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/hasWithdrawals</p>
+      <div class="info">
+         <span class="markdown">Process of moving funds from a contract to an address</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/Withdrawals"
+                  title="https://w3id.org/def/EthereumOntology/Withdrawals">Withdrawals</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -211,121 +461,204 @@ This section provides details for each class and property defined by Ethereum On
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#author" title="https://w3id.org/def/EthereumOntologyauthor">author</a>
+         <a href="#/addressAccessList"
+            title="https://w3id.org/def/EthereumOntology/addressAccessList">address access list</a>
       </li>
       <li>
-         <a href="#blockHash" title="https://w3id.org/def/EthereumOntologyblockHash">block hash</a>
+         <a href="#/addressWithdrawal"
+            title="https://w3id.org/def/EthereumOntology/addressWithdrawal">address withdrawal</a>
       </li>
       <li>
-         <a href="#blockNumber" title="https://w3id.org/def/EthereumOntologyblockNumber">block number</a>
+         <a href="#/amountWithdrawal"
+            title="https://w3id.org/def/EthereumOntology/amountWithdrawal">amount withdrawal</a>
       </li>
       <li>
-         <a href="#chainId" title="https://w3id.org/def/EthereumOntologychainId">chain id</a>
+         <a href="#/authorBlock"
+            title="https://w3id.org/def/EthereumOntology/authorBlock">author block</a>
       </li>
       <li>
-         <a href="#creates" title="https://w3id.org/def/EthereumOntologycreates">creates</a>
+         <a href="#/baseFeePerGasBlock"
+            title="https://w3id.org/def/EthereumOntology/baseFeePerGasBlock">base fee per gas block</a>
       </li>
       <li>
-         <a href="#difficulty" title="https://w3id.org/def/EthereumOntologydifficulty">difficulty</a>
+         <a href="#/blockHashTransaction"
+            title="https://w3id.org/def/EthereumOntology/blockHashTransaction">block hash transaction</a>
       </li>
       <li>
-         <a href="#extraData" title="https://w3id.org/def/EthereumOntologyextraData">extra data</a>
+         <a href="#/blockNumberTransaction"
+            title="https://w3id.org/def/EthereumOntology/blockNumberTransaction">block number transaction</a>
       </li>
       <li>
-         <a href="#from" title="https://w3id.org/def/EthereumOntologyfrom">from</a>
+         <a href="#/chainIdTransaction"
+            title="https://w3id.org/def/EthereumOntology/chainIdTransaction">chain id transaction</a>
       </li>
       <li>
-         <a href="#gas" title="https://w3id.org/def/EthereumOntologygas">gas</a>
+         <a href="#/createsTransaction"
+            title="https://w3id.org/def/EthereumOntology/createsTransaction">creates transaction</a>
       </li>
       <li>
-         <a href="#gasLimit" title="https://w3id.org/def/EthereumOntologygasLimit">gas limit</a>
+         <a href="#/difficultyBlock"
+            title="https://w3id.org/def/EthereumOntology/difficultyBlock">difficulty block</a>
       </li>
       <li>
-         <a href="#gasPrice" title="https://w3id.org/def/EthereumOntologygasPrice">gas price</a>
+         <a href="#/extraDataBlock"
+            title="https://w3id.org/def/EthereumOntology/extraDataBlock">extra data block</a>
       </li>
       <li>
-         <a href="#gasUsed" title="https://w3id.org/def/EthereumOntologygasUsed">gas used</a>
+         <a href="#/fromTransaction"
+            title="https://w3id.org/def/EthereumOntology/fromTransaction">from transaction</a>
       </li>
       <li>
-         <a href="#hash" title="https://w3id.org/def/EthereumOntologyhash">hash</a>
+         <a href="#/gasLimitBlock"
+            title="https://w3id.org/def/EthereumOntology/gasLimitBlock">gas limit block</a>
       </li>
       <li>
-         <a href="#input" title="https://w3id.org/def/EthereumOntologyinput">input</a>
+         <a href="#/gasPriceTransaction"
+            title="https://w3id.org/def/EthereumOntology/gasPriceTransaction">gas price transaction</a>
       </li>
       <li>
-         <a href="#logsBloom" title="https://w3id.org/def/EthereumOntologylogsBloom">logs bloom</a>
+         <a href="#/gasTransaction"
+            title="https://w3id.org/def/EthereumOntology/gasTransaction">gas transaction</a>
       </li>
       <li>
-         <a href="#miner" title="https://w3id.org/def/EthereumOntologyminer">miner</a>
+         <a href="#/gasUsedBlock"
+            title="https://w3id.org/def/EthereumOntology/gasUsedBlock">gas used block</a>
       </li>
       <li>
-         <a href="#mixHash" title="https://w3id.org/def/EthereumOntologymixHash">mix hash</a>
+         <a href="#/hashBlock" title="https://w3id.org/def/EthereumOntology/hashBlock">hash block</a>
       </li>
       <li>
-         <a href="#nonce" title="https://w3id.org/def/EthereumOntologynonce">nonce</a>
+         <a href="#/hashTransaction"
+            title="https://w3id.org/def/EthereumOntology/hashTransaction">hash transaction</a>
       </li>
       <li>
-         <a href="#parentHash" title="https://w3id.org/def/EthereumOntologyparentHash">parent hash</a>
+         <a href="#/indexWithdrawal"
+            title="https://w3id.org/def/EthereumOntology/indexWithdrawal">index withdrawal</a>
       </li>
       <li>
-         <a href="#publicKey" title="https://w3id.org/def/EthereumOntologypublicKey">public key</a>
+         <a href="#/inputTransaction"
+            title="https://w3id.org/def/EthereumOntology/inputTransaction">input transaction</a>
       </li>
       <li>
-         <a href="#r" title="https://w3id.org/def/EthereumOntologyr">r</a>
+         <a href="#/key" title="https://w3id.org/def/EthereumOntology/key">key</a>
       </li>
       <li>
-         <a href="#receiptsRoot"
-            title="https://w3id.org/def/EthereumOntologyreceiptsRoot">receipts root</a>
+         <a href="#/logsBloomBlock"
+            title="https://w3id.org/def/EthereumOntology/logsBloomBlock">logs bloom block</a>
       </li>
       <li>
-         <a href="#s" title="https://w3id.org/def/EthereumOntologys">s</a>
+         <a href="#/maxFeePerGasTransaction"
+            title="https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction">max fee per gas transaction</a>
       </li>
       <li>
-         <a href="#sha3Uncles" title="https://w3id.org/def/EthereumOntologysha3Uncles">sha3 uncles</a>
+         <a href="#/maxPriorityFeePerGasTransaction"
+            title="https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction">max priority fee per gas transaction</a>
       </li>
       <li>
-         <a href="#size" title="https://w3id.org/def/EthereumOntologysize">size</a>
+         <a href="#/minerBlock" title="https://w3id.org/def/EthereumOntology/minerBlock">miner block</a>
       </li>
       <li>
-         <a href="#stateRoot" title="https://w3id.org/def/EthereumOntologystateRoot">state root</a>
+         <a href="#/mixHashBlock"
+            title="https://w3id.org/def/EthereumOntology/mixHashBlock">mix hash block</a>
       </li>
       <li>
-         <a href="#timestamp" title="https://w3id.org/def/EthereumOntologytimestamp">timestamp</a>
+         <a href="#/nonceBlock" title="https://w3id.org/def/EthereumOntology/nonceBlock">nonce block</a>
       </li>
       <li>
-         <a href="#to" title="https://w3id.org/def/EthereumOntologyto">to</a>
+         <a href="#/nonceTransaction"
+            title="https://w3id.org/def/EthereumOntology/nonceTransaction">nonce transaction</a>
       </li>
       <li>
-         <a href="#totalDifficulty"
-            title="https://w3id.org/def/EthereumOntologytotalDifficulty">total difficulty</a>
+         <a href="#/numberBlock"
+            title="https://w3id.org/def/EthereumOntology/numberBlock">number block</a>
       </li>
       <li>
-         <a href="#transactionIndex"
-            title="https://w3id.org/def/EthereumOntologytransactionIndex">transaction index</a>
+         <a href="#/parentHashBlock"
+            title="https://w3id.org/def/EthereumOntology/parentHashBlock">parent hash block</a>
       </li>
       <li>
-         <a href="#transactionsRoot"
-            title="https://w3id.org/def/EthereumOntologytransactionsRoot">transactions root</a>
+         <a href="#/publicKeyTransaction"
+            title="https://w3id.org/def/EthereumOntology/publicKeyTransaction">public key transaction</a>
       </li>
       <li>
-         <a href="#v" title="https://w3id.org/def/EthereumOntologyv">v</a>
+         <a href="#/rTransaction"
+            title="https://w3id.org/def/EthereumOntology/rTransaction">r transaction</a>
       </li>
       <li>
-         <a href="#value" title="https://w3id.org/def/EthereumOntologyvalue">value</a>
+         <a href="#/receiptsRootBlock"
+            title="https://w3id.org/def/EthereumOntology/receiptsRootBlock">receipts root block</a>
+      </li>
+      <li>
+         <a href="#/sTransaction"
+            title="https://w3id.org/def/EthereumOntology/sTransaction">s transaction</a>
+      </li>
+      <li>
+         <a href="#/sha3UnclesBlock"
+            title="https://w3id.org/def/EthereumOntology/sha3UnclesBlock">sha3 uncles block</a>
+      </li>
+      <li>
+         <a href="#/sizeBlock" title="https://w3id.org/def/EthereumOntology/sizeBlock">size block</a>
+      </li>
+      <li>
+         <a href="#/stateRootBlock"
+            title="https://w3id.org/def/EthereumOntology/stateRootBlock">state root block</a>
+      </li>
+      <li>
+         <a href="#/timestampBlock"
+            title="https://w3id.org/def/EthereumOntology/timestampBlock">timestamp block</a>
+      </li>
+      <li>
+         <a href="#/toTransaction"
+            title="https://w3id.org/def/EthereumOntology/toTransaction">to transaction</a>
+      </li>
+      <li>
+         <a href="#/totalDifficultyBlock"
+            title="https://w3id.org/def/EthereumOntology/totalDifficultyBlock">total difficulty block</a>
+      </li>
+      <li>
+         <a href="#/transactionIndexTransaction"
+            title="https://w3id.org/def/EthereumOntology/transactionIndexTransaction">transaction index transaction</a>
+      </li>
+      <li>
+         <a href="#/transactionsRootBlock"
+            title="https://w3id.org/def/EthereumOntology/transactionsRootBlock">transactions root block</a>
+      </li>
+      <li>
+         <a href="#/typeTransaction"
+            title="https://w3id.org/def/EthereumOntology/typeTransaction">type transaction</a>
+      </li>
+      <li>
+         <a href="#/vTransaction"
+            title="https://w3id.org/def/EthereumOntology/vTransaction">v transaction</a>
+      </li>
+      <li>
+         <a href="#/validatorIndexWithdrawal"
+            title="https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal">validator index withdrawal</a>
+      </li>
+      <li>
+         <a href="#/valueTransaction"
+            title="https://w3id.org/def/EthereumOntology/valueTransaction">value transaction</a>
+      </li>
+      <li>
+         <a href="#/withdrawalRootBlock"
+            title="https://w3id.org/def/EthereumOntology/withdrawalRootBlock">withdrawal root block</a>
       </li>
    </ul>
-   <div class="entity" id="author">
-      <h3>author<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/addressAccessList">
+      <h3>address access list<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyauthor</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/addressAccessList</p>
+      <div class="info">
+         <span class="markdown">The contract address being accessed within the AccessList</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/AccessList" title="https://w3id.org/def/EthereumOntology/AccessList">Access List</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -337,18 +670,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="blockHash">
-      <h3>block hash<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/addressWithdrawal">
+      <h3>address withdrawal<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyblockHash</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/addressWithdrawal</p>
+      <div class="info">
+         <span class="markdown">The destination address where the funds are to be sent post withdrawal</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Withdrawals"
+                  title="https://w3id.org/def/EthereumOntology/Withdrawals">Withdrawals</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -360,18 +697,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="blockNumber">
-      <h3>block number<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/amountWithdrawal">
+      <h3>amount withdrawal<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyblockNumber</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/amountWithdrawal</p>
+      <div class="info">
+         <span class="markdown">The quantity of funds (usually measured in Ether) being withdrawn</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Withdrawals"
+                  title="https://w3id.org/def/EthereumOntology/Withdrawals">Withdrawals</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -383,41 +724,21 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="chainId">
-      <h3>chain id<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/authorBlock">
+      <h3>author block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologychainId</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
-            </dd>
-         </dl>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/authorBlock</p>
+      <div class="info">
+         <span class="markdown">Address of the individual who proposed the block</span>
       </div>
-   </div>
-   <div class="entity" id="creates">
-      <h3>creates<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologycreates</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -429,18 +750,21 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="difficulty">
-      <h3>difficulty<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/baseFeePerGasBlock">
+      <h3>base fee per gas block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologydifficulty</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/baseFeePerGasBlock</p>
+      <div class="info">
+         <span class="markdown">The base fee value</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -452,18 +776,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="extraData">
-      <h3>extra data<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/blockHashTransaction">
+      <h3>block hash transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyextraData</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/blockHashTransaction</p>
+      <div class="info">
+         <span class="markdown">Unique identifier of the block containing transaction</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -475,41 +803,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="from">
-      <h3>from<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/blockNumberTransaction">
+      <h3>block number transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyfrom</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/blockNumberTransaction</p>
+      <div class="info">
+         <span class="markdown">The number of the current block</span>
       </div>
-   </div>
-   <div class="entity" id="gas">
-      <h3>gas<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologygas</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -521,18 +830,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="gasLimit">
-      <h3>gas limit<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/chainIdTransaction">
+      <h3>chain id transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologygasLimit</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/chainIdTransaction</p>
+      <div class="info">
+         <span class="markdown">Identifies the specific Ethereum blockchain instance</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -544,18 +857,48 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="gasPrice">
-      <h3>gas price<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/createsTransaction">
+      <h3>creates transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologygasPrice</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/createsTransaction</p>
+      <div class="info">
+         <span class="markdown">Contract address created if transaction is a contract</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/difficultyBlock">
+      <h3>difficulty block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/difficultyBlock</p>
+      <div class="info">
+         <span class="markdown">Represents how hard it is to mine a block</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -567,18 +910,74 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="gasUsed">
-      <h3>gas used<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/extraDataBlock">
+      <h3>extra data block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologygasUsed</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/extraDataBlock</p>
+      <div class="info">
+         <span class="markdown">Arbitrary additional data as raw bytes</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/fromTransaction">
+      <h3>from transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/fromTransaction</p>
+      <div class="info">
+         <span class="markdown">Address of the sender initiating the transaction</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/gasLimitBlock">
+      <h3>gas limit block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/gasLimitBlock</p>
+      <div class="info">
+         <span class="markdown">Maximum gas allowed in this block</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -590,18 +989,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="hash">
-      <h3>hash<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/gasPriceTransaction">
+      <h3>gas price transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyhash</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/gasPriceTransaction</p>
+      <div class="info">
+         <span class="markdown">Cost per unit of gas specified for the transaction</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -613,110 +1016,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="input">
-      <h3>input<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/gasTransaction">
+      <h3>gas transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyinput</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/gasTransaction</p>
+      <div class="info">
+         <span class="markdown">Units of computational effort required to execute transaction</span>
       </div>
-   </div>
-   <div class="entity" id="logsBloom">
-      <h3>logs bloom<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologylogsBloom</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="miner">
-      <h3>miner<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyminer</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="mixHash">
-      <h3>mix hash<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologymixHash</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="nonce">
-      <h3>nonce<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologynonce</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -728,18 +1043,21 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="parentHash">
-      <h3>parent hash<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/gasUsedBlock">
+      <h3>gas used block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyparentHash</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/gasUsedBlock</p>
+      <div class="info">
+         <span class="markdown">The actual amount of gas used in this block</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -751,18 +1069,21 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="publicKey">
-      <h3>public key<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/hashBlock">
+      <h3>hash block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologypublicKey</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/hashBlock</p>
+      <div class="info">
+         <span class="markdown">Hash of execution block</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -774,18 +1095,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="r">
-      <h3>r<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/hashTransaction">
+      <h3>hash transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyr</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/hashTransaction</p>
+      <div class="info">
+         <span class="markdown">Unique identifier of the transaction</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -797,18 +1122,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="receiptsRoot">
-      <h3>receipts root<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/indexWithdrawal">
+      <h3>index withdrawal<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyreceiptsRoot</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/indexWithdrawal</p>
+      <div class="info">
+         <span class="markdown">A unique identifier for the withdrawal transaction, helping to organize and track transactions within a block</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Withdrawals"
+                  title="https://w3id.org/def/EthereumOntology/Withdrawals">Withdrawals</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -820,18 +1149,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="s">
-      <h3>s<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/inputTransaction">
+      <h3>input transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologys</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/inputTransaction</p>
+      <div class="info">
+         <span class="markdown">Data sent with transaction, often contract interaction</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -843,18 +1176,21 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="sha3Uncles">
-      <h3>sha3 uncles<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/key">
+      <h3>key<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologysha3Uncles</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/key</p>
+      <div class="info">
+         <span class="markdown">The storage key being accessed within that contract address in the AccessList</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Keys" title="https://w3id.org/def/EthereumOntology/Keys">Keys</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -866,18 +1202,48 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="size">
-      <h3>size<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/logsBloomBlock">
+      <h3>logs bloom block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologysize</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/logsBloomBlock</p>
+      <div class="info">
+         <span class="markdown">Data structure containing event logs</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/maxFeePerGasTransaction">
+      <h3>max fee per gas transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction</p>
+      <div class="info">
+         <span class="markdown">Maximum fee per gas unit for transaction inclusion</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -889,18 +1255,48 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="stateRoot">
-      <h3>state root<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/maxPriorityFeePerGasTransaction">
+      <h3>max priority fee per gas transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologystateRoot</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction</p>
+      <div class="info">
+         <span class="markdown">Tip to miner for transaction processing priority</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/minerBlock">
+      <h3>miner block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/minerBlock</p>
+      <div class="info">
+         <span class="markdown">Address of the miner who successfully mined the block</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -912,41 +1308,21 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="timestamp">
-      <h3>timestamp<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/mixHashBlock">
+      <h3>mix hash block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologytimestamp</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
-            </dd>
-         </dl>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/mixHashBlock</p>
+      <div class="info">
+         <span class="markdown">Hash proving sufficient computational work with nonce</span>
       </div>
-   </div>
-   <div class="entity" id="to">
-      <h3>to<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyto</p>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -958,18 +1334,21 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="totalDifficulty">
-      <h3>total difficulty<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/nonceBlock">
+      <h3>nonce block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologytotalDifficulty</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/nonceBlock</p>
+      <div class="info">
+         <span class="markdown">A number altered to meet a specific cryptographic condition</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -981,18 +1360,22 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="transactionIndex">
-      <h3>transaction index<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/nonceTransaction">
+      <h3>nonce transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologytransactionIndex</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/nonceTransaction</p>
+      <div class="info">
+         <span class="markdown">Number of transactions sent from the address of the sender</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1004,18 +1387,47 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="transactionsRoot">
-      <h3>transactions root<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/numberBlock">
+      <h3>number block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologytransactionsRoot</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/numberBlock</p>
+      <div class="info">
+         <span class="markdown">The number of the current block</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Block" title="https://w3id.org/def/EthereumOntologyBlock">Block</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/parentHashBlock">
+      <h3>parent hash block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/parentHashBlock</p>
+      <div class="info">
+         <span class="markdown">Hash of the parent block</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1027,18 +1439,154 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="v">
-      <h3>v<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/publicKeyTransaction">
+      <h3>public key transaction<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyv</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/publicKeyTransaction</p>
+      <div class="info">
+         <span class="markdown">Public key of the sender, derived from the private key</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/rTransaction">
+      <h3>r transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/rTransaction</p>
+      <div class="info">
+         <span class="markdown">Cryptographic signature part of the transaction</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/receiptsRootBlock">
+      <h3>receipts root block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/receiptsRootBlock</p>
+      <div class="info">
+         <span class="markdown">Hash of the transaction receipts trie</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/sTransaction">
+      <h3>s transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/sTransaction</p>
+      <div class="info">
+         <span class="markdown">Cryptographic signature part of the transaction</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/sha3UnclesBlock">
+      <h3>sha3 uncles block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/sha3UnclesBlock</p>
+      <div class="info">
+         <span class="markdown">SHA3 hash of the list of uncle blocks included</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/sizeBlock">
+      <h3>size block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/sizeBlock</p>
+      <div class="info">
+         <span class="markdown">The size of the block in bytes</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1050,18 +1598,47 @@ This section provides details for each class and property defined by Ethereum On
          </dl>
       </div>
    </div>
-   <div class="entity" id="value">
-      <h3>value<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="/stateRootBlock">
+      <h3>state root block<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/EthereumOntologyvalue</p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/stateRootBlock</p>
+      <div class="info">
+         <span class="markdown">Root hash for the global state after applying changes in this block</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#transaction" title="https://w3id.org/def/EthereumOntologytransaction">transaction</a>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/timestampBlock">
+      <h3>timestamp block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/timestampBlock</p>
+      <div class="info">
+         <span class="markdown">The block time</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1069,6 +1646,246 @@ This section provides details for each class and property defined by Ethereum On
                <a href="http://www.w3.org/2001/XMLSchema#integer"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/toTransaction">
+      <h3>to transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/toTransaction</p>
+      <div class="info">
+         <span class="markdown">Address of the receiver or contract interacting with</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/totalDifficultyBlock">
+      <h3>total difficulty block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/totalDifficultyBlock</p>
+      <div class="info">
+         <span class="markdown">Sum of the difficulty of this block and that of all the previous blocks in the chain</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/transactionIndexTransaction">
+      <h3>transaction index transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/transactionIndexTransaction</p>
+      <div class="info">
+         <span class="markdown">Position of the transaction within the block</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/transactionsRootBlock">
+      <h3>transactions root block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/transactionsRootBlock</p>
+      <div class="info">
+         <span class="markdown">Root hash of the transactions in the payload</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/typeTransaction">
+      <h3>type transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/typeTransaction</p>
+      <div class="info">
+         <span class="markdown">Indicates the transaction type</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/vTransaction">
+      <h3>v transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/vTransaction</p>
+      <div class="info">
+         <span class="markdown">Recovery ID, part of the cryptographic signature of the transaction</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/validatorIndexWithdrawal">
+      <h3>validator index withdrawal<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal</p>
+      <div class="info">
+         <span class="markdown">The unique identifier of the validator initiating the withdrawal. In Ethereum 2.0, validators are network participants who propose and attest to blocks, and their activities are tracked via unique indices</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Withdrawals"
+                  title="https://w3id.org/def/EthereumOntology/Withdrawals">Withdrawals</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/valueTransaction">
+      <h3>value transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/valueTransaction</p>
+      <div class="info">
+         <span class="markdown">Amount of Ether being transferred in Wei</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Transaction"
+                  title="https://w3id.org/def/EthereumOntology/Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/withdrawalRootBlock">
+      <h3>withdrawal root block<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/EthereumOntology/withdrawalRootBlock</p>
+      <div class="info">
+         <span class="markdown">Root hash of the withdrawals in the payload</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Block" title="https://w3id.org/def/EthereumOntology/Block">Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
