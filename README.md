@@ -2,7 +2,7 @@
 
 This ontology aims at modelling the Ethereum blocks.
 
-The ontology documentation can be found [here](https://w3id.org/def/SolidityABI)
+The ontology documentation can be found [here](https://w3id.org/def/EthereumOntology)
 
 ## Current version of the ontology model
 
