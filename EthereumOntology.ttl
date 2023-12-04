@@ -61,6 +61,14 @@ dc:title rdf:type owl:AnnotationProperty .
               rdfs:label "has behaviour" .
 
 
+###  https://w3id.org/def/Ethereum#hasBlock
+:hasBlock rdf:type owl:ObjectProperty ;
+          rdfs:domain :Transaction ;
+          rdfs:range :Block ;
+          dc:description "The block related to a transaction" ;
+          rdfs:label "has block" .
+
+
 ###  https://w3id.org/def/Ethereum#hasKey
 :hasKey rdf:type owl:ObjectProperty ;
         rdfs:domain :AccessList ;
@@ -445,7 +453,7 @@ dc:title rdf:type owl:AnnotationProperty .
 ###  http://ethon.consensys.net/Block
 ethon:Block rdf:type owl:Class ;
             dc:description "The block class that is part of the EthOn ontology" ;
-            rdfs:label "Block" .
+            rdfs:label "EthOn Block" .
 
 
 ###  https://w3id.org/def/Ethereum#AccessList
