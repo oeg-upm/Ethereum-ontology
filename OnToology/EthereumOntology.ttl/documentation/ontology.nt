@@ -31,47 +31,47 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/def/Ethereum#/hasABI
-<https://w3id.org/def/Ethereum#/hasABI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/Ethereum#/hasABI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/hasABI> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityABI#ApplicationBinaryInterface> .
-<https://w3id.org/def/Ethereum#/hasABI> <http://purl.org/dc/elements/1.1/description> "Specification for smart contract interactions on Ethereum" .
-<https://w3id.org/def/Ethereum#/hasABI> <http://www.w3.org/2000/01/rdf-schema#label> "has abi" .
+# https://w3id.org/def/Ethereum#hasABI
+<https://w3id.org/def/Ethereum#hasABI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Ethereum#hasABI> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#hasABI> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/SolidityABI#ApplicationBinaryInterface> .
+<https://w3id.org/def/Ethereum#hasABI> <http://purl.org/dc/elements/1.1/description> "Specification for smart contract interactions on Ethereum" .
+<https://w3id.org/def/Ethereum#hasABI> <http://www.w3.org/2000/01/rdf-schema#label> "has abi" .
 # 
-# https://w3id.org/def/Ethereum#/hasAccessList
-<https://w3id.org/def/Ethereum#/hasAccessList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/Ethereum#/hasAccessList> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/hasAccessList> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#/AccessList> .
-<https://w3id.org/def/Ethereum#/hasAccessList> <http://purl.org/dc/elements/1.1/description> "A list specifying addresses and keys accessed during the transaction, optimizing gas usage and enabling more predictable gas costs" .
-<https://w3id.org/def/Ethereum#/hasAccessList> <http://www.w3.org/2000/01/rdf-schema#label> "has access list" .
+# https://w3id.org/def/Ethereum#hasAccessList
+<https://w3id.org/def/Ethereum#hasAccessList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Ethereum#hasAccessList> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#hasAccessList> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#AccessList> .
+<https://w3id.org/def/Ethereum#hasAccessList> <http://purl.org/dc/elements/1.1/description> "A list specifying addresses and keys accessed during the transaction, optimizing gas usage and enabling more predictable gas costs" .
+<https://w3id.org/def/Ethereum#hasAccessList> <http://www.w3.org/2000/01/rdf-schema#label> "has access list" .
 # 
-# https://w3id.org/def/Ethereum#/hasBehaviour
-<https://w3id.org/def/Ethereum#/hasBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/Ethereum#/hasBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/hasBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <http://ethon.consensys.net/Block> .
-<https://w3id.org/def/Ethereum#/hasBehaviour> <http://purl.org/dc/elements/1.1/description> "Behaviour of the block represented in the EthOn ontology" .
-<https://w3id.org/def/Ethereum#/hasBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has behaviour" .
+# https://w3id.org/def/Ethereum#hasBehaviour
+<https://w3id.org/def/Ethereum#hasBehaviour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Ethereum#hasBehaviour> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#hasBehaviour> <http://www.w3.org/2000/01/rdf-schema#range> <http://ethon.consensys.net/Block> .
+<https://w3id.org/def/Ethereum#hasBehaviour> <http://purl.org/dc/elements/1.1/description> "Behaviour of the block represented in the EthOn ontology" .
+<https://w3id.org/def/Ethereum#hasBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has behaviour" .
 # 
-# https://w3id.org/def/Ethereum#/hasKey
-<https://w3id.org/def/Ethereum#/hasKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/Ethereum#/hasKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/AccessList> .
-<https://w3id.org/def/Ethereum#/hasKey> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#/Key> .
-<https://w3id.org/def/Ethereum#/hasKey> <http://purl.org/dc/elements/1.1/description> "Specific storage locations accessed in a contract" .
-<https://w3id.org/def/Ethereum#/hasKey> <http://www.w3.org/2000/01/rdf-schema#label> "has key" .
+# https://w3id.org/def/Ethereum#hasKey
+<https://w3id.org/def/Ethereum#hasKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Ethereum#hasKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#AccessList> .
+<https://w3id.org/def/Ethereum#hasKey> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#Key> .
+<https://w3id.org/def/Ethereum#hasKey> <http://purl.org/dc/elements/1.1/description> "Specific storage locations accessed in a contract" .
+<https://w3id.org/def/Ethereum#hasKey> <http://www.w3.org/2000/01/rdf-schema#label> "has key" .
 # 
-# https://w3id.org/def/Ethereum#/hasTransaction
-<https://w3id.org/def/Ethereum#/hasTransaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/Ethereum#/hasTransaction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/hasTransaction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/hasTransaction> <http://purl.org/dc/elements/1.1/description> "Set of operations encoded and transmitted on the network" .
-<https://w3id.org/def/Ethereum#/hasTransaction> <http://www.w3.org/2000/01/rdf-schema#label> "has transaction" .
+# https://w3id.org/def/Ethereum#hasTransaction
+<https://w3id.org/def/Ethereum#hasTransaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Ethereum#hasTransaction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#hasTransaction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#hasTransaction> <http://purl.org/dc/elements/1.1/description> "Set of operations encoded and transmitted on the network" .
+<https://w3id.org/def/Ethereum#hasTransaction> <http://www.w3.org/2000/01/rdf-schema#label> "has transaction" .
 # 
-# https://w3id.org/def/Ethereum#/hasWithdrawal
-<https://w3id.org/def/Ethereum#/hasWithdrawal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/Ethereum#/hasWithdrawal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/hasWithdrawal> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#/Withdrawal> .
-<https://w3id.org/def/Ethereum#/hasWithdrawal> <http://purl.org/dc/elements/1.1/description> "Process of moving funds from a contract to an address" .
-<https://w3id.org/def/Ethereum#/hasWithdrawal> <http://www.w3.org/2000/01/rdf-schema#label> "has withdrawal" .
+# https://w3id.org/def/Ethereum#hasWithdrawal
+<https://w3id.org/def/Ethereum#hasWithdrawal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Ethereum#hasWithdrawal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#hasWithdrawal> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#Withdrawal> .
+<https://w3id.org/def/Ethereum#hasWithdrawal> <http://purl.org/dc/elements/1.1/description> "Process of moving funds from a contract to an address" .
+<https://w3id.org/def/Ethereum#hasWithdrawal> <http://www.w3.org/2000/01/rdf-schema#label> "has withdrawal" .
 # 
 # 
 # 
@@ -82,310 +82,310 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/def/Ethereum#/address
-<https://w3id.org/def/Ethereum#/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/address> <http://purl.org/dc/elements/1.1/description> "The contract address being accessed within the AccessList and Withdrawals" .
-<https://w3id.org/def/Ethereum#/address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
+# https://w3id.org/def/Ethereum#address
+<https://w3id.org/def/Ethereum#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#address> <http://purl.org/dc/elements/1.1/description> "The contract address being accessed within the AccessList and Withdrawals" .
+<https://w3id.org/def/Ethereum#address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
 # 
-# https://w3id.org/def/Ethereum#/amount
-<https://w3id.org/def/Ethereum#/amount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/amount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Withdrawal> .
-<https://w3id.org/def/Ethereum#/amount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/amount> <http://purl.org/dc/elements/1.1/description> "The quantity of funds (usually measured in Ether) being withdrawn" .
-<https://w3id.org/def/Ethereum#/amount> <http://www.w3.org/2000/01/rdf-schema#label> "amount" .
+# https://w3id.org/def/Ethereum#amount
+<https://w3id.org/def/Ethereum#amount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#amount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Withdrawal> .
+<https://w3id.org/def/Ethereum#amount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#amount> <http://purl.org/dc/elements/1.1/description> "The quantity of funds (usually measured in Ether) being withdrawn" .
+<https://w3id.org/def/Ethereum#amount> <http://www.w3.org/2000/01/rdf-schema#label> "amount" .
 # 
-# https://w3id.org/def/Ethereum#/author
-<https://w3id.org/def/Ethereum#/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/author> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/author> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/author> <http://purl.org/dc/elements/1.1/description> "Address of the individual who proposed the block" .
-<https://w3id.org/def/Ethereum#/author> <http://www.w3.org/2000/01/rdf-schema#label> "author" .
+# https://w3id.org/def/Ethereum#author
+<https://w3id.org/def/Ethereum#author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#author> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#author> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#author> <http://purl.org/dc/elements/1.1/description> "Address of the individual who proposed the block" .
+<https://w3id.org/def/Ethereum#author> <http://www.w3.org/2000/01/rdf-schema#label> "author" .
 # 
-# https://w3id.org/def/Ethereum#/baseFeePerGas
-<https://w3id.org/def/Ethereum#/baseFeePerGas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/baseFeePerGas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/baseFeePerGas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/baseFeePerGas> <http://purl.org/dc/elements/1.1/description> "The base fee value" .
-<https://w3id.org/def/Ethereum#/baseFeePerGas> <http://www.w3.org/2000/01/rdf-schema#label> "base fee per gas" .
+# https://w3id.org/def/Ethereum#baseFeePerGas
+<https://w3id.org/def/Ethereum#baseFeePerGas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#baseFeePerGas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#baseFeePerGas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#baseFeePerGas> <http://purl.org/dc/elements/1.1/description> "The base fee value" .
+<https://w3id.org/def/Ethereum#baseFeePerGas> <http://www.w3.org/2000/01/rdf-schema#label> "base fee per gas" .
 # 
-# https://w3id.org/def/Ethereum#/blockHash
-<https://w3id.org/def/Ethereum#/blockHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/blockHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/blockHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/blockHash> <http://purl.org/dc/elements/1.1/description> "Unique identifier of the block containing transaction" .
-<https://w3id.org/def/Ethereum#/blockHash> <http://www.w3.org/2000/01/rdf-schema#label> "block hash" .
+# https://w3id.org/def/Ethereum#blockHash
+<https://w3id.org/def/Ethereum#blockHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#blockHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#blockHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#blockHash> <http://purl.org/dc/elements/1.1/description> "Unique identifier of the block containing transaction" .
+<https://w3id.org/def/Ethereum#blockHash> <http://www.w3.org/2000/01/rdf-schema#label> "block hash" .
 # 
-# https://w3id.org/def/Ethereum#/blockNumber
-<https://w3id.org/def/Ethereum#/blockNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/blockNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/blockNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/blockNumber> <http://purl.org/dc/elements/1.1/description> "The number of the current block" .
-<https://w3id.org/def/Ethereum#/blockNumber> <http://www.w3.org/2000/01/rdf-schema#label> "block number" .
+# https://w3id.org/def/Ethereum#blockNumber
+<https://w3id.org/def/Ethereum#blockNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#blockNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#blockNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#blockNumber> <http://purl.org/dc/elements/1.1/description> "The number of the current block" .
+<https://w3id.org/def/Ethereum#blockNumber> <http://www.w3.org/2000/01/rdf-schema#label> "block number" .
 # 
-# https://w3id.org/def/Ethereum#/chainId
-<https://w3id.org/def/Ethereum#/chainId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/chainId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/chainId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/chainId> <http://purl.org/dc/elements/1.1/description> "Identifies the specific Ethereum blockchain instance" .
-<https://w3id.org/def/Ethereum#/chainId> <http://www.w3.org/2000/01/rdf-schema#label> "chain id" .
+# https://w3id.org/def/Ethereum#chainId
+<https://w3id.org/def/Ethereum#chainId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#chainId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#chainId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#chainId> <http://purl.org/dc/elements/1.1/description> "Identifies the specific Ethereum blockchain instance" .
+<https://w3id.org/def/Ethereum#chainId> <http://www.w3.org/2000/01/rdf-schema#label> "chain id" .
 # 
-# https://w3id.org/def/Ethereum#/creates
-<https://w3id.org/def/Ethereum#/creates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/creates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/creates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/creates> <http://purl.org/dc/elements/1.1/description> "Contract address created if transaction is a contract" .
-<https://w3id.org/def/Ethereum#/creates> <http://www.w3.org/2000/01/rdf-schema#label> "creates" .
+# https://w3id.org/def/Ethereum#creates
+<https://w3id.org/def/Ethereum#creates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#creates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#creates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#creates> <http://purl.org/dc/elements/1.1/description> "Contract address created if transaction is a contract" .
+<https://w3id.org/def/Ethereum#creates> <http://www.w3.org/2000/01/rdf-schema#label> "creates" .
 # 
-# https://w3id.org/def/Ethereum#/difficulty
-<https://w3id.org/def/Ethereum#/difficulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/difficulty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/difficulty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/difficulty> <http://purl.org/dc/elements/1.1/description> "Represents how hard it is to mine a block" .
-<https://w3id.org/def/Ethereum#/difficulty> <http://www.w3.org/2000/01/rdf-schema#label> "difficulty" .
+# https://w3id.org/def/Ethereum#difficulty
+<https://w3id.org/def/Ethereum#difficulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#difficulty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#difficulty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#difficulty> <http://purl.org/dc/elements/1.1/description> "Represents how hard it is to mine a block" .
+<https://w3id.org/def/Ethereum#difficulty> <http://www.w3.org/2000/01/rdf-schema#label> "difficulty" .
 # 
-# https://w3id.org/def/Ethereum#/extraData
-<https://w3id.org/def/Ethereum#/extraData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/extraData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/extraData> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/extraData> <http://purl.org/dc/elements/1.1/description> "Arbitrary additional data as raw bytes" .
-<https://w3id.org/def/Ethereum#/extraData> <http://www.w3.org/2000/01/rdf-schema#label> "extra data" .
+# https://w3id.org/def/Ethereum#extraData
+<https://w3id.org/def/Ethereum#extraData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#extraData> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#extraData> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#extraData> <http://purl.org/dc/elements/1.1/description> "Arbitrary additional data as raw bytes" .
+<https://w3id.org/def/Ethereum#extraData> <http://www.w3.org/2000/01/rdf-schema#label> "extra data" .
 # 
-# https://w3id.org/def/Ethereum#/from
-<https://w3id.org/def/Ethereum#/from> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/from> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/from> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/from> <http://purl.org/dc/elements/1.1/description> "Address of the sender initiating the transaction" .
-<https://w3id.org/def/Ethereum#/from> <http://www.w3.org/2000/01/rdf-schema#label> "from" .
+# https://w3id.org/def/Ethereum#from
+<https://w3id.org/def/Ethereum#from> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#from> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#from> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#from> <http://purl.org/dc/elements/1.1/description> "Address of the sender initiating the transaction" .
+<https://w3id.org/def/Ethereum#from> <http://www.w3.org/2000/01/rdf-schema#label> "from" .
 # 
-# https://w3id.org/def/Ethereum#/gas
-<https://w3id.org/def/Ethereum#/gas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/gas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/gas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/gas> <http://purl.org/dc/elements/1.1/description> "Units of computational effort required to execute transaction" .
-<https://w3id.org/def/Ethereum#/gas> <http://www.w3.org/2000/01/rdf-schema#label> "gas" .
+# https://w3id.org/def/Ethereum#gas
+<https://w3id.org/def/Ethereum#gas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#gas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#gas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#gas> <http://purl.org/dc/elements/1.1/description> "Units of computational effort required to execute transaction" .
+<https://w3id.org/def/Ethereum#gas> <http://www.w3.org/2000/01/rdf-schema#label> "gas" .
 # 
-# https://w3id.org/def/Ethereum#/gasLimit
-<https://w3id.org/def/Ethereum#/gasLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/gasLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/gasLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/gasLimit> <http://purl.org/dc/elements/1.1/description> "Maximum gas allowed in this block" .
-<https://w3id.org/def/Ethereum#/gasLimit> <http://www.w3.org/2000/01/rdf-schema#label> "gas limit" .
+# https://w3id.org/def/Ethereum#gasLimit
+<https://w3id.org/def/Ethereum#gasLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#gasLimit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#gasLimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#gasLimit> <http://purl.org/dc/elements/1.1/description> "Maximum gas allowed in this block" .
+<https://w3id.org/def/Ethereum#gasLimit> <http://www.w3.org/2000/01/rdf-schema#label> "gas limit" .
 # 
-# https://w3id.org/def/Ethereum#/gasPrice
-<https://w3id.org/def/Ethereum#/gasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/gasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/gasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/gasPrice> <http://purl.org/dc/elements/1.1/description> "Cost per unit of gas specified for the transaction" .
-<https://w3id.org/def/Ethereum#/gasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "gas price" .
+# https://w3id.org/def/Ethereum#gasPrice
+<https://w3id.org/def/Ethereum#gasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#gasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#gasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#gasPrice> <http://purl.org/dc/elements/1.1/description> "Cost per unit of gas specified for the transaction" .
+<https://w3id.org/def/Ethereum#gasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "gas price" .
 # 
-# https://w3id.org/def/Ethereum#/gasUsed
-<https://w3id.org/def/Ethereum#/gasUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/gasUsed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/gasUsed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/gasUsed> <http://purl.org/dc/elements/1.1/description> "The actual amount of gas used in this block" .
-<https://w3id.org/def/Ethereum#/gasUsed> <http://www.w3.org/2000/01/rdf-schema#label> "gas used" .
+# https://w3id.org/def/Ethereum#gasUsed
+<https://w3id.org/def/Ethereum#gasUsed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#gasUsed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#gasUsed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#gasUsed> <http://purl.org/dc/elements/1.1/description> "The actual amount of gas used in this block" .
+<https://w3id.org/def/Ethereum#gasUsed> <http://www.w3.org/2000/01/rdf-schema#label> "gas used" .
 # 
-# https://w3id.org/def/Ethereum#/hash
-<https://w3id.org/def/Ethereum#/hash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/hash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/hash> <http://purl.org/dc/elements/1.1/description> "Hash of execution block and transaction" .
-<https://w3id.org/def/Ethereum#/hash> <http://www.w3.org/2000/01/rdf-schema#label> "hash" .
+# https://w3id.org/def/Ethereum#hash
+<https://w3id.org/def/Ethereum#hash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#hash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#hash> <http://purl.org/dc/elements/1.1/description> "Hash of execution block and transaction" .
+<https://w3id.org/def/Ethereum#hash> <http://www.w3.org/2000/01/rdf-schema#label> "hash" .
 # 
-# https://w3id.org/def/Ethereum#/index
-<https://w3id.org/def/Ethereum#/index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/index> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Withdrawal> .
-<https://w3id.org/def/Ethereum#/index> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/index> <http://purl.org/dc/elements/1.1/description> "A unique identifier for the withdrawal transaction, helping to organize and track transactions within a block" .
-<https://w3id.org/def/Ethereum#/index> <http://www.w3.org/2000/01/rdf-schema#label> "index" .
+# https://w3id.org/def/Ethereum#index
+<https://w3id.org/def/Ethereum#index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#index> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Withdrawal> .
+<https://w3id.org/def/Ethereum#index> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#index> <http://purl.org/dc/elements/1.1/description> "A unique identifier for the withdrawal transaction, helping to organize and track transactions within a block" .
+<https://w3id.org/def/Ethereum#index> <http://www.w3.org/2000/01/rdf-schema#label> "index" .
 # 
-# https://w3id.org/def/Ethereum#/input
-<https://w3id.org/def/Ethereum#/input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/input> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/input> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/input> <http://purl.org/dc/elements/1.1/description> "Data sent with transaction, often contract interaction" .
-<https://w3id.org/def/Ethereum#/input> <http://www.w3.org/2000/01/rdf-schema#label> "input" .
+# https://w3id.org/def/Ethereum#input
+<https://w3id.org/def/Ethereum#input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#input> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#input> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#input> <http://purl.org/dc/elements/1.1/description> "Data sent with transaction, often contract interaction" .
+<https://w3id.org/def/Ethereum#input> <http://www.w3.org/2000/01/rdf-schema#label> "input" .
 # 
-# https://w3id.org/def/Ethereum#/key
-<https://w3id.org/def/Ethereum#/key> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/key> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Key> .
-<https://w3id.org/def/Ethereum#/key> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/key> <http://purl.org/dc/elements/1.1/description> "The storage key being accessed within that contract address in the AccessList" .
-<https://w3id.org/def/Ethereum#/key> <http://www.w3.org/2000/01/rdf-schema#label> "key" .
+# https://w3id.org/def/Ethereum#key
+<https://w3id.org/def/Ethereum#key> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#key> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Key> .
+<https://w3id.org/def/Ethereum#key> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#key> <http://purl.org/dc/elements/1.1/description> "The storage key being accessed within that contract address in the AccessList" .
+<https://w3id.org/def/Ethereum#key> <http://www.w3.org/2000/01/rdf-schema#label> "key" .
 # 
-# https://w3id.org/def/Ethereum#/logsBloom
-<https://w3id.org/def/Ethereum#/logsBloom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/logsBloom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/logsBloom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/logsBloom> <http://purl.org/dc/elements/1.1/description> "Data structure containing event logs" .
-<https://w3id.org/def/Ethereum#/logsBloom> <http://www.w3.org/2000/01/rdf-schema#label> "logs bloom" .
+# https://w3id.org/def/Ethereum#logsBloom
+<https://w3id.org/def/Ethereum#logsBloom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#logsBloom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#logsBloom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#logsBloom> <http://purl.org/dc/elements/1.1/description> "Data structure containing event logs" .
+<https://w3id.org/def/Ethereum#logsBloom> <http://www.w3.org/2000/01/rdf-schema#label> "logs bloom" .
 # 
-# https://w3id.org/def/Ethereum#/maxFeePerGas
-<https://w3id.org/def/Ethereum#/maxFeePerGas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/maxFeePerGas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/maxFeePerGas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/maxFeePerGas> <http://purl.org/dc/elements/1.1/description> "Maximum fee per gas unit for transaction inclusion" .
-<https://w3id.org/def/Ethereum#/maxFeePerGas> <http://www.w3.org/2000/01/rdf-schema#label> "max fee per gas" .
+# https://w3id.org/def/Ethereum#maxFeePerGas
+<https://w3id.org/def/Ethereum#maxFeePerGas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#maxFeePerGas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#maxFeePerGas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#maxFeePerGas> <http://purl.org/dc/elements/1.1/description> "Maximum fee per gas unit for transaction inclusion" .
+<https://w3id.org/def/Ethereum#maxFeePerGas> <http://www.w3.org/2000/01/rdf-schema#label> "max fee per gas" .
 # 
-# https://w3id.org/def/Ethereum#/maxPriorityFeePerGas
-<https://w3id.org/def/Ethereum#/maxPriorityFeePerGas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/maxPriorityFeePerGas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/maxPriorityFeePerGas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/maxPriorityFeePerGas> <http://purl.org/dc/elements/1.1/description> "Tip to miner for transaction processing priority" .
-<https://w3id.org/def/Ethereum#/maxPriorityFeePerGas> <http://www.w3.org/2000/01/rdf-schema#label> "max priority fee per gas" .
+# https://w3id.org/def/Ethereum#maxPriorityFeePerGas
+<https://w3id.org/def/Ethereum#maxPriorityFeePerGas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#maxPriorityFeePerGas> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#maxPriorityFeePerGas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#maxPriorityFeePerGas> <http://purl.org/dc/elements/1.1/description> "Tip to miner for transaction processing priority" .
+<https://w3id.org/def/Ethereum#maxPriorityFeePerGas> <http://www.w3.org/2000/01/rdf-schema#label> "max priority fee per gas" .
 # 
-# https://w3id.org/def/Ethereum#/miner
-<https://w3id.org/def/Ethereum#/miner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/miner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/miner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/miner> <http://purl.org/dc/elements/1.1/description> "Address of the miner who successfully mined the block" .
-<https://w3id.org/def/Ethereum#/miner> <http://www.w3.org/2000/01/rdf-schema#label> "miner" .
+# https://w3id.org/def/Ethereum#miner
+<https://w3id.org/def/Ethereum#miner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#miner> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#miner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#miner> <http://purl.org/dc/elements/1.1/description> "Address of the miner who successfully mined the block" .
+<https://w3id.org/def/Ethereum#miner> <http://www.w3.org/2000/01/rdf-schema#label> "miner" .
 # 
-# https://w3id.org/def/Ethereum#/mixHash
-<https://w3id.org/def/Ethereum#/mixHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/mixHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/mixHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/mixHash> <http://purl.org/dc/elements/1.1/description> "Hash proving sufficient computational work with nonce" .
-<https://w3id.org/def/Ethereum#/mixHash> <http://www.w3.org/2000/01/rdf-schema#label> "mix hash" .
+# https://w3id.org/def/Ethereum#mixHash
+<https://w3id.org/def/Ethereum#mixHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#mixHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#mixHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#mixHash> <http://purl.org/dc/elements/1.1/description> "Hash proving sufficient computational work with nonce" .
+<https://w3id.org/def/Ethereum#mixHash> <http://www.w3.org/2000/01/rdf-schema#label> "mix hash" .
 # 
-# https://w3id.org/def/Ethereum#/nonce
-<https://w3id.org/def/Ethereum#/nonce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/nonce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/nonce> <http://purl.org/dc/elements/1.1/description> "A number altered to meet a specific cryptographic condition for block and transaction" .
-<https://w3id.org/def/Ethereum#/nonce> <http://www.w3.org/2000/01/rdf-schema#label> "nonce" .
+# https://w3id.org/def/Ethereum#nonce
+<https://w3id.org/def/Ethereum#nonce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#nonce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#nonce> <http://purl.org/dc/elements/1.1/description> "A number altered to meet a specific cryptographic condition for block and transaction" .
+<https://w3id.org/def/Ethereum#nonce> <http://www.w3.org/2000/01/rdf-schema#label> "nonce" .
 # 
-# https://w3id.org/def/Ethereum#/number
-<https://w3id.org/def/Ethereum#/number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/number> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/number> <http://purl.org/dc/elements/1.1/description> "The number of the current block" .
-<https://w3id.org/def/Ethereum#/number> <http://www.w3.org/2000/01/rdf-schema#label> "number" .
+# https://w3id.org/def/Ethereum#number
+<https://w3id.org/def/Ethereum#number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#number> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#number> <http://purl.org/dc/elements/1.1/description> "The number of the current block" .
+<https://w3id.org/def/Ethereum#number> <http://www.w3.org/2000/01/rdf-schema#label> "number" .
 # 
-# https://w3id.org/def/Ethereum#/parentHash
-<https://w3id.org/def/Ethereum#/parentHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/parentHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/parentHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/parentHash> <http://purl.org/dc/elements/1.1/description> "Hash of the parent block" .
-<https://w3id.org/def/Ethereum#/parentHash> <http://www.w3.org/2000/01/rdf-schema#label> "parent hash" .
+# https://w3id.org/def/Ethereum#parentHash
+<https://w3id.org/def/Ethereum#parentHash> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#parentHash> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#parentHash> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#parentHash> <http://purl.org/dc/elements/1.1/description> "Hash of the parent block" .
+<https://w3id.org/def/Ethereum#parentHash> <http://www.w3.org/2000/01/rdf-schema#label> "parent hash" .
 # 
-# https://w3id.org/def/Ethereum#/publicKey
-<https://w3id.org/def/Ethereum#/publicKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/publicKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/publicKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/publicKey> <http://purl.org/dc/elements/1.1/description> "Public key of the sender, derived from the private key" .
-<https://w3id.org/def/Ethereum#/publicKey> <http://www.w3.org/2000/01/rdf-schema#label> "public key" .
+# https://w3id.org/def/Ethereum#publicKey
+<https://w3id.org/def/Ethereum#publicKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#publicKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#publicKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#publicKey> <http://purl.org/dc/elements/1.1/description> "Public key of the sender, derived from the private key" .
+<https://w3id.org/def/Ethereum#publicKey> <http://www.w3.org/2000/01/rdf-schema#label> "public key" .
 # 
-# https://w3id.org/def/Ethereum#/r
-<https://w3id.org/def/Ethereum#/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/r> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/r> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/r> <http://purl.org/dc/elements/1.1/description> "Cryptographic signature part of the transaction" .
-<https://w3id.org/def/Ethereum#/r> <http://www.w3.org/2000/01/rdf-schema#label> "r" .
+# https://w3id.org/def/Ethereum#r
+<https://w3id.org/def/Ethereum#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#r> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#r> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#r> <http://purl.org/dc/elements/1.1/description> "Cryptographic signature part of the transaction" .
+<https://w3id.org/def/Ethereum#r> <http://www.w3.org/2000/01/rdf-schema#label> "r" .
 # 
-# https://w3id.org/def/Ethereum#/receiptsRoot
-<https://w3id.org/def/Ethereum#/receiptsRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/receiptsRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/receiptsRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/receiptsRoot> <http://purl.org/dc/elements/1.1/description> "Hash of the transaction receipts trie" .
-<https://w3id.org/def/Ethereum#/receiptsRoot> <http://www.w3.org/2000/01/rdf-schema#label> "receipts root" .
+# https://w3id.org/def/Ethereum#receiptsRoot
+<https://w3id.org/def/Ethereum#receiptsRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#receiptsRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#receiptsRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#receiptsRoot> <http://purl.org/dc/elements/1.1/description> "Hash of the transaction receipts trie" .
+<https://w3id.org/def/Ethereum#receiptsRoot> <http://www.w3.org/2000/01/rdf-schema#label> "receipts root" .
 # 
-# https://w3id.org/def/Ethereum#/s
-<https://w3id.org/def/Ethereum#/s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/s> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/s> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/s> <http://purl.org/dc/elements/1.1/description> "Cryptographic signature part of the transaction" .
-<https://w3id.org/def/Ethereum#/s> <http://www.w3.org/2000/01/rdf-schema#label> "s" .
+# https://w3id.org/def/Ethereum#s
+<https://w3id.org/def/Ethereum#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#s> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#s> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#s> <http://purl.org/dc/elements/1.1/description> "Cryptographic signature part of the transaction" .
+<https://w3id.org/def/Ethereum#s> <http://www.w3.org/2000/01/rdf-schema#label> "s" .
 # 
-# https://w3id.org/def/Ethereum#/sha3Uncles
-<https://w3id.org/def/Ethereum#/sha3Uncles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/sha3Uncles> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/sha3Uncles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/sha3Uncles> <http://purl.org/dc/elements/1.1/description> "SHA3 hash of the list of uncle blocks included" .
-<https://w3id.org/def/Ethereum#/sha3Uncles> <http://www.w3.org/2000/01/rdf-schema#label> "sha3 uncles" .
+# https://w3id.org/def/Ethereum#sha3Uncles
+<https://w3id.org/def/Ethereum#sha3Uncles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#sha3Uncles> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#sha3Uncles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#sha3Uncles> <http://purl.org/dc/elements/1.1/description> "SHA3 hash of the list of uncle blocks included" .
+<https://w3id.org/def/Ethereum#sha3Uncles> <http://www.w3.org/2000/01/rdf-schema#label> "sha3 uncles" .
 # 
-# https://w3id.org/def/Ethereum#/size
-<https://w3id.org/def/Ethereum#/size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/size> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/size> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/size> <http://purl.org/dc/elements/1.1/description> "The size of the block in bytes" .
-<https://w3id.org/def/Ethereum#/size> <http://www.w3.org/2000/01/rdf-schema#label> "size" .
+# https://w3id.org/def/Ethereum#size
+<https://w3id.org/def/Ethereum#size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#size> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#size> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#size> <http://purl.org/dc/elements/1.1/description> "The size of the block in bytes" .
+<https://w3id.org/def/Ethereum#size> <http://www.w3.org/2000/01/rdf-schema#label> "size" .
 # 
-# https://w3id.org/def/Ethereum#/stateRoot
-<https://w3id.org/def/Ethereum#/stateRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/stateRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/stateRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/stateRoot> <http://purl.org/dc/elements/1.1/description> "Root hash for the global state after applying changes in this block" .
-<https://w3id.org/def/Ethereum#/stateRoot> <http://www.w3.org/2000/01/rdf-schema#label> "state root" .
+# https://w3id.org/def/Ethereum#stateRoot
+<https://w3id.org/def/Ethereum#stateRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#stateRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#stateRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#stateRoot> <http://purl.org/dc/elements/1.1/description> "Root hash for the global state after applying changes in this block" .
+<https://w3id.org/def/Ethereum#stateRoot> <http://www.w3.org/2000/01/rdf-schema#label> "state root" .
 # 
-# https://w3id.org/def/Ethereum#/timestamp
-<https://w3id.org/def/Ethereum#/timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/timestamp> <http://purl.org/dc/elements/1.1/description> "The block time" .
-<https://w3id.org/def/Ethereum#/timestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp" .
+# https://w3id.org/def/Ethereum#timestamp
+<https://w3id.org/def/Ethereum#timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#timestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#timestamp> <http://purl.org/dc/elements/1.1/description> "The block time" .
+<https://w3id.org/def/Ethereum#timestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp" .
 # 
-# https://w3id.org/def/Ethereum#/to
-<https://w3id.org/def/Ethereum#/to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/to> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/to> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/to> <http://purl.org/dc/elements/1.1/description> "Address of the receiver or contract interacting with" .
-<https://w3id.org/def/Ethereum#/to> <http://www.w3.org/2000/01/rdf-schema#label> "to" .
+# https://w3id.org/def/Ethereum#to
+<https://w3id.org/def/Ethereum#to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#to> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#to> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#to> <http://purl.org/dc/elements/1.1/description> "Address of the receiver or contract interacting with" .
+<https://w3id.org/def/Ethereum#to> <http://www.w3.org/2000/01/rdf-schema#label> "to" .
 # 
-# https://w3id.org/def/Ethereum#/totalDifficulty
-<https://w3id.org/def/Ethereum#/totalDifficulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/totalDifficulty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/totalDifficulty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/totalDifficulty> <http://purl.org/dc/elements/1.1/description> "Sum of the difficulty of this block and that of all the previous blocks in the chain" .
-<https://w3id.org/def/Ethereum#/totalDifficulty> <http://www.w3.org/2000/01/rdf-schema#label> "total difficulty" .
+# https://w3id.org/def/Ethereum#totalDifficulty
+<https://w3id.org/def/Ethereum#totalDifficulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#totalDifficulty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#totalDifficulty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#totalDifficulty> <http://purl.org/dc/elements/1.1/description> "Sum of the difficulty of this block and that of all the previous blocks in the chain" .
+<https://w3id.org/def/Ethereum#totalDifficulty> <http://www.w3.org/2000/01/rdf-schema#label> "total difficulty" .
 # 
-# https://w3id.org/def/Ethereum#/transactionIndex
-<https://w3id.org/def/Ethereum#/transactionIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/transactionIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/transactionIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/transactionIndex> <http://purl.org/dc/elements/1.1/description> "Position of the transaction within the block" .
-<https://w3id.org/def/Ethereum#/transactionIndex> <http://www.w3.org/2000/01/rdf-schema#label> "transaction index" .
+# https://w3id.org/def/Ethereum#transactionIndex
+<https://w3id.org/def/Ethereum#transactionIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#transactionIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#transactionIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#transactionIndex> <http://purl.org/dc/elements/1.1/description> "Position of the transaction within the block" .
+<https://w3id.org/def/Ethereum#transactionIndex> <http://www.w3.org/2000/01/rdf-schema#label> "transaction index" .
 # 
-# https://w3id.org/def/Ethereum#/transactionsRoot
-<https://w3id.org/def/Ethereum#/transactionsRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/transactionsRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/transactionsRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/transactionsRoot> <http://purl.org/dc/elements/1.1/description> "Root hash of the transactions in the payload" .
-<https://w3id.org/def/Ethereum#/transactionsRoot> <http://www.w3.org/2000/01/rdf-schema#label> "transactions root" .
+# https://w3id.org/def/Ethereum#transactionsRoot
+<https://w3id.org/def/Ethereum#transactionsRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#transactionsRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#transactionsRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#transactionsRoot> <http://purl.org/dc/elements/1.1/description> "Root hash of the transactions in the payload" .
+<https://w3id.org/def/Ethereum#transactionsRoot> <http://www.w3.org/2000/01/rdf-schema#label> "transactions root" .
 # 
-# https://w3id.org/def/Ethereum#/type
-<https://w3id.org/def/Ethereum#/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/type> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/type> <http://purl.org/dc/elements/1.1/description> "Indicates the transaction type" .
-<https://w3id.org/def/Ethereum#/type> <http://www.w3.org/2000/01/rdf-schema#label> "type" .
+# https://w3id.org/def/Ethereum#type
+<https://w3id.org/def/Ethereum#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#type> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#type> <http://purl.org/dc/elements/1.1/description> "Indicates the transaction type" .
+<https://w3id.org/def/Ethereum#type> <http://www.w3.org/2000/01/rdf-schema#label> "type" .
 # 
-# https://w3id.org/def/Ethereum#/v
-<https://w3id.org/def/Ethereum#/v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/v> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/v> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/v> <http://purl.org/dc/elements/1.1/description> "Recovery ID, part of the cryptographic signature of the transaction" .
-<https://w3id.org/def/Ethereum#/v> <http://www.w3.org/2000/01/rdf-schema#label> "v" .
+# https://w3id.org/def/Ethereum#v
+<https://w3id.org/def/Ethereum#v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#v> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#v> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#v> <http://purl.org/dc/elements/1.1/description> "Recovery ID, part of the cryptographic signature of the transaction" .
+<https://w3id.org/def/Ethereum#v> <http://www.w3.org/2000/01/rdf-schema#label> "v" .
 # 
-# https://w3id.org/def/Ethereum#/validatorIndex
-<https://w3id.org/def/Ethereum#/validatorIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/validatorIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Withdrawal> .
-<https://w3id.org/def/Ethereum#/validatorIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/validatorIndex> <http://purl.org/dc/elements/1.1/description> "The unique identifier of the validator initiating the withdrawal. In Ethereum 2.0, validators are network participants who propose and attest to blocks, and their activities are tracked via unique indices" .
-<https://w3id.org/def/Ethereum#/validatorIndex> <http://www.w3.org/2000/01/rdf-schema#label> "validator index" .
+# https://w3id.org/def/Ethereum#validatorIndex
+<https://w3id.org/def/Ethereum#validatorIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#validatorIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Withdrawal> .
+<https://w3id.org/def/Ethereum#validatorIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#validatorIndex> <http://purl.org/dc/elements/1.1/description> "The unique identifier of the validator initiating the withdrawal. In Ethereum 2.0, validators are network participants who propose and attest to blocks, and their activities are tracked via unique indices" .
+<https://w3id.org/def/Ethereum#validatorIndex> <http://www.w3.org/2000/01/rdf-schema#label> "validator index" .
 # 
-# https://w3id.org/def/Ethereum#/value
-<https://w3id.org/def/Ethereum#/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/value> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Transaction> .
-<https://w3id.org/def/Ethereum#/value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/def/Ethereum#/value> <http://purl.org/dc/elements/1.1/description> "Amount of Ether being transferred in Wei" .
-<https://w3id.org/def/Ethereum#/value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
+# https://w3id.org/def/Ethereum#value
+<https://w3id.org/def/Ethereum#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#value> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/def/Ethereum#value> <http://purl.org/dc/elements/1.1/description> "Amount of Ether being transferred in Wei" .
+<https://w3id.org/def/Ethereum#value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
 # 
-# https://w3id.org/def/Ethereum#/withdrawalRoot
-<https://w3id.org/def/Ethereum#/withdrawalRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/def/Ethereum#/withdrawalRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#/Block> .
-<https://w3id.org/def/Ethereum#/withdrawalRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/def/Ethereum#/withdrawalRoot> <http://purl.org/dc/elements/1.1/description> "Root hash of the withdrawals in the payload" .
-<https://w3id.org/def/Ethereum#/withdrawalRoot> <http://www.w3.org/2000/01/rdf-schema#label> "withdrawal root" .
+# https://w3id.org/def/Ethereum#withdrawalRoot
+<https://w3id.org/def/Ethereum#withdrawalRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/Ethereum#withdrawalRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#withdrawalRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/Ethereum#withdrawalRoot> <http://purl.org/dc/elements/1.1/description> "Root hash of the withdrawals in the payload" .
+<https://w3id.org/def/Ethereum#withdrawalRoot> <http://www.w3.org/2000/01/rdf-schema#label> "withdrawal root" .
 # 
 # 
 # 
@@ -401,30 +401,30 @@
 <http://ethon.consensys.net/Block> <http://purl.org/dc/elements/1.1/description> "The block class that is part of the EthOn ontology" .
 <http://ethon.consensys.net/Block> <http://www.w3.org/2000/01/rdf-schema#label> "Block" .
 # 
-# https://w3id.org/def/Ethereum#/AccessList
-<https://w3id.org/def/Ethereum#/AccessList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/Ethereum#/AccessList> <http://purl.org/dc/elements/1.1/description> "A specify address and keys accessed during the transaction" .
-<https://w3id.org/def/Ethereum#/AccessList> <http://www.w3.org/2000/01/rdf-schema#label> "Access List" .
+# https://w3id.org/def/Ethereum#AccessList
+<https://w3id.org/def/Ethereum#AccessList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Ethereum#AccessList> <http://purl.org/dc/elements/1.1/description> "A specify address and keys accessed during the transaction" .
+<https://w3id.org/def/Ethereum#AccessList> <http://www.w3.org/2000/01/rdf-schema#label> "Access List" .
 # 
-# https://w3id.org/def/Ethereum#/Block
-<https://w3id.org/def/Ethereum#/Block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/Ethereum#/Block> <http://purl.org/dc/elements/1.1/description> "A transaction and other data recorded on the chain" .
-<https://w3id.org/def/Ethereum#/Block> <http://www.w3.org/2000/01/rdf-schema#label> "Block" .
+# https://w3id.org/def/Ethereum#Block
+<https://w3id.org/def/Ethereum#Block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Ethereum#Block> <http://purl.org/dc/elements/1.1/description> "A transaction and other data recorded on the chain" .
+<https://w3id.org/def/Ethereum#Block> <http://www.w3.org/2000/01/rdf-schema#label> "Block" .
 # 
-# https://w3id.org/def/Ethereum#/Key
-<https://w3id.org/def/Ethereum#/Key> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/Ethereum#/Key> <http://purl.org/dc/elements/1.1/description> "Specific storage locations accessed in a contract" .
-<https://w3id.org/def/Ethereum#/Key> <http://www.w3.org/2000/01/rdf-schema#label> "Key" .
+# https://w3id.org/def/Ethereum#Key
+<https://w3id.org/def/Ethereum#Key> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Ethereum#Key> <http://purl.org/dc/elements/1.1/description> "Specific storage locations accessed in a contract" .
+<https://w3id.org/def/Ethereum#Key> <http://www.w3.org/2000/01/rdf-schema#label> "Key" .
 # 
-# https://w3id.org/def/Ethereum#/Transaction
-<https://w3id.org/def/Ethereum#/Transaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/Ethereum#/Transaction> <http://purl.org/dc/elements/1.1/description> "Encoded operations executed and recorded the chain" .
-<https://w3id.org/def/Ethereum#/Transaction> <http://www.w3.org/2000/01/rdf-schema#label> "Transaction" .
+# https://w3id.org/def/Ethereum#Transaction
+<https://w3id.org/def/Ethereum#Transaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Ethereum#Transaction> <http://purl.org/dc/elements/1.1/description> "Encoded operations executed and recorded the chain" .
+<https://w3id.org/def/Ethereum#Transaction> <http://www.w3.org/2000/01/rdf-schema#label> "Transaction" .
 # 
-# https://w3id.org/def/Ethereum#/Withdrawal
-<https://w3id.org/def/Ethereum#/Withdrawal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/Ethereum#/Withdrawal> <http://purl.org/dc/elements/1.1/description> "Process of retrieving funds from a contract" .
-<https://w3id.org/def/Ethereum#/Withdrawal> <http://www.w3.org/2000/01/rdf-schema#label> "Withdrawal" .
+# https://w3id.org/def/Ethereum#Withdrawal
+<https://w3id.org/def/Ethereum#Withdrawal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/Ethereum#Withdrawal> <http://purl.org/dc/elements/1.1/description> "Process of retrieving funds from a contract" .
+<https://w3id.org/def/Ethereum#Withdrawal> <http://www.w3.org/2000/01/rdf-schema#label> "Withdrawal" .
 # 
 # https://w3id.org/def/SolidityABI#ApplicationBinaryInterface
 <https://w3id.org/def/SolidityABI#ApplicationBinaryInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
