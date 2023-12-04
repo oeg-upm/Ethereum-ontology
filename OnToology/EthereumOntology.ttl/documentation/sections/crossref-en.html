@@ -13,10 +13,10 @@ This section provides details for each class and property defined by Ethereum On
             title="https://w3id.org/def/SolidityABI#ApplicationBinaryInterface">Application Binary Interface</a>
       </li>
       <li>
-         <a href="#http://ethon.consensys.net/Block" title="http://ethon.consensys.net/Block">Block</a>
+         <a href="#https://w3id.org/def/Ethereum#Block" title="https://w3id.org/def/Ethereum#Block">Block</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/Ethereum#Block" title="https://w3id.org/def/Ethereum#Block">Block</a>
+         <a href="#http://ethon.consensys.net/Block" title="http://ethon.consensys.net/Block">EthOn Block</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/Ethereum#Key" title="https://w3id.org/def/Ethereum#Key">Key</a>
@@ -69,24 +69,6 @@ This section provides details for each class and property defined by Ethereum On
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://ethon.consensys.net/Block">
-      <h3>Block<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://ethon.consensys.net/Block</p>
-      <div class="info">
-         <span class="markdown">The block class that is part of the EthOn ontology</span>
-      </div>
-      <dl class="description">
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#https://w3id.org/def/Ethereum#hasBehaviour" title="https://w3id.org/def/Ethereum#hasBehaviour">has behaviour</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="https://w3id.org/def/Ethereum#Block">
       <h3>Block<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -123,6 +105,29 @@ This section provides details for each class and property defined by Ethereum On
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/Ethereum#transactionsRoot" title="https://w3id.org/def/Ethereum#transactionsRoot">transactions root</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/Ethereum#withdrawalRoot" title="https://w3id.org/def/Ethereum#withdrawalRoot">withdrawal root</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/Ethereum#hasBlock" title="https://w3id.org/def/Ethereum#hasBlock">has block</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ethon.consensys.net/Block">
+      <h3>EthOn Block<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ethon.consensys.net/Block</p>
+      <div class="info">
+         <span class="markdown">The block class that is part of the EthOn ontology</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/Ethereum#hasBehaviour" title="https://w3id.org/def/Ethereum#hasBehaviour">has behaviour</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -171,6 +176,7 @@ This section provides details for each class and property defined by Ethereum On
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/Ethereum#gasPrice" title="https://w3id.org/def/Ethereum#gasPrice">gas price</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/Ethereum#hasABI" title="https://w3id.org/def/Ethereum#hasABI">has abi</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/Ethereum#hasAccessList" title="https://w3id.org/def/Ethereum#hasAccessList">has access list</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/Ethereum#hasBlock" title="https://w3id.org/def/Ethereum#hasBlock">has block</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/Ethereum#input" title="https://w3id.org/def/Ethereum#input">input</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/Ethereum#maxFeePerGas" title="https://w3id.org/def/Ethereum#maxFeePerGas">max fee per gas</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/Ethereum#maxPriorityFeePerGas"
@@ -230,6 +236,9 @@ This section provides details for each class and property defined by Ethereum On
       </li>
       <li>
          <a href="#https://w3id.org/def/Ethereum#hasBehaviour" title="https://w3id.org/def/Ethereum#hasBehaviour">has behaviour</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/Ethereum#hasBlock" title="https://w3id.org/def/Ethereum#hasBlock">has block</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/Ethereum#hasKey" title="https://w3id.org/def/Ethereum#hasKey">has key</a>
@@ -311,7 +320,32 @@ This section provides details for each class and property defined by Ethereum On
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://ethon.consensys.net/Block" title="http://ethon.consensys.net/Block">Block</a>
+               <a href="#http://ethon.consensys.net/Block" title="http://ethon.consensys.net/Block">EthOn Block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/Ethereum#hasBlock">
+      <h3>has block<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/Ethereum#hasBlock</p>
+      <div class="info">
+         <span class="markdown">The block related to a transaction</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/Ethereum#Transaction" title="https://w3id.org/def/Ethereum#Transaction">Transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/Ethereum#Block" title="https://w3id.org/def/Ethereum#Block">Block</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

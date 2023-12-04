@@ -98,6 +98,18 @@
     
 
 
+    <!-- https://w3id.org/def/Ethereum#hasBlock -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/Ethereum#hasBlock">
+        <rdfs:domain rdf:resource="https://w3id.org/def/Ethereum#Transaction"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/Ethereum#Block"/>
+        <dc:description>The block related to a transaction</dc:description>
+        <rdfs:label>has block</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/Ethereum#hasKey -->
 
 
@@ -688,7 +700,7 @@
 
     <owl:Class rdf:about="http://ethon.consensys.net/Block">
         <dc:description>The block class that is part of the EthOn ontology</dc:description>
-        <rdfs:label>Block</rdfs:label>
+        <rdfs:label>EthOn Block</rdfs:label>
     </owl:Class>
     
 

@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="50" parse.nodes="10" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="51" parse.nodes="10" parse.order="free">
       <node id="nid_owl:Thing">
          <data key="d0">
             <y:ShapeNode>
@@ -509,7 +509,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:blockNumber37" source="nid_base:Transaction" target="nid_xsd:integer">
+    <edge id="eid_base:hasBlock37" source="nid_base:Transaction" target="nid_base:Block">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">base:hasBlock</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_base:blockNumber38" source="nid_base:Transaction" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -532,7 +543,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasABI38" source="nid_base:Transaction" target="nid_https://w3id.org/def/SolidityABI#ApplicationBinaryInterface">
+    <edge id="eid_base:hasABI39" source="nid_base:Transaction" target="nid_https://w3id.org/def/SolidityABI#ApplicationBinaryInterface">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -543,7 +554,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:receiptsRoot39" source="nid_base:Block" target="nid_xsd:string">
+    <edge id="eid_base:receiptsRoot40" source="nid_base:Block" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -554,7 +565,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:totalDifficulty40" source="nid_base:Block" target="nid_xsd:integer">
+    <edge id="eid_base:totalDifficulty41" source="nid_base:Block" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -565,7 +576,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:creates41" source="nid_base:Transaction" target="nid_xsd:string">
+    <edge id="eid_base:creates42" source="nid_base:Transaction" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -576,7 +587,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:maxFeePerGas42" source="nid_base:Transaction" target="nid_xsd:integer">
+    <edge id="eid_base:maxFeePerGas43" source="nid_base:Transaction" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -599,7 +610,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_base:hasKey43" source="nid_base:AccessList" target="nid_base:Key">
+    <edge id="eid_base:hasKey44" source="nid_base:AccessList" target="nid_base:Key">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -610,7 +621,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasAccessList44" source="nid_base:Transaction" target="nid_base:AccessList">
+    <edge id="eid_base:hasAccessList45" source="nid_base:Transaction" target="nid_base:AccessList">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -621,7 +632,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasWithdrawal45" source="nid_base:Block" target="nid_base:Withdrawal">
+    <edge id="eid_base:hasWithdrawal46" source="nid_base:Block" target="nid_base:Withdrawal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -632,7 +643,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:maxPriorityFeePerGas46" source="nid_base:Transaction" target="nid_xsd:integer">
+    <edge id="eid_base:maxPriorityFeePerGas47" source="nid_base:Transaction" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -643,7 +654,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:validatorIndex47" source="nid_base:Withdrawal" target="nid_xsd:string">
+    <edge id="eid_base:validatorIndex48" source="nid_base:Withdrawal" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -654,7 +665,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:hasTransaction48" source="nid_base:Block" target="nid_base:Transaction">
+    <edge id="eid_base:hasTransaction49" source="nid_base:Block" target="nid_base:Transaction">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -665,7 +676,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_base:gasUsed49" source="nid_base:Block" target="nid_xsd:integer">
+    <edge id="eid_base:gasUsed50" source="nid_base:Block" target="nid_xsd:integer">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

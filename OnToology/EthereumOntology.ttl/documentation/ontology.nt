@@ -52,6 +52,13 @@
 <https://w3id.org/def/Ethereum#hasBehaviour> <http://purl.org/dc/elements/1.1/description> "Behaviour of the block represented in the EthOn ontology" .
 <https://w3id.org/def/Ethereum#hasBehaviour> <http://www.w3.org/2000/01/rdf-schema#label> "has behaviour" .
 # 
+# https://w3id.org/def/Ethereum#hasBlock
+<https://w3id.org/def/Ethereum#hasBlock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/Ethereum#hasBlock> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#Transaction> .
+<https://w3id.org/def/Ethereum#hasBlock> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/Ethereum#Block> .
+<https://w3id.org/def/Ethereum#hasBlock> <http://purl.org/dc/elements/1.1/description> "The block related to a transaction" .
+<https://w3id.org/def/Ethereum#hasBlock> <http://www.w3.org/2000/01/rdf-schema#label> "has block" .
+# 
 # https://w3id.org/def/Ethereum#hasKey
 <https://w3id.org/def/Ethereum#hasKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/Ethereum#hasKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/Ethereum#AccessList> .
@@ -399,7 +406,7 @@
 # http://ethon.consensys.net/Block
 <http://ethon.consensys.net/Block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ethon.consensys.net/Block> <http://purl.org/dc/elements/1.1/description> "The block class that is part of the EthOn ontology" .
-<http://ethon.consensys.net/Block> <http://www.w3.org/2000/01/rdf-schema#label> "Block" .
+<http://ethon.consensys.net/Block> <http://www.w3.org/2000/01/rdf-schema#label> "EthOn Block" .
 # 
 # https://w3id.org/def/Ethereum#AccessList
 <https://w3id.org/def/Ethereum#AccessList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
