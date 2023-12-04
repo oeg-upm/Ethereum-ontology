@@ -5,7 +5,7 @@
     "@value" : "The block class that is part of the EthOn ontology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Block"
+    "@value" : "EthOn Block"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
@@ -345,6 +345,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://ethon.consensys.net/Block"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/Ethereum#hasBlock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The block related to a transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/Ethereum#Transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has block"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/Ethereum#Block"
   } ]
 }, {
   "@id" : "https://w3id.org/def/Ethereum#hasKey",

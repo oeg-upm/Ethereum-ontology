@@ -57,6 +57,14 @@
               rdfs:label "has behaviour" .
 
 
+###  https://w3id.org/def/Ethereum#hasBlock
+:hasBlock rdf:type owl:ObjectProperty ;
+          rdfs:domain :Transaction ;
+          rdfs:range :Block ;
+          <http://purl.org/dc/elements/1.1/description> "The block related to a transaction" ;
+          rdfs:label "has block" .
+
+
 ###  https://w3id.org/def/Ethereum#hasKey
 :hasKey rdf:type owl:ObjectProperty ;
         rdfs:domain :AccessList ;
@@ -441,7 +449,7 @@
 ###  http://ethon.consensys.net/Block
 <http://ethon.consensys.net/Block> rdf:type owl:Class ;
                                    <http://purl.org/dc/elements/1.1/description> "The block class that is part of the EthOn ontology" ;
-                                   rdfs:label "Block" .
+                                   rdfs:label "EthOn Block" .
 
 
 ###  https://w3id.org/def/Ethereum#AccessList

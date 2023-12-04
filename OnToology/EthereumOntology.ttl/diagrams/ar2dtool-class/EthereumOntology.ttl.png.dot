@@ -39,6 +39,7 @@ node [shape = rectangle, color="orange"]; "https://w3id.org/def/SolidityABI#Appl
 	"base:Block" -> "xsd:string" [ label = "base:author" ];
 	"base:Transaction" -> "xsd:string" [ label = "base:publicKey" ];
 	"base:Transaction" -> "xsd:string" [ label = "base:to" ];
+	"base:Transaction" -> "base:Block" [ label = "base:hasBlock" ];
 	"base:Transaction" -> "xsd:integer" [ label = "base:blockNumber" ];
 	"base:Transaction" -> "https://w3id.org/def/SolidityABI#ApplicationBinaryInterface" [ label = "base:hasABI" ];
 	"base:Block" -> "xsd:string" [ label = "base:receiptsRoot" ];
