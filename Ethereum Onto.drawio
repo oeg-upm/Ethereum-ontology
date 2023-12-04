@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-12-04T13:12:14.132Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="8N-iOxJH_FD6q9b1tBSJ" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2023-12-04T17:43:31.293Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="sKrJkTMsVHunIqSUgD51" version="22.1.2" type="device">
   <diagram name="Página-1" id="SBtXCQusfcoDAzW-KhdI">
-    <mxGraphModel dx="746" dy="609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1082" dy="883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="483" y="865" width="253" height="90" as="geometry" />
         </mxCell>
         <mxCell id="7OYhp2xL0KcFC6VSOEil-1" value="&lt;div&gt;&lt;b&gt;eth&lt;/b&gt;: https://w3id.org/def/EthereumOntology/&lt;/div&gt;&lt;div&gt;&lt;b&gt;abi:&lt;/b&gt;&amp;nbsp;https://w3id.org/def/SolidityABI/&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;ethon:&amp;nbsp;&lt;/b&gt;http://ethon.consensys.net/&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
-          <mxGeometry x="110" y="860" width="310" height="100" as="geometry" />
+          <mxGeometry x="110" y="860" width="310" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7OYhp2xL0KcFC6VSOEil-8" value="eth:author: string&lt;br&gt;eth:baseFeePerGas: integer&lt;br&gt;eth:difficulty: integer&lt;br&gt;eth:extraData: string&lt;br&gt;eth:gasLimit: integer&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;eth:gasUsed: integer&lt;br&gt;eth:hash:string&lt;br&gt;eth:logsBloom: string&lt;br&gt;eth:miner: string&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;eth:mixHash: string&lt;br&gt;eth:nonce: integer&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;eth:number: integer&lt;br&gt;eth:parentHash: string&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;eth:receiptsRoot: string&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;eth:sha3Uncles: string&lt;br&gt;eth:size: integer&lt;br&gt;eth:stateRoot: string&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;eth:timestamp: integer&lt;br&gt;eth:totalDifficulty: integer&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;eth:transactionsRoot: string&lt;br&gt;eth:withdrawalRoot: string" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" parent="1" vertex="1">
           <mxGeometry x="100" y="250" width="219" height="320" as="geometry" />
