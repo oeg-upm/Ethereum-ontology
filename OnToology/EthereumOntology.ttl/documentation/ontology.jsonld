@@ -17,7 +17,7 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/",
+  "@id" : "https://w3id.org/def/Ethereum#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Juan Cano-Benito"
@@ -31,10 +31,11 @@
     "@value" : "Ethereum Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "1.0"
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.1"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/AccessList",
+  "@id" : "https://w3id.org/def/Ethereum#/AccessList",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A specify address and keys accessed during the transaction"
@@ -43,7 +44,7 @@
     "@value" : "Access List"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/Block",
+  "@id" : "https://w3id.org/def/Ethereum#/Block",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A transaction and other data recorded on the chain"
@@ -52,16 +53,16 @@
     "@value" : "Block"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/Keys",
+  "@id" : "https://w3id.org/def/Ethereum#/Key",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Specific storage locations accessed in a contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Keys"
+    "@value" : "Key"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/Transaction",
+  "@id" : "https://w3id.org/def/Ethereum#/Transaction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Encoded operations executed and recorded the chain"
@@ -70,292 +71,274 @@
     "@value" : "Transaction"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/Withdrawals",
+  "@id" : "https://w3id.org/def/Ethereum#/Withdrawal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Process of retrieving funds from a contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Withdrawals"
+    "@value" : "Withdrawal"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/addressAccessList",
+  "@id" : "https://w3id.org/def/Ethereum#/address",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "The contract address being accessed within the AccessList"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/AccessList"
+    "@value" : "The contract address being accessed within the AccessList and Withdrawals"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "address access list"
+    "@value" : "address"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/addressWithdrawal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "The destination address where the funds are to be sent post withdrawal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Withdrawals"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "address withdrawal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/EthereumOntology/amountWithdrawal",
+  "@id" : "https://w3id.org/def/Ethereum#/amount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The quantity of funds (usually measured in Ether) being withdrawn"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Withdrawals"
+    "@id" : "https://w3id.org/def/Ethereum#/Withdrawal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "amount withdrawal"
+    "@value" : "amount"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/authorBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/author",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Address of the individual who proposed the block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "author block"
+    "@value" : "author"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/baseFeePerGasBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/baseFeePerGas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The base fee value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "base fee per gas block"
+    "@value" : "base fee per gas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/blockHashTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/blockHash",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Unique identifier of the block containing transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "block hash transaction"
+    "@value" : "block hash"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/blockNumberTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/blockNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The number of the current block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "block number transaction"
+    "@value" : "block number"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/chainIdTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/chainId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Identifies the specific Ethereum blockchain instance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "chain id transaction"
+    "@value" : "chain id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/createsTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/creates",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Contract address created if transaction is a contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "creates transaction"
+    "@value" : "creates"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/difficultyBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/difficulty",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Represents how hard it is to mine a block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "difficulty block"
+    "@value" : "difficulty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/extraDataBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/extraData",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Arbitrary additional data as raw bytes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "extra data block"
+    "@value" : "extra data"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/fromTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/from",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Address of the sender initiating the transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "from transaction"
+    "@value" : "from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/gasLimitBlock",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Maximum gas allowed in this block"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "gas limit block"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/EthereumOntology/gasPriceTransaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Cost per unit of gas specified for the transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "gas price transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/EthereumOntology/gasTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/gas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Units of computational effort required to execute transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "gas transaction"
+    "@value" : "gas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/gasUsedBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/gasLimit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Maximum gas allowed in this block"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gas limit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/Ethereum#/gasPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Cost per unit of gas specified for the transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gas price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/Ethereum#/gasUsed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The actual amount of gas used in this block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "gas used block"
+    "@value" : "gas used"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/hasABI",
+  "@id" : "https://w3id.org/def/Ethereum#/hasABI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Specification for smart contract interactions on Ethereum"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has abi"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/SolidityABI/ABI"
+    "@id" : "https://w3id.org/def/SolidityABI#ApplicationBinaryInterface"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/hasAccessList",
+  "@id" : "https://w3id.org/def/Ethereum#/hasAccessList",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A list specifying addresses and keys accessed during the transaction, optimizing gas usage and enabling more predictable gas costs"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has access list"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/AccessList"
+    "@id" : "https://w3id.org/def/Ethereum#/AccessList"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/hasBehaviour",
+  "@id" : "https://w3id.org/def/Ethereum#/hasBehaviour",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Behaviour of the block represented in the EthOn ontology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has behaviour"
@@ -364,118 +347,100 @@
     "@id" : "http://ethon.consensys.net/Block"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/hasKeys",
+  "@id" : "https://w3id.org/def/Ethereum#/hasKey",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Specific storage locations accessed in a contract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/AccessList"
+    "@id" : "https://w3id.org/def/Ethereum#/AccessList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has keys"
+    "@value" : "has key"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Keys"
+    "@id" : "https://w3id.org/def/Ethereum#/Key"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/hasTransactions",
+  "@id" : "https://w3id.org/def/Ethereum#/hasTransaction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Set of operations encoded and transmitted on the network"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has transactions"
+    "@value" : "has transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/hasWithdrawals",
+  "@id" : "https://w3id.org/def/Ethereum#/hasWithdrawal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Process of moving funds from a contract to an address"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has withdrawals"
+    "@value" : "has withdrawal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Withdrawals"
+    "@id" : "https://w3id.org/def/Ethereum#/Withdrawal"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/hashBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/hash",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Hash of execution block"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@value" : "Hash of execution block and transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hash block"
+    "@value" : "hash"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/hashTransaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Unique identifier of the transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hash transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/EthereumOntology/indexWithdrawal",
+  "@id" : "https://w3id.org/def/Ethereum#/index",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A unique identifier for the withdrawal transaction, helping to organize and track transactions within a block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Withdrawals"
+    "@id" : "https://w3id.org/def/Ethereum#/Withdrawal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "index withdrawal"
+    "@value" : "index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/inputTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/input",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Data sent with transaction, often contract interaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "input transaction"
+    "@value" : "input"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/key",
+  "@id" : "https://w3id.org/def/Ethereum#/key",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The storage key being accessed within that contract address in the AccessList"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Keys"
+    "@id" : "https://w3id.org/def/Ethereum#/Key"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "key"
@@ -484,402 +449,384 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/logsBloomBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/logsBloom",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Data structure containing event logs"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "logs bloom block"
+    "@value" : "logs bloom"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/maxFeePerGas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Maximum fee per gas unit for transaction inclusion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "max fee per gas transaction"
+    "@value" : "max fee per gas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/maxPriorityFeePerGas",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Tip to miner for transaction processing priority"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "max priority fee per gas transaction"
+    "@value" : "max priority fee per gas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/minerBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/miner",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Address of the miner who successfully mined the block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "miner block"
+    "@value" : "miner"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/mixHashBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/mixHash",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Hash proving sufficient computational work with nonce"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "mix hash block"
+    "@value" : "mix hash"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/nonceBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/nonce",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "A number altered to meet a specific cryptographic condition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@value" : "A number altered to meet a specific cryptographic condition for block and transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "nonce block"
+    "@value" : "nonce"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/nonceTransaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Number of transactions sent from the address of the sender"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "nonce transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/EthereumOntology/numberBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/number",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The number of the current block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "number block"
+    "@value" : "number"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/parentHashBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/parentHash",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Hash of the parent block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "parent hash block"
+    "@value" : "parent hash"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/publicKeyTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/publicKey",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Public key of the sender, derived from the private key"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "public key transaction"
+    "@value" : "public key"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/rTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/r",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Cryptographic signature part of the transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "r transaction"
+    "@value" : "r"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/receiptsRootBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/receiptsRoot",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Hash of the transaction receipts trie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "receipts root block"
+    "@value" : "receipts root"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/sTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/s",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Cryptographic signature part of the transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "s transaction"
+    "@value" : "s"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/sha3UnclesBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/sha3Uncles",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "SHA3 hash of the list of uncle blocks included"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "sha3 uncles block"
+    "@value" : "sha3 uncles"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/sizeBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/size",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The size of the block in bytes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "size block"
+    "@value" : "size"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/stateRootBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/stateRoot",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Root hash for the global state after applying changes in this block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "state root block"
+    "@value" : "state root"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/timestampBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/timestamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The block time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "timestamp block"
+    "@value" : "timestamp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/toTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/to",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Address of the receiver or contract interacting with"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "to transaction"
+    "@value" : "to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/totalDifficultyBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/totalDifficulty",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Sum of the difficulty of this block and that of all the previous blocks in the chain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "total difficulty block"
+    "@value" : "total difficulty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/transactionIndexTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/transactionIndex",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Position of the transaction within the block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "transaction index transaction"
+    "@value" : "transaction index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/transactionsRootBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/transactionsRoot",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Root hash of the transactions in the payload"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "transactions root block"
+    "@value" : "transactions root"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/typeTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/type",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Indicates the transaction type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "type transaction"
+    "@value" : "type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/vTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/v",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Recovery ID, part of the cryptographic signature of the transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "v transaction"
+    "@value" : "v"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal",
+  "@id" : "https://w3id.org/def/Ethereum#/validatorIndex",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The unique identifier of the validator initiating the withdrawal. In Ethereum 2.0, validators are network participants who propose and attest to blocks, and their activities are tracked via unique indices"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Withdrawals"
+    "@id" : "https://w3id.org/def/Ethereum#/Withdrawal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "validator index withdrawal"
+    "@value" : "validator index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/valueTransaction",
+  "@id" : "https://w3id.org/def/Ethereum#/value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Amount of Ether being transferred in Wei"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Transaction"
+    "@id" : "https://w3id.org/def/Ethereum#/Transaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "value transaction"
+    "@value" : "value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/EthereumOntology/withdrawalRootBlock",
+  "@id" : "https://w3id.org/def/Ethereum#/withdrawalRoot",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Root hash of the withdrawals in the payload"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/def/EthereumOntology/Block"
+    "@id" : "https://w3id.org/def/Ethereum#/Block"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "withdrawal root block"
+    "@value" : "withdrawal root"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/SolidityABI/ABI",
+  "@id" : "https://w3id.org/def/SolidityABI#ApplicationBinaryInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Specification for smart contract interactions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ABI"
+    "@value" : "Application Binary Interface"
   } ]
 } ]
