@@ -1,17 +1,17 @@
-@prefix : <https://w3id.org/def/EthereumOntology/> .
+@prefix : <https://w3id.org/def/Ethereum#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/def/EthereumOntology/> .
+@base <https://w3id.org/def/Ethereum#> .
 
-<https://w3id.org/def/EthereumOntology/> rdf:type owl:Ontology ;
-                                          <http://purl.org/dc/elements/1.1/creator> "Juan Cano-Benito" ,
-                                                                                    "http://www.garcia-castro.com/foaf.rdf#me" ;
-                                          <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the Ethereum blocks." ;
-                                          <http://purl.org/dc/elements/1.1/title> "Ethereum Ontology" ;
-                                          owl:versionInfo "1.0" .
+<https://w3id.org/def/Ethereum#> rdf:type owl:Ontology ;
+                                  <http://purl.org/dc/elements/1.1/creator> "Juan Cano-Benito" ,
+                                                                            "http://www.garcia-castro.com/foaf.rdf#me" ;
+                                  <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the Ethereum blocks." ;
+                                  <http://purl.org/dc/elements/1.1/title> "Ethereum Ontology" ;
+                                  owl:versionInfo 1.1 .
 
 #################################################################
 #    Annotation properties
@@ -33,432 +33,405 @@
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/def/EthereumOntology/hasABI
-:hasABI rdf:type owl:ObjectProperty ;
-        rdfs:domain :Transaction ;
-        rdfs:range <https://w3id.org/def/SolidityABI/ABI> ;
-        <http://purl.org/dc/elements/1.1/description> "Specification for smart contract interactions on Ethereum" ;
-        rdfs:label "has abi" .
+###  https://w3id.org/def/Ethereum#/hasABI
+<https://w3id.org/def/Ethereum#/hasABI> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                        rdfs:range <https://w3id.org/def/SolidityABI#ApplicationBinaryInterface> ;
+                                        <http://purl.org/dc/elements/1.1/description> "Specification for smart contract interactions on Ethereum" ;
+                                        rdfs:label "has abi" .
 
 
-###  https://w3id.org/def/EthereumOntology/hasAccessList
-:hasAccessList rdf:type owl:ObjectProperty ;
-               rdfs:domain :Transaction ;
-               rdfs:range :AccessList ;
-               <http://purl.org/dc/elements/1.1/description> "A list specifying addresses and keys accessed during the transaction, optimizing gas usage and enabling more predictable gas costs" ;
-               rdfs:label "has access list" .
+###  https://w3id.org/def/Ethereum#/hasAccessList
+<https://w3id.org/def/Ethereum#/hasAccessList> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                               rdfs:range <https://w3id.org/def/Ethereum#/AccessList> ;
+                                               <http://purl.org/dc/elements/1.1/description> "A list specifying addresses and keys accessed during the transaction, optimizing gas usage and enabling more predictable gas costs" ;
+                                               rdfs:label "has access list" .
 
 
-###  https://w3id.org/def/EthereumOntology/hasBehaviour
-:hasBehaviour rdf:type owl:ObjectProperty ;
-              rdfs:domain :Block ;
-              rdfs:range <http://ethon.consensys.net/Block> ;
-              <http://purl.org/dc/elements/1.1/description> "Behaviour of the block represented in the EthOn ontology" ;
-              rdfs:label "has behaviour" .
+###  https://w3id.org/def/Ethereum#/hasBehaviour
+<https://w3id.org/def/Ethereum#/hasBehaviour> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                              rdfs:range <http://ethon.consensys.net/Block> ;
+                                              <http://purl.org/dc/elements/1.1/description> "Behaviour of the block represented in the EthOn ontology" ;
+                                              rdfs:label "has behaviour" .
 
 
-###  https://w3id.org/def/EthereumOntology/hasKeys
-:hasKeys rdf:type owl:ObjectProperty ;
-         rdfs:domain :AccessList ;
-         rdfs:range :Keys ;
-         <http://purl.org/dc/elements/1.1/description> "Specific storage locations accessed in a contract" ;
-         rdfs:label "has keys" .
+###  https://w3id.org/def/Ethereum#/hasKey
+<https://w3id.org/def/Ethereum#/hasKey> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://w3id.org/def/Ethereum#/AccessList> ;
+                                        rdfs:range <https://w3id.org/def/Ethereum#/Key> ;
+                                        <http://purl.org/dc/elements/1.1/description> "Specific storage locations accessed in a contract" ;
+                                        rdfs:label "has key" .
 
 
-###  https://w3id.org/def/EthereumOntology/hasTransactions
-:hasTransactions rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Block ;
-                 rdfs:range :Transaction ;
-                 <http://purl.org/dc/elements/1.1/description> "Set of operations encoded and transmitted on the network" ;
-                 rdfs:label "has transactions" .
+###  https://w3id.org/def/Ethereum#/hasTransaction
+<https://w3id.org/def/Ethereum#/hasTransaction> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                                rdfs:range <https://w3id.org/def/Ethereum#/Transaction> ;
+                                                <http://purl.org/dc/elements/1.1/description> "Set of operations encoded and transmitted on the network" ;
+                                                rdfs:label "has transaction" .
 
 
-###  https://w3id.org/def/EthereumOntology/hasWithdrawals
-:hasWithdrawals rdf:type owl:ObjectProperty ;
-                rdfs:domain :Block ;
-                rdfs:range :Withdrawals ;
-                <http://purl.org/dc/elements/1.1/description> "Process of moving funds from a contract to an address" ;
-                rdfs:label "has withdrawals" .
+###  https://w3id.org/def/Ethereum#/hasWithdrawal
+<https://w3id.org/def/Ethereum#/hasWithdrawal> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                               rdfs:range <https://w3id.org/def/Ethereum#/Withdrawal> ;
+                                               <http://purl.org/dc/elements/1.1/description> "Process of moving funds from a contract to an address" ;
+                                               rdfs:label "has withdrawal" .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://w3id.org/def/EthereumOntology/addressAccessList
-:addressAccessList rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :AccessList ;
-                   rdfs:range xsd:string ;
-                   <http://purl.org/dc/elements/1.1/description> "The contract address being accessed within the AccessList" ;
-                   rdfs:label "address access list" .
-
-
-###  https://w3id.org/def/EthereumOntology/addressWithdrawal
-:addressWithdrawal rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Withdrawals ;
-                   rdfs:range xsd:string ;
-                   <http://purl.org/dc/elements/1.1/description> "The destination address where the funds are to be sent post withdrawal" ;
-                   rdfs:label "address withdrawal" .
-
-
-###  https://w3id.org/def/EthereumOntology/amountWithdrawal
-:amountWithdrawal rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Withdrawals ;
-                  rdfs:range xsd:integer ;
-                  <http://purl.org/dc/elements/1.1/description> "The quantity of funds (usually measured in Ether) being withdrawn" ;
-                  rdfs:label "amount withdrawal" .
-
-
-###  https://w3id.org/def/EthereumOntology/authorBlock
-:authorBlock rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Block ;
-             rdfs:range xsd:string ;
-             <http://purl.org/dc/elements/1.1/description> "Address of the individual who proposed the block" ;
-             rdfs:label "author block" .
-
-
-###  https://w3id.org/def/EthereumOntology/baseFeePerGasBlock
-:baseFeePerGasBlock rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Block ;
-                    rdfs:range xsd:integer ;
-                    <http://purl.org/dc/elements/1.1/description> "The base fee value" ;
-                    rdfs:label "base fee per gas block" .
-
-
-###  https://w3id.org/def/EthereumOntology/blockHashTransaction
-:blockHashTransaction rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Transaction ;
-                      rdfs:range xsd:string ;
-                      <http://purl.org/dc/elements/1.1/description> "Unique identifier of the block containing transaction" ;
-                      rdfs:label "block hash transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/blockNumberTransaction
-:blockNumberTransaction rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Transaction ;
-                        rdfs:range xsd:integer ;
-                        <http://purl.org/dc/elements/1.1/description> "The number of the current block" ;
-                        rdfs:label "block number transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/chainIdTransaction
-:chainIdTransaction rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Transaction ;
-                    rdfs:range xsd:integer ;
-                    <http://purl.org/dc/elements/1.1/description> "Identifies the specific Ethereum blockchain instance" ;
-                    rdfs:label "chain id transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/createsTransaction
-:createsTransaction rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Transaction ;
-                    rdfs:range xsd:string ;
-                    <http://purl.org/dc/elements/1.1/description> "Contract address created if transaction is a contract" ;
-                    rdfs:label "creates transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/difficultyBlock
-:difficultyBlock rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Block ;
-                 rdfs:range xsd:integer ;
-                 <http://purl.org/dc/elements/1.1/description> "Represents how hard it is to mine a block" ;
-                 rdfs:label "difficulty block" .
-
-
-###  https://w3id.org/def/EthereumOntology/extraDataBlock
-:extraDataBlock rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Block ;
-                rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/description> "Arbitrary additional data as raw bytes" ;
-                rdfs:label "extra data block" .
-
-
-###  https://w3id.org/def/EthereumOntology/fromTransaction
-:fromTransaction rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Transaction ;
-                 rdfs:range xsd:string ;
-                 <http://purl.org/dc/elements/1.1/description> "Address of the sender initiating the transaction" ;
-                 rdfs:label "from transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/gasLimitBlock
-:gasLimitBlock rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Block ;
-               rdfs:range xsd:integer ;
-               <http://purl.org/dc/elements/1.1/description> "Maximum gas allowed in this block" ;
-               rdfs:label "gas limit block" .
+###  https://w3id.org/def/Ethereum#/address
+<https://w3id.org/def/Ethereum#/address> rdf:type owl:DatatypeProperty ;
+                                         rdfs:range xsd:string ;
+                                         <http://purl.org/dc/elements/1.1/description> "The contract address being accessed within the AccessList and Withdrawals" ;
+                                         rdfs:label "address" .
+
+
+###  https://w3id.org/def/Ethereum#/amount
+<https://w3id.org/def/Ethereum#/amount> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://w3id.org/def/Ethereum#/Withdrawal> ;
+                                        rdfs:range xsd:integer ;
+                                        <http://purl.org/dc/elements/1.1/description> "The quantity of funds (usually measured in Ether) being withdrawn" ;
+                                        rdfs:label "amount" .
+
+
+###  https://w3id.org/def/Ethereum#/author
+<https://w3id.org/def/Ethereum#/author> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                        rdfs:range xsd:string ;
+                                        <http://purl.org/dc/elements/1.1/description> "Address of the individual who proposed the block" ;
+                                        rdfs:label "author" .
+
+
+###  https://w3id.org/def/Ethereum#/baseFeePerGas
+<https://w3id.org/def/Ethereum#/baseFeePerGas> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                               rdfs:range xsd:integer ;
+                                               <http://purl.org/dc/elements/1.1/description> "The base fee value" ;
+                                               rdfs:label "base fee per gas" .
+
+
+###  https://w3id.org/def/Ethereum#/blockHash
+<https://w3id.org/def/Ethereum#/blockHash> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                           rdfs:range xsd:string ;
+                                           <http://purl.org/dc/elements/1.1/description> "Unique identifier of the block containing transaction" ;
+                                           rdfs:label "block hash" .
+
+
+###  https://w3id.org/def/Ethereum#/blockNumber
+<https://w3id.org/def/Ethereum#/blockNumber> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                             rdfs:range xsd:integer ;
+                                             <http://purl.org/dc/elements/1.1/description> "The number of the current block" ;
+                                             rdfs:label "block number" .
+
+
+###  https://w3id.org/def/Ethereum#/chainId
+<https://w3id.org/def/Ethereum#/chainId> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                         rdfs:range xsd:integer ;
+                                         <http://purl.org/dc/elements/1.1/description> "Identifies the specific Ethereum blockchain instance" ;
+                                         rdfs:label "chain id" .
+
+
+###  https://w3id.org/def/Ethereum#/creates
+<https://w3id.org/def/Ethereum#/creates> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                         rdfs:range xsd:string ;
+                                         <http://purl.org/dc/elements/1.1/description> "Contract address created if transaction is a contract" ;
+                                         rdfs:label "creates" .
+
+
+###  https://w3id.org/def/Ethereum#/difficulty
+<https://w3id.org/def/Ethereum#/difficulty> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                            rdfs:range xsd:integer ;
+                                            <http://purl.org/dc/elements/1.1/description> "Represents how hard it is to mine a block" ;
+                                            rdfs:label "difficulty" .
+
+
+###  https://w3id.org/def/Ethereum#/extraData
+<https://w3id.org/def/Ethereum#/extraData> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                           rdfs:range xsd:string ;
+                                           <http://purl.org/dc/elements/1.1/description> "Arbitrary additional data as raw bytes" ;
+                                           rdfs:label "extra data" .
+
+
+###  https://w3id.org/def/Ethereum#/from
+<https://w3id.org/def/Ethereum#/from> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                      rdfs:range xsd:string ;
+                                      <http://purl.org/dc/elements/1.1/description> "Address of the sender initiating the transaction" ;
+                                      rdfs:label "from" .
+
+
+###  https://w3id.org/def/Ethereum#/gas
+<https://w3id.org/def/Ethereum#/gas> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                     rdfs:range xsd:integer ;
+                                     <http://purl.org/dc/elements/1.1/description> "Units of computational effort required to execute transaction" ;
+                                     rdfs:label "gas" .
+
+
+###  https://w3id.org/def/Ethereum#/gasLimit
+<https://w3id.org/def/Ethereum#/gasLimit> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                          rdfs:range xsd:integer ;
+                                          <http://purl.org/dc/elements/1.1/description> "Maximum gas allowed in this block" ;
+                                          rdfs:label "gas limit" .
 
 
-###  https://w3id.org/def/EthereumOntology/gasPriceTransaction
-:gasPriceTransaction rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :Transaction ;
-                     rdfs:range xsd:integer ;
-                     <http://purl.org/dc/elements/1.1/description> "Cost per unit of gas specified for the transaction" ;
-                     rdfs:label "gas price transaction" .
+###  https://w3id.org/def/Ethereum#/gasPrice
+<https://w3id.org/def/Ethereum#/gasPrice> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                          rdfs:range xsd:integer ;
+                                          <http://purl.org/dc/elements/1.1/description> "Cost per unit of gas specified for the transaction" ;
+                                          rdfs:label "gas price" .
 
 
-###  https://w3id.org/def/EthereumOntology/gasTransaction
-:gasTransaction rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Transaction ;
-                rdfs:range xsd:integer ;
-                <http://purl.org/dc/elements/1.1/description> "Units of computational effort required to execute transaction" ;
-                rdfs:label "gas transaction" .
+###  https://w3id.org/def/Ethereum#/gasUsed
+<https://w3id.org/def/Ethereum#/gasUsed> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                         rdfs:range xsd:integer ;
+                                         <http://purl.org/dc/elements/1.1/description> "The actual amount of gas used in this block" ;
+                                         rdfs:label "gas used" .
 
 
-###  https://w3id.org/def/EthereumOntology/gasUsedBlock
-:gasUsedBlock rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Block ;
-              rdfs:range xsd:integer ;
-              <http://purl.org/dc/elements/1.1/description> "The actual amount of gas used in this block" ;
-              rdfs:label "gas used block" .
+###  https://w3id.org/def/Ethereum#/hash
+<https://w3id.org/def/Ethereum#/hash> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:string ;
+                                      <http://purl.org/dc/elements/1.1/description> "Hash of execution block and transaction" ;
+                                      rdfs:label "hash" .
 
 
-###  https://w3id.org/def/EthereumOntology/hashBlock
-:hashBlock rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Block ;
-           rdfs:range xsd:string ;
-           <http://purl.org/dc/elements/1.1/description> "Hash of execution block" ;
-           rdfs:label "hash block" .
+###  https://w3id.org/def/Ethereum#/index
+<https://w3id.org/def/Ethereum#/index> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://w3id.org/def/Ethereum#/Withdrawal> ;
+                                       rdfs:range xsd:string ;
+                                       <http://purl.org/dc/elements/1.1/description> "A unique identifier for the withdrawal transaction, helping to organize and track transactions within a block" ;
+                                       rdfs:label "index" .
 
 
-###  https://w3id.org/def/EthereumOntology/hashTransaction
-:hashTransaction rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Transaction ;
-                 rdfs:range xsd:string ;
-                 <http://purl.org/dc/elements/1.1/description> "Unique identifier of the transaction" ;
-                 rdfs:label "hash transaction" .
+###  https://w3id.org/def/Ethereum#/input
+<https://w3id.org/def/Ethereum#/input> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                       rdfs:range xsd:string ;
+                                       <http://purl.org/dc/elements/1.1/description> "Data sent with transaction, often contract interaction" ;
+                                       rdfs:label "input" .
 
 
-###  https://w3id.org/def/EthereumOntology/indexWithdrawal
-:indexWithdrawal rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Withdrawals ;
-                 rdfs:range xsd:string ;
-                 <http://purl.org/dc/elements/1.1/description> "A unique identifier for the withdrawal transaction, helping to organize and track transactions within a block" ;
-                 rdfs:label "index withdrawal" .
+###  https://w3id.org/def/Ethereum#/key
+<https://w3id.org/def/Ethereum#/key> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <https://w3id.org/def/Ethereum#/Key> ;
+                                     rdfs:range xsd:string ;
+                                     <http://purl.org/dc/elements/1.1/description> "The storage key being accessed within that contract address in the AccessList" ;
+                                     rdfs:label "key" .
 
 
-###  https://w3id.org/def/EthereumOntology/inputTransaction
-:inputTransaction rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Transaction ;
-                  rdfs:range xsd:string ;
-                  <http://purl.org/dc/elements/1.1/description> "Data sent with transaction, often contract interaction" ;
-                  rdfs:label "input transaction" .
+###  https://w3id.org/def/Ethereum#/logsBloom
+<https://w3id.org/def/Ethereum#/logsBloom> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                           rdfs:range xsd:string ;
+                                           <http://purl.org/dc/elements/1.1/description> "Data structure containing event logs" ;
+                                           rdfs:label "logs bloom" .
 
 
-###  https://w3id.org/def/EthereumOntology/key
-:key rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Keys ;
-     rdfs:range xsd:string ;
-     <http://purl.org/dc/elements/1.1/description> "The storage key being accessed within that contract address in the AccessList" ;
-     rdfs:label "key" .
+###  https://w3id.org/def/Ethereum#/maxFeePerGas
+<https://w3id.org/def/Ethereum#/maxFeePerGas> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                              rdfs:range xsd:integer ;
+                                              <http://purl.org/dc/elements/1.1/description> "Maximum fee per gas unit for transaction inclusion" ;
+                                              rdfs:label "max fee per gas" .
 
 
-###  https://w3id.org/def/EthereumOntology/logsBloomBlock
-:logsBloomBlock rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Block ;
-                rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/description> "Data structure containing event logs" ;
-                rdfs:label "logs bloom block" .
+###  https://w3id.org/def/Ethereum#/maxPriorityFeePerGas
+<https://w3id.org/def/Ethereum#/maxPriorityFeePerGas> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                                      rdfs:range xsd:integer ;
+                                                      <http://purl.org/dc/elements/1.1/description> "Tip to miner for transaction processing priority" ;
+                                                      rdfs:label "max priority fee per gas" .
 
 
-###  https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction
-:maxFeePerGasTransaction rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :Transaction ;
-                         rdfs:range xsd:integer ;
-                         <http://purl.org/dc/elements/1.1/description> "Maximum fee per gas unit for transaction inclusion" ;
-                         rdfs:label "max fee per gas transaction" .
+###  https://w3id.org/def/Ethereum#/miner
+<https://w3id.org/def/Ethereum#/miner> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                       rdfs:range xsd:string ;
+                                       <http://purl.org/dc/elements/1.1/description> "Address of the miner who successfully mined the block" ;
+                                       rdfs:label "miner" .
 
 
-###  https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction
-:maxPriorityFeePerGasTransaction rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain :Transaction ;
-                                 rdfs:range xsd:integer ;
-                                 <http://purl.org/dc/elements/1.1/description> "Tip to miner for transaction processing priority" ;
-                                 rdfs:label "max priority fee per gas transaction" .
+###  https://w3id.org/def/Ethereum#/mixHash
+<https://w3id.org/def/Ethereum#/mixHash> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                         rdfs:range xsd:string ;
+                                         <http://purl.org/dc/elements/1.1/description> "Hash proving sufficient computational work with nonce" ;
+                                         rdfs:label "mix hash" .
 
 
-###  https://w3id.org/def/EthereumOntology/minerBlock
-:minerBlock rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Block ;
-            rdfs:range xsd:string ;
-            <http://purl.org/dc/elements/1.1/description> "Address of the miner who successfully mined the block" ;
-            rdfs:label "miner block" .
+###  https://w3id.org/def/Ethereum#/nonce
+<https://w3id.org/def/Ethereum#/nonce> rdf:type owl:DatatypeProperty ;
+                                       rdfs:range xsd:integer ;
+                                       <http://purl.org/dc/elements/1.1/description> "A number altered to meet a specific cryptographic condition for block and transaction" ;
+                                       rdfs:label "nonce" .
 
 
-###  https://w3id.org/def/EthereumOntology/mixHashBlock
-:mixHashBlock rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Block ;
-              rdfs:range xsd:string ;
-              <http://purl.org/dc/elements/1.1/description> "Hash proving sufficient computational work with nonce" ;
-              rdfs:label "mix hash block" .
+###  https://w3id.org/def/Ethereum#/number
+<https://w3id.org/def/Ethereum#/number> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                        rdfs:range xsd:integer ;
+                                        <http://purl.org/dc/elements/1.1/description> "The number of the current block" ;
+                                        rdfs:label "number" .
 
 
-###  https://w3id.org/def/EthereumOntology/nonceBlock
-:nonceBlock rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Block ;
-            rdfs:range xsd:integer ;
-            <http://purl.org/dc/elements/1.1/description> "A number altered to meet a specific cryptographic condition" ;
-            rdfs:label "nonce block" .
+###  https://w3id.org/def/Ethereum#/parentHash
+<https://w3id.org/def/Ethereum#/parentHash> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                            rdfs:range xsd:string ;
+                                            <http://purl.org/dc/elements/1.1/description> "Hash of the parent block" ;
+                                            rdfs:label "parent hash" .
 
 
-###  https://w3id.org/def/EthereumOntology/nonceTransaction
-:nonceTransaction rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Transaction ;
-                  rdfs:range xsd:integer ;
-                  <http://purl.org/dc/elements/1.1/description> "Number of transactions sent from the address of the sender" ;
-                  rdfs:label "nonce transaction" .
+###  https://w3id.org/def/Ethereum#/publicKey
+<https://w3id.org/def/Ethereum#/publicKey> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                           rdfs:range xsd:string ;
+                                           <http://purl.org/dc/elements/1.1/description> "Public key of the sender, derived from the private key" ;
+                                           rdfs:label "public key" .
 
 
-###  https://w3id.org/def/EthereumOntology/numberBlock
-:numberBlock rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Block ;
-             rdfs:range xsd:integer ;
-             <http://purl.org/dc/elements/1.1/description> "The number of the current block" ;
-             rdfs:label "number block" .
+###  https://w3id.org/def/Ethereum#/r
+<https://w3id.org/def/Ethereum#/r> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                   rdfs:range xsd:string ;
+                                   <http://purl.org/dc/elements/1.1/description> "Cryptographic signature part of the transaction" ;
+                                   rdfs:label "r" .
 
 
-###  https://w3id.org/def/EthereumOntology/parentHashBlock
-:parentHashBlock rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Block ;
-                 rdfs:range xsd:string ;
-                 <http://purl.org/dc/elements/1.1/description> "Hash of the parent block" ;
-                 rdfs:label "parent hash block" .
+###  https://w3id.org/def/Ethereum#/receiptsRoot
+<https://w3id.org/def/Ethereum#/receiptsRoot> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                              rdfs:range xsd:string ;
+                                              <http://purl.org/dc/elements/1.1/description> "Hash of the transaction receipts trie" ;
+                                              rdfs:label "receipts root" .
 
 
-###  https://w3id.org/def/EthereumOntology/publicKeyTransaction
-:publicKeyTransaction rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Transaction ;
-                      rdfs:range xsd:string ;
-                      <http://purl.org/dc/elements/1.1/description> "Public key of the sender, derived from the private key" ;
-                      rdfs:label "public key transaction" .
+###  https://w3id.org/def/Ethereum#/s
+<https://w3id.org/def/Ethereum#/s> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                   rdfs:range xsd:string ;
+                                   <http://purl.org/dc/elements/1.1/description> "Cryptographic signature part of the transaction" ;
+                                   rdfs:label "s" .
 
 
-###  https://w3id.org/def/EthereumOntology/rTransaction
-:rTransaction rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Transaction ;
-              rdfs:range xsd:string ;
-              <http://purl.org/dc/elements/1.1/description> "Cryptographic signature part of the transaction" ;
-              rdfs:label "r transaction" .
+###  https://w3id.org/def/Ethereum#/sha3Uncles
+<https://w3id.org/def/Ethereum#/sha3Uncles> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                            rdfs:range xsd:string ;
+                                            <http://purl.org/dc/elements/1.1/description> "SHA3 hash of the list of uncle blocks included" ;
+                                            rdfs:label "sha3 uncles" .
 
 
-###  https://w3id.org/def/EthereumOntology/receiptsRootBlock
-:receiptsRootBlock rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Block ;
-                   rdfs:range xsd:string ;
-                   <http://purl.org/dc/elements/1.1/description> "Hash of the transaction receipts trie" ;
-                   rdfs:label "receipts root block" .
+###  https://w3id.org/def/Ethereum#/size
+<https://w3id.org/def/Ethereum#/size> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                      rdfs:range xsd:integer ;
+                                      <http://purl.org/dc/elements/1.1/description> "The size of the block in bytes" ;
+                                      rdfs:label "size" .
 
 
-###  https://w3id.org/def/EthereumOntology/sTransaction
-:sTransaction rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Transaction ;
-              rdfs:range xsd:string ;
-              <http://purl.org/dc/elements/1.1/description> "Cryptographic signature part of the transaction" ;
-              rdfs:label "s transaction" .
+###  https://w3id.org/def/Ethereum#/stateRoot
+<https://w3id.org/def/Ethereum#/stateRoot> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                           rdfs:range xsd:string ;
+                                           <http://purl.org/dc/elements/1.1/description> "Root hash for the global state after applying changes in this block" ;
+                                           rdfs:label "state root" .
 
 
-###  https://w3id.org/def/EthereumOntology/sha3UnclesBlock
-:sha3UnclesBlock rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Block ;
-                 rdfs:range xsd:string ;
-                 <http://purl.org/dc/elements/1.1/description> "SHA3 hash of the list of uncle blocks included" ;
-                 rdfs:label "sha3 uncles block" .
-
-
-###  https://w3id.org/def/EthereumOntology/sizeBlock
-:sizeBlock rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Block ;
-           rdfs:range xsd:integer ;
-           <http://purl.org/dc/elements/1.1/description> "The size of the block in bytes" ;
-           rdfs:label "size block" .
-
-
-###  https://w3id.org/def/EthereumOntology/stateRootBlock
-:stateRootBlock rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Block ;
-                rdfs:range xsd:string ;
-                <http://purl.org/dc/elements/1.1/description> "Root hash for the global state after applying changes in this block" ;
-                rdfs:label "state root block" .
-
-
-###  https://w3id.org/def/EthereumOntology/timestampBlock
-:timestampBlock rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Block ;
-                rdfs:range xsd:integer ;
-                <http://purl.org/dc/elements/1.1/description> "The block time" ;
-                rdfs:label "timestamp block" .
-
-
-###  https://w3id.org/def/EthereumOntology/toTransaction
-:toTransaction rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Transaction ;
-               rdfs:range xsd:string ;
-               <http://purl.org/dc/elements/1.1/description> "Address of the receiver or contract interacting with" ;
-               rdfs:label "to transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/totalDifficultyBlock
-:totalDifficultyBlock rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Block ;
-                      rdfs:range xsd:integer ;
-                      <http://purl.org/dc/elements/1.1/description> "Sum of the difficulty of this block and that of all the previous blocks in the chain" ;
-                      rdfs:label "total difficulty block" .
-
-
-###  https://w3id.org/def/EthereumOntology/transactionIndexTransaction
-:transactionIndexTransaction rdf:type owl:DatatypeProperty ;
-                             rdfs:domain :Transaction ;
-                             rdfs:range xsd:integer ;
-                             <http://purl.org/dc/elements/1.1/description> "Position of the transaction within the block" ;
-                             rdfs:label "transaction index transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/transactionsRootBlock
-:transactionsRootBlock rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Block ;
-                       rdfs:range xsd:string ;
-                       <http://purl.org/dc/elements/1.1/description> "Root hash of the transactions in the payload" ;
-                       rdfs:label "transactions root block" .
-
-
-###  https://w3id.org/def/EthereumOntology/typeTransaction
-:typeTransaction rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Transaction ;
-                 rdfs:range xsd:string ;
-                 <http://purl.org/dc/elements/1.1/description> "Indicates the transaction type" ;
-                 rdfs:label "type transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/vTransaction
-:vTransaction rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Transaction ;
-              rdfs:range xsd:integer ;
-              <http://purl.org/dc/elements/1.1/description> "Recovery ID, part of the cryptographic signature of the transaction" ;
-              rdfs:label "v transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal
-:validatorIndexWithdrawal rdf:type owl:DatatypeProperty ;
-                          rdfs:domain :Withdrawals ;
-                          rdfs:range xsd:string ;
-                          <http://purl.org/dc/elements/1.1/description> "The unique identifier of the validator initiating the withdrawal. In Ethereum 2.0, validators are network participants who propose and attest to blocks, and their activities are tracked via unique indices" ;
-                          rdfs:label "validator index withdrawal" .
-
-
-###  https://w3id.org/def/EthereumOntology/valueTransaction
-:valueTransaction rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Transaction ;
-                  rdfs:range xsd:integer ;
-                  <http://purl.org/dc/elements/1.1/description> "Amount of Ether being transferred in Wei" ;
-                  rdfs:label "value transaction" .
-
-
-###  https://w3id.org/def/EthereumOntology/withdrawalRootBlock
-:withdrawalRootBlock rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :Block ;
-                     rdfs:range xsd:string ;
-                     <http://purl.org/dc/elements/1.1/description> "Root hash of the withdrawals in the payload" ;
-                     rdfs:label "withdrawal root block" .
+###  https://w3id.org/def/Ethereum#/timestamp
+<https://w3id.org/def/Ethereum#/timestamp> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                           rdfs:range xsd:integer ;
+                                           <http://purl.org/dc/elements/1.1/description> "The block time" ;
+                                           rdfs:label "timestamp" .
+
+
+###  https://w3id.org/def/Ethereum#/to
+<https://w3id.org/def/Ethereum#/to> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                    rdfs:range xsd:string ;
+                                    <http://purl.org/dc/elements/1.1/description> "Address of the receiver or contract interacting with" ;
+                                    rdfs:label "to" .
+
+
+###  https://w3id.org/def/Ethereum#/totalDifficulty
+<https://w3id.org/def/Ethereum#/totalDifficulty> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                                 rdfs:range xsd:integer ;
+                                                 <http://purl.org/dc/elements/1.1/description> "Sum of the difficulty of this block and that of all the previous blocks in the chain" ;
+                                                 rdfs:label "total difficulty" .
+
+
+###  https://w3id.org/def/Ethereum#/transactionIndex
+<https://w3id.org/def/Ethereum#/transactionIndex> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                                  rdfs:range xsd:integer ;
+                                                  <http://purl.org/dc/elements/1.1/description> "Position of the transaction within the block" ;
+                                                  rdfs:label "transaction index" .
+
+
+###  https://w3id.org/def/Ethereum#/transactionsRoot
+<https://w3id.org/def/Ethereum#/transactionsRoot> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                                  rdfs:range xsd:string ;
+                                                  <http://purl.org/dc/elements/1.1/description> "Root hash of the transactions in the payload" ;
+                                                  rdfs:label "transactions root" .
+
+
+###  https://w3id.org/def/Ethereum#/type
+<https://w3id.org/def/Ethereum#/type> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                      rdfs:range xsd:string ;
+                                      <http://purl.org/dc/elements/1.1/description> "Indicates the transaction type" ;
+                                      rdfs:label "type" .
+
+
+###  https://w3id.org/def/Ethereum#/v
+<https://w3id.org/def/Ethereum#/v> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                   rdfs:range xsd:integer ;
+                                   <http://purl.org/dc/elements/1.1/description> "Recovery ID, part of the cryptographic signature of the transaction" ;
+                                   rdfs:label "v" .
+
+
+###  https://w3id.org/def/Ethereum#/validatorIndex
+<https://w3id.org/def/Ethereum#/validatorIndex> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <https://w3id.org/def/Ethereum#/Withdrawal> ;
+                                                rdfs:range xsd:string ;
+                                                <http://purl.org/dc/elements/1.1/description> "The unique identifier of the validator initiating the withdrawal. In Ethereum 2.0, validators are network participants who propose and attest to blocks, and their activities are tracked via unique indices" ;
+                                                rdfs:label "validator index" .
+
+
+###  https://w3id.org/def/Ethereum#/value
+<https://w3id.org/def/Ethereum#/value> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <https://w3id.org/def/Ethereum#/Transaction> ;
+                                       rdfs:range xsd:integer ;
+                                       <http://purl.org/dc/elements/1.1/description> "Amount of Ether being transferred in Wei" ;
+                                       rdfs:label "value" .
+
+
+###  https://w3id.org/def/Ethereum#/withdrawalRoot
+<https://w3id.org/def/Ethereum#/withdrawalRoot> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <https://w3id.org/def/Ethereum#/Block> ;
+                                                rdfs:range xsd:string ;
+                                                <http://purl.org/dc/elements/1.1/description> "Root hash of the withdrawals in the payload" ;
+                                                rdfs:label "withdrawal root" .
 
 
 #################################################################
@@ -471,40 +444,40 @@
                                    rdfs:label "Block" .
 
 
-###  https://w3id.org/def/EthereumOntology/AccessList
-:AccessList rdf:type owl:Class ;
-            <http://purl.org/dc/elements/1.1/description> "A specify address and keys accessed during the transaction" ;
-            rdfs:label "Access List" .
+###  https://w3id.org/def/Ethereum#/AccessList
+<https://w3id.org/def/Ethereum#/AccessList> rdf:type owl:Class ;
+                                            <http://purl.org/dc/elements/1.1/description> "A specify address and keys accessed during the transaction" ;
+                                            rdfs:label "Access List" .
 
 
-###  https://w3id.org/def/EthereumOntology/Block
-:Block rdf:type owl:Class ;
-       <http://purl.org/dc/elements/1.1/description> "A transaction and other data recorded on the chain" ;
-       rdfs:label "Block" .
+###  https://w3id.org/def/Ethereum#/Block
+<https://w3id.org/def/Ethereum#/Block> rdf:type owl:Class ;
+                                       <http://purl.org/dc/elements/1.1/description> "A transaction and other data recorded on the chain" ;
+                                       rdfs:label "Block" .
 
 
-###  https://w3id.org/def/EthereumOntology/Keys
-:Keys rdf:type owl:Class ;
-      <http://purl.org/dc/elements/1.1/description> "Specific storage locations accessed in a contract" ;
-      rdfs:label "Keys" .
+###  https://w3id.org/def/Ethereum#/Key
+<https://w3id.org/def/Ethereum#/Key> rdf:type owl:Class ;
+                                     <http://purl.org/dc/elements/1.1/description> "Specific storage locations accessed in a contract" ;
+                                     rdfs:label "Key" .
 
 
-###  https://w3id.org/def/EthereumOntology/Transaction
-:Transaction rdf:type owl:Class ;
-             <http://purl.org/dc/elements/1.1/description> "Encoded operations executed and recorded the chain" ;
-             rdfs:label "Transaction" .
+###  https://w3id.org/def/Ethereum#/Transaction
+<https://w3id.org/def/Ethereum#/Transaction> rdf:type owl:Class ;
+                                             <http://purl.org/dc/elements/1.1/description> "Encoded operations executed and recorded the chain" ;
+                                             rdfs:label "Transaction" .
 
 
-###  https://w3id.org/def/EthereumOntology/Withdrawals
-:Withdrawals rdf:type owl:Class ;
-             <http://purl.org/dc/elements/1.1/description> "Process of retrieving funds from a contract" ;
-             rdfs:label "Withdrawals" .
+###  https://w3id.org/def/Ethereum#/Withdrawal
+<https://w3id.org/def/Ethereum#/Withdrawal> rdf:type owl:Class ;
+                                            <http://purl.org/dc/elements/1.1/description> "Process of retrieving funds from a contract" ;
+                                            rdfs:label "Withdrawal" .
 
 
-###  https://w3id.org/def/SolidityABI/ABI
-<https://w3id.org/def/SolidityABI/ABI> rdf:type owl:Class ;
-                                       <http://purl.org/dc/elements/1.1/description> "Specification for smart contract interactions" ;
-                                       rdfs:label "ABI" .
+###  https://w3id.org/def/SolidityABI#ApplicationBinaryInterface
+<https://w3id.org/def/SolidityABI#ApplicationBinaryInterface> rdf:type owl:Class ;
+                                                              <http://purl.org/dc/elements/1.1/description> "Specification for smart contract interactions" ;
+                                                              rdfs:label "Application Binary Interface" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
