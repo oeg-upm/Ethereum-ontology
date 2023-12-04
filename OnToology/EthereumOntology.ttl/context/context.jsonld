@@ -1,233 +1,233 @@
 {
   "@context" : {
     "miner" : {
-      "@id" : "https://w3id.org/def/Ethereum#/miner",
+      "@id" : "https://w3id.org/def/Ethereum#miner",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "transactionIndex" : {
-      "@id" : "https://w3id.org/def/Ethereum#/transactionIndex",
+      "@id" : "https://w3id.org/def/Ethereum#transactionIndex",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "gasLimit" : {
-      "@id" : "https://w3id.org/def/Ethereum#/gasLimit",
+      "@id" : "https://w3id.org/def/Ethereum#gasLimit",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "s" : {
-      "@id" : "https://w3id.org/def/Ethereum#/s",
+      "@id" : "https://w3id.org/def/Ethereum#s",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "ApplicationBinaryInterface" : {
       "@id" : "https://w3id.org/def/SolidityABI#ApplicationBinaryInterface"
     },
     "totalDifficulty" : {
-      "@id" : "https://w3id.org/def/Ethereum#/totalDifficulty",
+      "@id" : "https://w3id.org/def/Ethereum#totalDifficulty",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "chainId" : {
-      "@id" : "https://w3id.org/def/Ethereum#/chainId",
+      "@id" : "https://w3id.org/def/Ethereum#chainId",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "gasPrice" : {
-      "@id" : "https://w3id.org/def/Ethereum#/gasPrice",
+      "@id" : "https://w3id.org/def/Ethereum#gasPrice",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "validatorIndex" : {
-      "@id" : "https://w3id.org/def/Ethereum#/validatorIndex",
+      "@id" : "https://w3id.org/def/Ethereum#validatorIndex",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "index" : {
-      "@id" : "https://w3id.org/def/Ethereum#/index",
+      "@id" : "https://w3id.org/def/Ethereum#index",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "gasUsed" : {
-      "@id" : "https://w3id.org/def/Ethereum#/gasUsed",
+      "@id" : "https://w3id.org/def/Ethereum#gasUsed",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "withdrawalRoot" : {
-      "@id" : "https://w3id.org/def/Ethereum#/withdrawalRoot",
+      "@id" : "https://w3id.org/def/Ethereum#withdrawalRoot",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasWithdrawal" : {
-      "@id" : "https://w3id.org/def/Ethereum#/hasWithdrawal",
+      "@id" : "https://w3id.org/def/Ethereum#hasWithdrawal",
       "@type" : "@id"
     },
     "baseFeePerGas" : {
-      "@id" : "https://w3id.org/def/Ethereum#/baseFeePerGas",
+      "@id" : "https://w3id.org/def/Ethereum#baseFeePerGas",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "hash" : {
-      "@id" : "https://w3id.org/def/Ethereum#/hash",
+      "@id" : "https://w3id.org/def/Ethereum#hash",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "author" : {
-      "@id" : "https://w3id.org/def/Ethereum#/author",
+      "@id" : "https://w3id.org/def/Ethereum#author",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "key" : {
-      "@id" : "https://w3id.org/def/Ethereum#/key",
+      "@id" : "https://w3id.org/def/Ethereum#key",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "v" : {
-      "@id" : "https://w3id.org/def/Ethereum#/v",
+      "@id" : "https://w3id.org/def/Ethereum#v",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "receiptsRoot" : {
-      "@id" : "https://w3id.org/def/Ethereum#/receiptsRoot",
+      "@id" : "https://w3id.org/def/Ethereum#receiptsRoot",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "timestamp" : {
-      "@id" : "https://w3id.org/def/Ethereum#/timestamp",
+      "@id" : "https://w3id.org/def/Ethereum#timestamp",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "publicKey" : {
-      "@id" : "https://w3id.org/def/Ethereum#/publicKey",
+      "@id" : "https://w3id.org/def/Ethereum#publicKey",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Block" : {
-      "@id" : "https://w3id.org/def/Ethereum#/Block"
+      "@id" : "http://ethon.consensys.net/Block"
     },
     "blockNumber" : {
-      "@id" : "https://w3id.org/def/Ethereum#/blockNumber",
+      "@id" : "https://w3id.org/def/Ethereum#blockNumber",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "gas" : {
-      "@id" : "https://w3id.org/def/Ethereum#/gas",
+      "@id" : "https://w3id.org/def/Ethereum#gas",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "Key" : {
-      "@id" : "https://w3id.org/def/Ethereum#/Key"
+      "@id" : "https://w3id.org/def/Ethereum#Key"
     },
     "Withdrawal" : {
-      "@id" : "https://w3id.org/def/Ethereum#/Withdrawal"
+      "@id" : "https://w3id.org/def/Ethereum#Withdrawal"
     },
     "mixHash" : {
-      "@id" : "https://w3id.org/def/Ethereum#/mixHash",
+      "@id" : "https://w3id.org/def/Ethereum#mixHash",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
     "hasAccessList" : {
-      "@id" : "https://w3id.org/def/Ethereum#/hasAccessList",
+      "@id" : "https://w3id.org/def/Ethereum#hasAccessList",
       "@type" : "@id"
     },
     "maxPriorityFeePerGas" : {
-      "@id" : "https://w3id.org/def/Ethereum#/maxPriorityFeePerGas",
+      "@id" : "https://w3id.org/def/Ethereum#maxPriorityFeePerGas",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "maxFeePerGas" : {
-      "@id" : "https://w3id.org/def/Ethereum#/maxFeePerGas",
+      "@id" : "https://w3id.org/def/Ethereum#maxFeePerGas",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "value" : {
-      "@id" : "https://w3id.org/def/Ethereum#/value",
+      "@id" : "https://w3id.org/def/Ethereum#value",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "creates" : {
-      "@id" : "https://w3id.org/def/Ethereum#/creates",
+      "@id" : "https://w3id.org/def/Ethereum#creates",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "address" : {
-      "@id" : "https://w3id.org/def/Ethereum#/address",
+      "@id" : "https://w3id.org/def/Ethereum#address",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "transactionsRoot" : {
-      "@id" : "https://w3id.org/def/Ethereum#/transactionsRoot",
+      "@id" : "https://w3id.org/def/Ethereum#transactionsRoot",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasTransaction" : {
-      "@id" : "https://w3id.org/def/Ethereum#/hasTransaction",
+      "@id" : "https://w3id.org/def/Ethereum#hasTransaction",
       "@type" : "@id"
     },
     "sha3Uncles" : {
-      "@id" : "https://w3id.org/def/Ethereum#/sha3Uncles",
+      "@id" : "https://w3id.org/def/Ethereum#sha3Uncles",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "number" : {
-      "@id" : "https://w3id.org/def/Ethereum#/number",
+      "@id" : "https://w3id.org/def/Ethereum#number",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "difficulty" : {
-      "@id" : "https://w3id.org/def/Ethereum#/difficulty",
+      "@id" : "https://w3id.org/def/Ethereum#difficulty",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "blockHash" : {
-      "@id" : "https://w3id.org/def/Ethereum#/blockHash",
+      "@id" : "https://w3id.org/def/Ethereum#blockHash",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "input" : {
-      "@id" : "https://w3id.org/def/Ethereum#/input",
+      "@id" : "https://w3id.org/def/Ethereum#input",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "AccessList" : {
-      "@id" : "https://w3id.org/def/Ethereum#/AccessList"
+      "@id" : "https://w3id.org/def/Ethereum#AccessList"
     },
     "hasABI" : {
-      "@id" : "https://w3id.org/def/Ethereum#/hasABI",
+      "@id" : "https://w3id.org/def/Ethereum#hasABI",
       "@type" : "@id"
     },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
     "type" : {
-      "@id" : "https://w3id.org/def/Ethereum#/type",
+      "@id" : "https://w3id.org/def/Ethereum#type",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "amount" : {
-      "@id" : "https://w3id.org/def/Ethereum#/amount",
+      "@id" : "https://w3id.org/def/Ethereum#amount",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "r" : {
-      "@id" : "https://w3id.org/def/Ethereum#/r",
+      "@id" : "https://w3id.org/def/Ethereum#r",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "from" : {
-      "@id" : "https://w3id.org/def/Ethereum#/from",
+      "@id" : "https://w3id.org/def/Ethereum#from",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasBehaviour" : {
-      "@id" : "https://w3id.org/def/Ethereum#/hasBehaviour",
+      "@id" : "https://w3id.org/def/Ethereum#hasBehaviour",
       "@type" : "@id"
     },
     "nonce" : {
-      "@id" : "https://w3id.org/def/Ethereum#/nonce",
+      "@id" : "https://w3id.org/def/Ethereum#nonce",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "size" : {
-      "@id" : "https://w3id.org/def/Ethereum#/size",
+      "@id" : "https://w3id.org/def/Ethereum#size",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "parentHash" : {
-      "@id" : "https://w3id.org/def/Ethereum#/parentHash",
+      "@id" : "https://w3id.org/def/Ethereum#parentHash",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "logsBloom" : {
-      "@id" : "https://w3id.org/def/Ethereum#/logsBloom",
+      "@id" : "https://w3id.org/def/Ethereum#logsBloom",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "stateRoot" : {
-      "@id" : "https://w3id.org/def/Ethereum#/stateRoot",
+      "@id" : "https://w3id.org/def/Ethereum#stateRoot",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasKey" : {
-      "@id" : "https://w3id.org/def/Ethereum#/hasKey",
+      "@id" : "https://w3id.org/def/Ethereum#hasKey",
       "@type" : "@id"
     },
     "extraData" : {
-      "@id" : "https://w3id.org/def/Ethereum#/extraData",
+      "@id" : "https://w3id.org/def/Ethereum#extraData",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Transaction" : {
-      "@id" : "https://w3id.org/def/Ethereum#/Transaction"
+      "@id" : "https://w3id.org/def/Ethereum#Transaction"
     },
     "to" : {
-      "@id" : "https://w3id.org/def/Ethereum#/to",
+      "@id" : "https://w3id.org/def/Ethereum#to",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "description" : {
