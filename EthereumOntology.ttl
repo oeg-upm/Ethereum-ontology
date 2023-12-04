@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/def/Ethereum#/> .
+@prefix : <https://w3id.org/def/Ethereum#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix abi: <https://w3id.org/def/SolidityABI/> .
 @prefix eth: <https://w3id.org/def/EthereumOntology/> .
@@ -8,7 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ethon: <http://ethon.consensys.net/> .
-@base <https://w3id.org/def/Ethereum#/> .
+@base <https://w3id.org/def/Ethereum#> .
 
 <https://w3id.org/def/Ethereum#> rdf:type owl:Ontology ;
                                   dc:creator "Juan Cano-Benito" ,
