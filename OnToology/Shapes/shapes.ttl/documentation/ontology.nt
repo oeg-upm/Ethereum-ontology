@@ -1,0 +1,781 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#name
+<http://www.w3.org/ns/shacl#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#pattern
+<http://www.w3.org/ns/shacl#pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#contains
+<https://w3id.org/def/astrea#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#generatedShapesFrom
+<https://w3id.org/def/astrea#generatedShapesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#message
+<https://w3id.org/def/astrea#message> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/astrea#statusCode
+<https://w3id.org/def/astrea#statusCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/shacl#PropertyShape
+<http://www.w3.org/ns/shacl#PropertyShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/astrea#ReportEntry
+<https://w3id.org/def/astrea#ReportEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/astrea#ShapeReport
+<https://w3id.org/def/astrea#ShapeReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://astrea.linkeddata.es/report
+<http://astrea.linkeddata.es/report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://astrea.linkeddata.es/report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/astrea#ShapeReport> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#generatedShapesFrom> <https://astrea.linkeddata.es/report/0620946147> .
+# 
+# https://astrea.linkeddata.es/report/0620946147
+<https://astrea.linkeddata.es/report/0620946147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/report/0620946147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/astrea#ReportEntry> .
+<https://astrea.linkeddata.es/report/0620946147> <https://w3id.org/def/astrea#message> "Shapes generated with no errors" .
+<https://astrea.linkeddata.es/report/0620946147> <https://w3id.org/def/astrea#statusCode> "200"^^<http://www.w3.org/2001/XMLSchema#int> .
+# 
+# https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> <http://www.w3.org/2000/01/rdf-schema#label> "gas price transaction" .
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> <http://www.w3.org/ns/shacl#name> "gas price transaction" .
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/gasPriceTransaction> .
+<https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> <http://www.w3.org/2000/01/rdf-schema#label> "state root block" .
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> <http://www.w3.org/ns/shacl#name> "state root block" .
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/stateRootBlock> .
+<https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> <http://www.w3.org/2000/01/rdf-schema#label> "to transaction" .
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> <http://www.w3.org/ns/shacl#name> "to transaction" .
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/toTransaction> .
+<https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> <http://www.w3.org/2000/01/rdf-schema#label> "mix hash block" .
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> <http://www.w3.org/ns/shacl#name> "mix hash block" .
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/mixHashBlock> .
+<https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> <http://www.w3.org/2000/01/rdf-schema#label> "v transaction" .
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> <http://www.w3.org/ns/shacl#name> "v transaction" .
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/vTransaction> .
+<https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> <http://www.w3.org/2000/01/rdf-schema#label> "Access List" .
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> <http://www.w3.org/ns/shacl#name> "Access List" .
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> .
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> .
+<https://astrea.linkeddata.es/shapes#b222e7d6c1b01414204031d5b11a9939> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/def/EthereumOntology/AccessList> .
+# 
+# https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/2000/01/rdf-schema#label> "Withdrawals" .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/ns/shacl#name> "Withdrawals" .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> .
+<https://astrea.linkeddata.es/shapes#b6ac77dde0e997661eadc3e754e0e8d5> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/def/EthereumOntology/Withdrawals> .
+# 
+# https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> <http://www.w3.org/2000/01/rdf-schema#label> "nonce block" .
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> <http://www.w3.org/ns/shacl#name> "nonce block" .
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/nonceBlock> .
+<https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> <http://www.w3.org/2000/01/rdf-schema#label> "address withdrawal" .
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> <http://www.w3.org/ns/shacl#name> "address withdrawal" .
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/addressWithdrawal> .
+<https://astrea.linkeddata.es/shapes#c6b3f1bbd26dc62a6f472300f9802fa9> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> <http://www.w3.org/2000/01/rdf-schema#label> "receipts root block" .
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> <http://www.w3.org/ns/shacl#name> "receipts root block" .
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/receiptsRootBlock> .
+<https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> <http://www.w3.org/2000/01/rdf-schema#label> "max priority fee per gas transaction" .
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> <http://www.w3.org/ns/shacl#name> "max priority fee per gas transaction" .
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction> .
+<https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> <http://www.w3.org/2000/01/rdf-schema#label> "index withdrawal" .
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> <http://www.w3.org/ns/shacl#name> "index withdrawal" .
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/indexWithdrawal> .
+<https://astrea.linkeddata.es/shapes#d0e73f258dac0106778d5136e259b4c6> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> <http://www.w3.org/2000/01/rdf-schema#label> "key" .
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> <http://www.w3.org/ns/shacl#name> "key" .
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/key> .
+<https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> <http://www.w3.org/2000/01/rdf-schema#label> "sha3 uncles block" .
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> <http://www.w3.org/ns/shacl#name> "sha3 uncles block" .
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/sha3UnclesBlock> .
+<https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> <http://www.w3.org/2000/01/rdf-schema#label> "base fee per gas block" .
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> <http://www.w3.org/ns/shacl#name> "base fee per gas block" .
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/baseFeePerGasBlock> .
+<https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> <http://www.w3.org/2000/01/rdf-schema#label> "value transaction" .
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> <http://www.w3.org/ns/shacl#name> "value transaction" .
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/valueTransaction> .
+<https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166
+<https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166> <http://www.w3.org/2000/01/rdf-schema#label> "ABI" .
+<https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166> <http://www.w3.org/ns/shacl#name> "ABI" .
+<https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#dd0d92721e809e3fcf95432b14b9c166> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/def/SolidityABI/ABI> .
+# 
+# https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> <http://www.w3.org/2000/01/rdf-schema#label> "s transaction" .
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> <http://www.w3.org/ns/shacl#name> "s transaction" .
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/sTransaction> .
+<https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> <http://www.w3.org/2000/01/rdf-schema#label> "block hash transaction" .
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> <http://www.w3.org/ns/shacl#name> "block hash transaction" .
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/blockHashTransaction> .
+<https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> <http://www.w3.org/2000/01/rdf-schema#label> "withdrawal root block" .
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> <http://www.w3.org/ns/shacl#name> "withdrawal root block" .
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/withdrawalRootBlock> .
+<https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> <http://www.w3.org/2000/01/rdf-schema#label> "chain id transaction" .
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> <http://www.w3.org/ns/shacl#name> "chain id transaction" .
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/chainIdTransaction> .
+<https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/2000/01/rdf-schema#label> "Block" .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#name> "Block" .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#a19f117d1c141a35e4d92a50308faf3b> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#a8def45c259298fc1b4e8f4f657efee5> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#b97609c37375f9ebc60cc3366189704e> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#cace74af840326f58589f65e790b0638> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#d24a40e2c4f0c1612f9ed6a59774af64> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#d99da0bd58f620d953142b9f6248396a> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#e550c8db583e53912ad3195489a30391> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> .
+<https://astrea.linkeddata.es/shapes#ee8eb3ff202cbd6621e57d9279a34623> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/def/EthereumOntology/Block> .
+# 
+# https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> <http://www.w3.org/2000/01/rdf-schema#label> "from transaction" .
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> <http://www.w3.org/ns/shacl#name> "from transaction" .
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/fromTransaction> .
+<https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> <http://www.w3.org/2000/01/rdf-schema#label> "difficulty block" .
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> <http://www.w3.org/ns/shacl#name> "difficulty block" .
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/difficultyBlock> .
+<https://astrea.linkeddata.es/shapes#04378fd767cb212d4a2ae168472e4a03> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> <http://www.w3.org/2000/01/rdf-schema#label> "hash transaction" .
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> <http://www.w3.org/ns/shacl#name> "hash transaction" .
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/hashTransaction> .
+<https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> <http://www.w3.org/2000/01/rdf-schema#label> "extra data block" .
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> <http://www.w3.org/ns/shacl#name> "extra data block" .
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/extraDataBlock> .
+<https://astrea.linkeddata.es/shapes#176779b4b9ebd5938ad571e5d14fafee> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> <http://www.w3.org/2000/01/rdf-schema#label> "size block" .
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> <http://www.w3.org/ns/shacl#name> "size block" .
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/sizeBlock> .
+<https://astrea.linkeddata.es/shapes#1873bbe8d9ec8e11ade9126d572bd118> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> <http://www.w3.org/2000/01/rdf-schema#label> "gas limit block" .
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> <http://www.w3.org/ns/shacl#name> "gas limit block" .
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/gasLimitBlock> .
+<https://astrea.linkeddata.es/shapes#2aececb1259a01606beff2c962a71d8b> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> <http://www.w3.org/2000/01/rdf-schema#label> "validator index withdrawal" .
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> <http://www.w3.org/ns/shacl#name> "validator index withdrawal" .
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal> .
+<https://astrea.linkeddata.es/shapes#2ba97e8ff83fd9d7c1583554ff08f8eb> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> <http://www.w3.org/2000/01/rdf-schema#label> "input transaction" .
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> <http://www.w3.org/ns/shacl#name> "input transaction" .
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/inputTransaction> .
+<https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> <http://www.w3.org/2000/01/rdf-schema#label> "creates transaction" .
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> <http://www.w3.org/ns/shacl#name> "creates transaction" .
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/createsTransaction> .
+<https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> <http://www.w3.org/2000/01/rdf-schema#label> "address access list" .
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> <http://www.w3.org/ns/shacl#name> "address access list" .
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/addressAccessList> .
+<https://astrea.linkeddata.es/shapes#26d3f797d604c2d679ad13166a5b9eee> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> <http://www.w3.org/2000/01/rdf-schema#label> "hash block" .
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> <http://www.w3.org/ns/shacl#name> "hash block" .
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/hashBlock> .
+<https://astrea.linkeddata.es/shapes#3b301ea3616d2297dbcff1e943a0ab6c> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> <http://www.w3.org/2000/01/rdf-schema#label> "gas transaction" .
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> <http://www.w3.org/ns/shacl#name> "gas transaction" .
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/gasTransaction> .
+<https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> <http://www.w3.org/2000/01/rdf-schema#label> "type transaction" .
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> <http://www.w3.org/ns/shacl#name> "type transaction" .
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/typeTransaction> .
+<https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> <http://www.w3.org/2000/01/rdf-schema#label> "transaction index transaction" .
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> <http://www.w3.org/ns/shacl#name> "transaction index transaction" .
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/transactionIndexTransaction> .
+<https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> <http://www.w3.org/2000/01/rdf-schema#label> "number block" .
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> <http://www.w3.org/ns/shacl#name> "number block" .
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/numberBlock> .
+<https://astrea.linkeddata.es/shapes#3d26a485e41c056d13ce472848259724> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> <http://www.w3.org/2000/01/rdf-schema#label> "nonce transaction" .
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> <http://www.w3.org/ns/shacl#name> "nonce transaction" .
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/nonceTransaction> .
+<https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> <http://www.w3.org/2000/01/rdf-schema#label> "logs bloom block" .
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> <http://www.w3.org/ns/shacl#name> "logs bloom block" .
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/logsBloomBlock> .
+<https://astrea.linkeddata.es/shapes#30fe821f4ae3b2df182e337cc347f1d7> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> <http://www.w3.org/2000/01/rdf-schema#label> "gas used block" .
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> <http://www.w3.org/ns/shacl#name> "gas used block" .
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/gasUsedBlock> .
+<https://astrea.linkeddata.es/shapes#3763e8d037003767448cf69a2cf1c844> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16
+<https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> <http://www.w3.org/2000/01/rdf-schema#label> "has access list" .
+<https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> <http://www.w3.org/ns/shacl#class> <https://w3id.org/def/EthereumOntology/AccessList> .
+<https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> <http://www.w3.org/ns/shacl#name> "has access list" .
+<https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/hasAccessList> .
+# 
+# https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/2000/01/rdf-schema#label> "Transaction" .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#name> "Transaction" .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#a12c93dc8b55ea3d89aab6cad6ea5ed5> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#a57113e7f69bb9737a9cb4e188a8afbf> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#b20ab1d75cea57b9301cdcbe36696582> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#d0448891db88780c3cb90604f2ee11a7> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#dbda85ad33d2ccd84246ef9c5a60c647> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#e085dbd536a380fc0c554886686934f4> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#e0b712f5cec23a59aee2aa747ea58e1c> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#ea16b6791363336e1a8b18b4451bad08> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#efe50c6209d4211523d9097126f63a6c> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#047c75e5e9d9dcd6c590d771b6aee39f> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#2fb275949df2d80c319ed43d2fa78e18> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#206e104e64bff24f1a0a47a9edcac4b6> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3b3c749a916b80998b08aeac0d86c066> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3c80e42fdc2ebc98d7483b6a759f980b> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3d14e9b58577809f1a3a53a8cd2d1adb> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3e53d66d8c90f6e241d63025aac6ff4d> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#3868914bc7d8b427c04faac9bb203f16> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> .
+<https://astrea.linkeddata.es/shapes#4e6141ec20617f4ed7547c43f0b616fd> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/def/EthereumOntology/Transaction> .
+# 
+# https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> <http://www.w3.org/2000/01/rdf-schema#label> "block number transaction" .
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> <http://www.w3.org/ns/shacl#name> "block number transaction" .
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/blockNumberTransaction> .
+<https://astrea.linkeddata.es/shapes#411fd81dfdc702d65d176db0933793ea> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5
+<https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> <http://www.w3.org/2000/01/rdf-schema#label> "has behaviour" .
+<https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> <http://www.w3.org/ns/shacl#class> <http://ethon.consensys.net/Block> .
+<https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> <http://www.w3.org/ns/shacl#name> "has behaviour" .
+<https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#418fd3b852a9e6a1fffba8ca1800b3c5> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/hasBehaviour> .
+# 
+# https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81
+<https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> <http://www.w3.org/2000/01/rdf-schema#label> "has withdrawals" .
+<https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> <http://www.w3.org/ns/shacl#class> <https://w3id.org/def/EthereumOntology/Withdrawals> .
+<https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> <http://www.w3.org/ns/shacl#name> "has withdrawals" .
+<https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#622c08004ddf180060c74e3c77417f81> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/hasWithdrawals> .
+# 
+# https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263
+<https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> <http://www.w3.org/2000/01/rdf-schema#label> "Keys" .
+<https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> <http://www.w3.org/ns/shacl#name> "Keys" .
+<https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#d10b6f5dfbc9c9f1c9b38c9425e7ce75> .
+<https://astrea.linkeddata.es/shapes#7c69a7440850ba166df51368bb366263> <http://www.w3.org/ns/shacl#targetClass> <https://w3id.org/def/EthereumOntology/Keys> .
+# 
+# https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> <http://www.w3.org/2000/01/rdf-schema#label> "total difficulty block" .
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> <http://www.w3.org/ns/shacl#name> "total difficulty block" .
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/totalDifficultyBlock> .
+<https://astrea.linkeddata.es/shapes#7d1114d6cf3d6026a3396491c5148f33> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024
+<https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> <http://www.w3.org/2000/01/rdf-schema#label> "has keys" .
+<https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> <http://www.w3.org/ns/shacl#class> <https://w3id.org/def/EthereumOntology/Keys> .
+<https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> <http://www.w3.org/ns/shacl#name> "has keys" .
+<https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#7f6d4c519b2feb03306e12482aae2024> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/hasKeys> .
+# 
+# https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> <http://www.w3.org/2000/01/rdf-schema#label> "max fee per gas transaction" .
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> <http://www.w3.org/ns/shacl#name> "max fee per gas transaction" .
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction> .
+<https://astrea.linkeddata.es/shapes#73bc5122da32726b7e476a4270b647be> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> <http://www.w3.org/2000/01/rdf-schema#label> "transactions root block" .
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> <http://www.w3.org/ns/shacl#name> "transactions root block" .
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/transactionsRootBlock> .
+<https://astrea.linkeddata.es/shapes#76c39c810fdad003ae2b1afa3aceb58c> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> <http://www.w3.org/2000/01/rdf-schema#label> "miner block" .
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> <http://www.w3.org/ns/shacl#name> "miner block" .
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/minerBlock> .
+<https://astrea.linkeddata.es/shapes#794ac394d55c34b63f811af8e2d4f5ff> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp block" .
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> <http://www.w3.org/ns/shacl#name> "timestamp block" .
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/timestampBlock> .
+<https://astrea.linkeddata.es/shapes#8adeb870add7b72ec2e8b1062e0f66aa> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d
+<https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> <http://www.w3.org/2000/01/rdf-schema#label> "has abi" .
+<https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> <http://www.w3.org/ns/shacl#class> <https://w3id.org/def/SolidityABI/ABI> .
+<https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> <http://www.w3.org/ns/shacl#name> "has abi" .
+<https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#8e36be217441f3b715b6f2bd4b341e4d> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/hasABI> .
+# 
+# https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> <http://www.w3.org/2000/01/rdf-schema#label> "r transaction" .
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> <http://www.w3.org/ns/shacl#name> "r transaction" .
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/rTransaction> .
+<https://astrea.linkeddata.es/shapes#8ed86db5c26b7e7b984516c09efd963a> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3
+<https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3> <http://www.w3.org/2000/01/rdf-schema#label> "Block" .
+<https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3> <http://www.w3.org/ns/shacl#name> "Block" .
+<https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<https://astrea.linkeddata.es/shapes#84eb188e1f936ebea2b42dd4e970bcf3> <http://www.w3.org/ns/shacl#targetClass> <http://ethon.consensys.net/Block> .
+# 
+# https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec
+<https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> <http://www.w3.org/2000/01/rdf-schema#label> "has transactions" .
+<https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> <http://www.w3.org/ns/shacl#class> <https://w3id.org/def/EthereumOntology/Transaction> .
+<https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> <http://www.w3.org/ns/shacl#name> "has transactions" .
+<https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> .
+<https://astrea.linkeddata.es/shapes#89dc0d1822798fc4584e0796acce42ec> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/hasTransactions> .
+# 
+# https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> <http://www.w3.org/2000/01/rdf-schema#label> "author block" .
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> <http://www.w3.org/ns/shacl#name> "author block" .
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/authorBlock> .
+<https://astrea.linkeddata.es/shapes#897035ed8bb382bdac2842e115e15a82> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> <http://www.w3.org/2000/01/rdf-schema#label> "amount withdrawal" .
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> <http://www.w3.org/ns/shacl#name> "amount withdrawal" .
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/amountWithdrawal> .
+<https://astrea.linkeddata.es/shapes#9e9ad0a373d1dc74bb6f3d6bac5858a0> <http://www.w3.org/ns/shacl#pattern> "[\\-+]?[0-9]+" .
+# 
+# https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> <http://www.w3.org/2000/01/rdf-schema#label> "parent hash block" .
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> <http://www.w3.org/ns/shacl#name> "parent hash block" .
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/parentHashBlock> .
+<https://astrea.linkeddata.es/shapes#930994ff7e51be860d80a14bcf2705d4> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> <http://www.w3.org/2000/01/rdf-schema#label> "public key transaction" .
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> <http://www.w3.org/ns/shacl#name> "public key transaction" .
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> <http://www.w3.org/ns/shacl#path> <https://w3id.org/def/EthereumOntology/publicKeyTransaction> .
+<https://astrea.linkeddata.es/shapes#96ecc49f76f5301b86751fd316ddba38> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
