@@ -1,187 +1,191 @@
 {
    "@context":{
       "author":{
-         "@id":"https://w3id.org/def/EthereumOntology/authorBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/author",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "baseFeePerGas":{
-         "@id":"https://w3id.org/def/EthereumOntology/baseFeePerGasBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/baseFeePerGas",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "difficulty":{
-         "@id":"https://w3id.org/def/EthereumOntology/difficultyBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/difficulty",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "extraData":{
-         "@id":"https://w3id.org/def/EthereumOntology/extraDataBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/extraData",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "gasLimit":{
-         "@id":"https://w3id.org/def/EthereumOntology/gasLimitBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/gasLimit",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "gasUsed":{
-         "@id":"https://w3id.org/def/EthereumOntology/gasUsedBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/gasUsed",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "hash":{
-         "@id":"https://w3id.org/def/EthereumOntology/hashBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/hash",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "logsBloom":{
-         "@id":"https://w3id.org/def/EthereumOntology/logsBloomBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/logsBloom",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "miner":{
-         "@id":"https://w3id.org/def/EthereumOntology/minerBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/miner",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "mixHash":{
-         "@id":"https://w3id.org/def/EthereumOntology/mixHashBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/mixHash",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "nonce":{
-         "@id":"https://w3id.org/def/EthereumOntology/nonceBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/nonce",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "number":{
-         "@id":"https://w3id.org/def/EthereumOntology/numberBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/number",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "parentHash":{
-         "@id":"https://w3id.org/def/EthereumOntology/parentHashBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/parentHash",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "recepitsRoot":{
-         "@id":"https://w3id.org/def/EthereumOntology/receiptsRootBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/receiptsRoot",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "sha3Uncles":{
-         "@id":"https://w3id.org/def/EthereumOntology/sha3UnclesBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/sha3Uncles",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "size":{
-         "@id":"https://w3id.org/def/EthereumOntology/sizeBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/size",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "stateRoot":{
-         "@id":"https://w3id.org/def/EthereumOntology/stateRootBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/stateRoot",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "timestamp":{
-         "@id":"https://w3id.org/def/EthereumOntology/timestampBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/timestamp",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "totalDifficulty":{
-         "@id":"https://w3id.org/def/EthereumOntology/totalDifficultyBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/totalDifficulty",
          "@type":"http://www.w3.org/2001/XMLSchema#integer"
       },
       "transactionRoot":{
-         "@id":"https://w3id.org/def/EthereumOntology/transactionsRootBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/transactionsRoot",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "withdrawalRoot":{
-         "@id":"https://w3id.org/def/EthereumOntology/withdrawalRootBlock",
+         "@id":"https://w3id.org/def/EthereumOntology/withdrawalRoot",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "hasTransactions":{
-         "@id":"https://w3id.org/def/EthereumOntology/hasTransactions",
+         "@id":"https://w3id.org/def/EthereumOntology/hasTransaction",
          "@type":"@id",
          "@context":{
             "blockHash":{
-               "@id":"https://w3id.org/def/EthereumOntology/blockHashTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/blockHash",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "blockNumber":{
-               "@id":"https://w3id.org/def/EthereumOntology/blockNumberTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/blockNumber",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "chainId":{
-               "@id":"https://w3id.org/def/EthereumOntology/chainIdTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/chainId",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "creates":{
-               "@id":"https://w3id.org/def/EthereumOntology/createsTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/creates",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "from":{
-               "@id":"https://w3id.org/def/EthereumOntology/fromTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/from",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "gas":{
-               "@id":"https://w3id.org/def/EthereumOntology/gasTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/gas",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "gasPrice":{
-               "@id":"https://w3id.org/def/EthereumOntology/gasPriceTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/gasPrice",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "hash":{
-               "@id":"https://w3id.org/def/EthereumOntology/hashTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/hash",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "input":{
-               "@id":"https://w3id.org/def/EthereumOntology/inputTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/input",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "maxFeePerGas":{
-               "@id":"https://w3id.org/def/EthereumOntology/maxFeePerGasTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/maxFeePerGas",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "maxPriorityFeePerGas":{
-               "@id":"https://w3id.org/def/EthereumOntology/maxPriorityFeePerGasTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/maxPriorityFeePerGas",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "nonce":{
-               "@id":"https://w3id.org/def/EthereumOntology/nonceTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/nonce",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "publicKey":{
-               "@id":"https://w3id.org/def/EthereumOntology/publicKeyTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/publicKey",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "r":{
-               "@id":"https://w3id.org/def/EthereumOntology/rTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/r",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "s":{
-               "@id":"https://w3id.org/def/EthereumOntology/sTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/s",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "to":{
-               "@id":"https://w3id.org/def/EthereumOntology/toTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/to",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "transactionIndex":{
-               "@id":"https://w3id.org/def/EthereumOntology/transactionIndexTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/transactionIndex",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "type":{
-               "@id":"https://w3id.org/def/EthereumOntology/typeTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/type",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "v":{
-               "@id":"https://w3id.org/def/EthereumOntology/vTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/v",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             },
             "value":{
-               "@id":"https://w3id.org/def/EthereumOntology/valueTransaction",
+               "@id":"https://w3id.org/def/EthereumOntology/value",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
+            },
+            "hasABI":{
+               "@id":"https://w3id.org/def/EthereumOntology/hasABI",
+               "@type":"@vocab"
             },
             "hasAccessList":{
                "@id":"https://w3id.org/def/EthereumOntology/hasAccessList",
                "@type":"@id",
                "@context":{
                   "address":{
-                     "@id":"https://w3id.org/def/EthereumOntology/addressAccessList",
+                     "@id":"https://w3id.org/def/EthereumOntology/address",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "hasKeys":{
-                     "@id":"https://w3id.org/def/EthereumOntology/hasKeys",
+                     "@id":"https://w3id.org/def/EthereumOntology/hasKey",
                      "@type":"@id",
                      "@context":{
                         "key":{
-                           "@id":"https://w3id.org/def/EthereumOntology/Keys",
+                           "@id":"https://w3id.org/def/EthereumOntology/key",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         }
                      }
@@ -191,23 +195,23 @@
          }
       },
       "hasWithdrawals":{
-         "@id":"https://w3id.org/def/EthereumOntology/hasWithdrawals",
+         "@id":"https://w3id.org/def/EthereumOntology/hasWithdrawal",
          "@type":"@id",
          "@context":{
             "address":{
-               "@id":"https://w3id.org/def/EthereumOntology/addressWithdrawal",
+               "@id":"https://w3id.org/def/EthereumOntology/address",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "index":{
-               "@id":"https://w3id.org/def/EthereumOntology/indexWithdrawal",
+               "@id":"https://w3id.org/def/EthereumOntology/index",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "validator":{
-               "@id":"https://w3id.org/def/EthereumOntology/validatorIndexWithdrawal",
+               "@id":"https://w3id.org/def/EthereumOntology/validatorIndex",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "amount":{
-               "@id":"https://w3id.org/def/EthereumOntology/amountWithdrawal",
+               "@id":"https://w3id.org/def/EthereumOntology/amount",
                "@type":"http://www.w3.org/2001/XMLSchema#integer"
             }
          }
