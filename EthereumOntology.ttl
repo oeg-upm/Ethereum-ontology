@@ -15,6 +15,7 @@
                                              "http://www.garcia-castro.com/foaf.rdf#me" ;
                                   dc:description "This ontology aims at modelling the Ethereum blocks." ;
                                   dc:title "Ethereum Ontology" ;
+                                  <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                   owl:versionInfo 1.1 .
 
 #################################################################
